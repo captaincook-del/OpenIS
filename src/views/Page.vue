@@ -22,12 +22,12 @@ const page = computed(() => pages[props.pageKey])
     </section>
 
     <section v-if="page.roadmap" class="mt-4">
-      <p class="font-600">{{ coverage.done }} domaines livrés sur {{ coverage.total }} ({{ coverage.pct }} %)</p>
+      <p class="font-600">{{ coverage.done }} domaines terminés sur {{ coverage.total }} ({{ coverage.pct }} %) · pointillés : à compléter</p>
       <div v-for="[group, list] in coverage.groups" :key="group" class="mt-5">
         <h3 class="font-600">{{ group }}</h3>
         <ul class="mt-2 flex flex-wrap gap-2">
-          <li v-for="d in list" :key="d.id" class="chip" :class="d.status === 'done' ? '!bg-brandsoft !border-brand font-600' : 'text-mute'">
-            {{ d.name }}<span class="sr-only"> ({{ d.status === 'done' ? 'disponible' : 'prévu' }})</span></li>
+          <li v-for="d in list" :key="d.id" class="chip" :class="d.status === 'done' ? '!bg-brandsoft !border-brand font-600' : d.status === 'partial' ? '!border-brand !border-dashed' : 'text-mute'">
+            {{ d.name }}<span class="sr-only"> ({{ d.status === 'done' ? 'terminé' : d.status === 'partial' ? 'à compléter' : 'prévu' }})</span></li>
         </ul>
       </div>
     </section>

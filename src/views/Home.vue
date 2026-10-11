@@ -69,9 +69,13 @@ const BRAND = '#2F5D50'
         <div v-for="[group, list] in groups" :key="group" class="flex md:block gap-2 md:mb-5 shrink-0">
           <h2 class="hidden md:block text-sm font-600 text-mute mb-1.5">{{ group }}</h2>
           <button v-for="t in list" :key="t.id" :aria-current="tabId === t.id"
-            class="focusable shrink-0 md:w-full text-left px-3 py-2 rounded-md border-l-4 mb-0 md:mb-1 transition-colors text-sm text-ink cursor-pointer"
+            class="focusable shrink-0 md:w-full flex items-center justify-between gap-3 text-left px-3 py-2 rounded-md border-l-4 mb-0 md:mb-1 transition-colors text-sm text-ink cursor-pointer"
             :class="tabId === t.id ? 'bg-white font-700 shadow-sm' : 'border-transparent font-500 hover:bg-white/70'"
-            :style="tabId === t.id ? { borderLeftColor: level.color } : {}" @click="tabId = t.id">{{ t.name }}</button>
+            :style="tabId === t.id ? { borderLeftColor: level.color } : {}" @click="tabId = t.id">
+            <span>{{ t.name }}</span>
+            <!-- Domaine encore en cours d'enrichissement : indication discrète -->
+            <span v-if="t.status === 'partial'" class="text-xs font-400 text-mute" title="Domaine en cours d'enrichissement">en cours</span>
+          </button>
         </div>
         <p class="hidden md:block text-sm text-mute">{{ total }} composants pour « {{ size.name }} ».</p>
       </nav>
@@ -81,6 +85,7 @@ const BRAND = '#2F5D50'
           <h2 class="font-display font-800 text-3xl mr-2">{{ tab.name }}</h2>
           <span class="chip" :style="{ borderColor: level.color }">{{ level.name }}</span>
           <span class="chip">{{ size.name }}</span>
+          <span v-if="tab.status === 'partial'" class="chip border-dashed text-mute" title="De nouveaux composants seront ajoutés">En cours d'enrichissement</span>
         </div>
         <p class="mt-2 text-mute">{{ tab.intro }} <span class="text-ink">{{ tab.sizing?.[sizeId] }}</span></p>
 
