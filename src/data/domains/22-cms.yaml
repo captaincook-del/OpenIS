@@ -1,6 +1,6 @@
 id: cms
 name: Site web et CMS
-status: complete
+status: partial
 intro: Site web, publication et statistiques.
 sizing: {startup: Un site statique., pme: Site éditable par l'équipe., grande: 'Plusieurs sites, contributeurs, workflow.'}
 items:

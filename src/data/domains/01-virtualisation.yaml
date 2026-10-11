@@ -1,6 +1,6 @@
 id: virtualisation
 name: Virtualisation
-status: partial
+status: complete
 intro: 'La fondation : héberger machines virtuelles et stockage.'
 sizing: {startup: 'Un hôte, quelques VM. Les snapshots font office de filet.', pme: 'Cluster de 3 nœuds, stockage répliqué.', grande: 'Plusieurs clusters par site, stockage distribué dédié.'}
 items:

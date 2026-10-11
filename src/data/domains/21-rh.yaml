@@ -1,6 +1,6 @@
 id: rh
 name: Ressources humaines et paie
-status: complete
+status: partial
 intro: Dossiers du personnel, congés, paie.
 sizing: {startup: Tableur protégé., pme: Outil RH de base et congés., grande: RH intégré à l'annuaire et au SSO.}
 items:

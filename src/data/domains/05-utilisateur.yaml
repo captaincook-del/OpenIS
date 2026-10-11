@@ -1,6 +1,6 @@
 id: utilisateur
 name: Poste utilisateur
-status: partial
+status: complete
 intro: 'Ce que la personne voit : poste de travail et smartphone.'
 sizing: {startup: 'Postes gérés à la main, scripts de base.', pme: 'Parc géré par politiques, déploiement automatisé.', grande: 'Images maîtres, gestion centralisée par site.'}
 items:

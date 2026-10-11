@@ -1,6 +1,6 @@
 id: socles
 name: Socles
-status: partial
+status: complete
 intro: 'DNS, LDAP, NTP : ce que tout le reste suppose.'
 sizing: {startup: Un résolveur et un annuaire léger suffisent., pme: 'Deux de chaque, sur des hôtes distincts.', grande: 'Services répliqués par site, supervisés.'}
 items:
