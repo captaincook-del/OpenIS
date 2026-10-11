@@ -1,0 +1,19 @@
+id: wazuh
+updated: 2026-10
+summary: 'Détection d''intrusion et supervision de sécurité : agents, journaux, conformité.'
+why:
+- Combine agents sur les postes, analyse de journaux, intégrité des fichiers et détection de vulnérabilités.
+- Règles de conformité prêtes à l'emploi et tableaux de bord.
+alternatives:
+- name: CrowdSec
+  id: crowdsec
+  verdict: Bloque les comportements malveillants en périphérie ; plus léger, mais ne remplace pas une supervision complète.
+- name: Security Onion
+  url: https://securityonionsolutions.com
+  verdict: Solution qui reprend plusieurs solution open sources, mais sous licence Elastic License 2.0 (ELv2).
+- name: Splunk
+  url: https://www.splunk.com
+  verdict: Puissant et clé en main, mais coûteux au volume de données.
+limits:
+- Gourmand en ressources et long à régler pour limiter les fausses alertes.
+when_not: Pour un petit parc sans personne pour lire les alertes, CrowdSec seul est plus réaliste.

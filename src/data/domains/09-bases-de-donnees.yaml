@@ -1,0 +1,15 @@
+id: bases-de-donnees
+name: Bases de données
+status: complete
+intro: Moteurs relationnels et cache, sauvegardés et supervisés.
+sizing: {startup: Une instance partagée entre applications., pme: 'Primaire et réplique, sauvegarde continue.', grande: 'Une grappe par application critique, équipe dédiée.'}
+items:
+- name: Base relationnelle
+  role: Données des applications
+  v: ['PostgreSQL, 1 instance', PostgreSQL + réplique, PostgreSQL + Patroni, Patroni multi-sites, 'PostgreSQL + Patroni, chiffrement au repos']
+- name: Sauvegarde des bases
+  role: Restauration à un instant donné
+  v: [Export planifié, pgBackRest, pgBackRest + copie distante, pgBackRest multi-dépôts, 'pgBackRest chiffré, dépôt souverain']
+- name: Cache
+  role: Accélère les applications
+  v: ['Valkey, 1 instance', Valkey, Valkey Sentinel, Valkey en grappe, 'Valkey en grappe, TLS imposé']

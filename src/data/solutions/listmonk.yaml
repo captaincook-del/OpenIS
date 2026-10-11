@@ -1,0 +1,16 @@
+id: listmonk
+updated: 2026-10
+summary: Envoi de listes de diffusion et de lettres d'information.
+why:
+- Simple et rapide, une seule application.
+- Gère désabonnements et suivi des envois.
+alternatives:
+- name: Mailchimp
+  url: https://mailchimp.com
+  verdict: Délivrabilité et modèles prêts à l'emploi, mais propriétaire et facturé au volume.
+- name: Mautic
+  url: https://www.mautic.org
+  verdict: Marketing automatisé complet, plus lourd.
+limits:
+- La délivrabilité dépend de votre configuration SPF, DKIM et DMARC.
+when_not: Pour de très gros envois, passez par un prestataire de routage.

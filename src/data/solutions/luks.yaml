@@ -1,0 +1,15 @@
+id: luks
+updated: 2026-10
+summary: Chiffrement de disque standard sous Linux.
+why:
+- Intégré au noyau, éprouvé et pris en charge par toutes les distributions.
+- Gère plusieurs clés et leur révocation.
+alternatives:
+- name: BitLocker
+  verdict: Équivalent sous Windows, propriétaire.
+- name: VeraCrypt
+  url: https://www.veracrypt.fr
+  verdict: Multiplateforme, adapté aux conteneurs chiffrés, moins intégré au démarrage.
+limits:
+- La récupération en cas de clé perdue est à organiser.
+when_not: Sur un parc mixte, prévoyez un outil de séquestre des clés.

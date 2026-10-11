@@ -1,0 +1,15 @@
+id: zfs
+updated: 2026-10
+summary: Système de fichiers avec instantanés, sommes de contrôle, réplication et RAID intégré.
+why:
+- Détecte et corrige la corruption silencieuse des données.
+- Instantanés et réplication simples, une bonne base de sauvegarde sur un ou deux serveurs.
+alternatives:
+- name: Ceph
+  id: ceph
+  verdict: Pour répartir les données sur plusieurs nœuds, avec une exploitation plus lourde.
+- name: RAID logiciel Linux (mdadm)
+  verdict: Plus simple, mais sans somme de contrôle ni instantanés.
+limits:
+- Sa licence CDDL n'est pas compatible avec celle du noyau Linux, donc le module s'installe à part ; il est gourmand en mémoire.
+when_not: Au-delà de trois nœuds avec disques répartis, regardez plutôt Ceph.

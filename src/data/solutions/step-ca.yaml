@@ -1,0 +1,16 @@
+id: step-ca
+updated: 2026-10
+summary: Autorité de certification interne compatible avec le protocole ACME.
+why:
+- Délivre automatiquement des certificats internes, comme Let's Encrypt mais chez vous.
+- Léger et rapide à mettre en place.
+alternatives:
+- name: Let's Encrypt
+  url: https://letsencrypt.org
+  verdict: Gratuit pour les noms publics, inutilisable pour des services purement internes.
+- name: EJBCA
+  url: https://www.ejbca.org
+  verdict: PKI complète pour organisations réglementées, plus lourde.
+limits:
+- La protection de la clé racine (hors ligne, HSM) reste à votre charge.
+when_not: Pour une PKI réglementée avec cérémonies de clés et audits, EJBCA est plus adapté.

@@ -1,0 +1,15 @@
+id: telephonie
+name: Téléphonie
+status: complete
+intro: Appels internes et externes, softphones.
+sizing: {startup: 'Quelques lignes, softphones.', pme: 'Standard téléphonique, files d''appel.', grande: 'Plusieurs sites, secours opérateur.'}
+items:
+- name: Standard téléphonique
+  role: Cœur de la téléphonie
+  v: [Asterisk + FreePBX, Asterisk + FreePBX, FreeSWITCH, FreeSWITCH + Kamailio redondants, 'FreeSWITCH, trunk d''un opérateur français']
+- name: Applications d'appel
+  role: Sur poste et mobile
+  v: [Linphone, Linphone, Linphone + configuration automatique, Linphone + provisioning centralisé, 'Linphone, chiffrement SRTP imposé']
+- name: Raccordement opérateur
+  role: Appels vers l'extérieur
+  v: [Un trunk SIP, Un trunk SIP + secours 4G, 'Deux trunks, deux opérateurs', Deux opérateurs + deux sites, 'Opérateurs français, journaux conservés en France']

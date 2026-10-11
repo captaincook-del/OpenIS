@@ -1,0 +1,16 @@
+id: orangehrm
+updated: 2026-10
+summary: 'Logiciel de ressources humaines : dossiers, congés, recrutement.'
+why:
+- Couvre congés, absences, évaluations et recrutement dans une édition libre.
+- Installation simple, sur une pile PHP et MySQL courante.
+alternatives:
+- name: Odoo Community
+  id: odoo
+  verdict: 'Plus large (ERP complet), mais certaines applications RH sont réservées à l''édition payante : à vérifier.'
+- name: Lucca
+  url: https://www.lucca.fr
+  verdict: Solution française propriétaire, plus adaptée aux spécificités légales locales.
+limits:
+- Peu adapté à la paie et aux déclarations sociales françaises.
+when_not: Si la paie française est au cœur du besoin, un logiciel spécialisé est plus sûr.

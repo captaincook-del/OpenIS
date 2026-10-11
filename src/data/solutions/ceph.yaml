@@ -1,0 +1,15 @@
+id: ceph
+updated: 2026-10
+summary: 'Stockage distribué unifié : disques de machines virtuelles, objets (S3) et fichiers.'
+why:
+- Un seul cluster sert les disques des VM, l'API S3 et le partage de fichiers, avec réplication ou codage d'effacement.
+- 'Aucun point unique de défaillance : il tolère la perte de disques, de nœuds ou de sites selon la configuration.'
+alternatives:
+- name: ZFS
+  id: zfs
+  verdict: Plus simple et très fiable sur un ou deux serveurs, mais sans stockage réparti sur plusieurs nœuds.
+- name: Baie SAN propriétaire
+  verdict: Performances et support clé en main, au prix d'un coût élevé et d'une dépendance à un constructeur.
+limits:
+- Demande au moins trois nœuds, un réseau rapide (10 Gbit/s ou plus) et une vraie compétence d'exploitation.
+when_not: Pour un ou deux serveurs, ZFS avec réplication suffit et coûte beaucoup moins en exploitation.

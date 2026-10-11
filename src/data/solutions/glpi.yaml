@@ -1,0 +1,16 @@
+id: glpi
+updated: 2026-10
+summary: Gestion de parc et de support (tickets, inventaire, contrats), d'origine française.
+why:
+- Inventaire du parc et tickets dans le même outil, avec de nombreux modules gratuits.
+- Éditeur français et communauté francophone importante, documentation en français.
+alternatives:
+- name: Zammad
+  id: zammad
+  verdict: Plus agréable pour le support multicanal (courriel, chat), moins complet pour l'inventaire.
+- name: ServiceNow
+  url: https://www.servicenow.com
+  verdict: Très complet, mais coûteux et propriétaire.
+limits:
+- Interface chargée et paramétrage initial long.
+when_not: Pour un support uniquement par courriel, Zammad est plus léger.

@@ -1,0 +1,16 @@
+id: libreoffice
+updated: 2026-10
+summary: 'Suite bureautique libre : texte, tableur, présentation, dessin.'
+why:
+- Format ODF ouvert et normalisé, lisible à long terme.
+- Ouvre les formats Microsoft Office et s'utilise sans abonnement.
+alternatives:
+- name: Microsoft 365
+  url: https://www.microsoft.com/microsoft-365
+  verdict: Compatibilité parfaite avec les fichiers Office complexes, mais abonnement et dépendance.
+- name: OnlyOffice
+  url: https://www.onlyoffice.com
+  verdict: Interface proche d'Office ; le partage entre édition libre et fonctions commerciales est à vérifier.
+limits:
+- Les macros et mises en page Microsoft complexes peuvent s'afficher différemment.
+when_not: Si vous échangez en permanence avec l'extérieur des documents Office très travaillés, prévoyez des tests de compatibilité.

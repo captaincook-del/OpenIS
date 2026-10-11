@@ -1,0 +1,71 @@
+links:
+  # Valeur de secours : en production, l'adresse vient de VITE_REPO_URL (voir netlify.toml). Vide = logo GitHub masqué.
+  repo: https://github.com/votre-compte/monde-libre
+contact:
+  # Valeurs de secours : en production, les adresses viennent de VITE_CONTACT_EMAIL et VITE_CLAIMS_EMAIL (voir netlify.toml)
+  email: contact@monde-libre.example
+  claims_email: reclamations@monde-libre.example
+  title: Réclamations et débats
+  intro: "Ce formulaire sert à signaler une erreur, déposer une réclamation sur un contenu, ou discuter d'un choix technique. Le message s'ouvre dans votre application de courriel : rien n'est enregistré sur ce site."
+  notice: "Ce site est un projet non professionnel : il ne propose ni devis, ni accompagnement, ni support. Les demandes commerciales ou de prestation ne recevront pas de réponse."
+  topics:
+    - Réclamation sur un contenu
+    - Erreur à corriger (licence, lien, fait inexact)
+    - Débat sur un choix technique
+    - Autre remarque
+about:
+  title: À propos
+  roadmap: true
+  sections:
+    - h: Notre idée
+      p:
+        - "Les petites et grandes organisations dépendent de quelques éditeurs pour tout leur système d'information. Nous montrons qu'une autre voie existe, entièrement fondée sur des logiciels libres."
+        - "Du serveur de virtualisation jusqu'à l'application sur le téléphone de chaque personne, nous décrivons une pile complète, adaptée à la taille de l'organisation."
+    - h: Pour qui
+      p:
+        - "Startups, PME, grandes entreprises, associations et collectivités."
+    - h: Cinq niveaux d'exigence
+      p:
+        - "Essentielle, Standard, Entreprise, Haute disponibilité, Souveraine. On choisit le niveau selon les risques à couvrir et le budget, pas selon la mode."
+    - h: État du catalogue
+      p:
+        - "Le catalogue couvre l'ensemble des domaines prévus, de l'infrastructure à la formation (liste ci-dessous). Les choix techniques restent à relire avec un expert avant toute mise en production."
+legal:
+  title: Mentions légales
+  # Les textes acceptent des liens [texte](adresse) et les jetons {email} et {claims_email} (adresses de contact ci-dessus).
+  # Un bloc `quote:` affiche un encadré, une ligne par entrée.
+  sections:
+    - h: Cadre légal
+      p:
+        - "Ce site est un service de communication au public en ligne édité à titre non professionnel au sens de l'[article 6, III, 2° de la loi 2004-575 du 21 juin 2004](http://legifrance.gouv.fr/affichTexteArticle.do?idArticle=LEGIARTI000028345121&cidTexte=LEGITEXT000005789847). Conformément aux dispositions de cet article, son éditeur a choisi de rester anonyme."
+    - h: Hébergeur
+      p:
+        - "Ce site est hébergé par :"
+        - quote:
+            - "[Netlify, Inc.](https://www.netlify.com/),"
+            - "2325 3rd Street,"
+            - "Suite 215,"
+            - "San Francisco,"
+            - "California 94107,"
+            - "États-Unis d'Amérique"
+        - "avec un nom de domaine enregistré chez :"
+        - quote:
+            - "[OVH SAS](https://www.ovh.com/fr/),"
+            - "2 rue Kellermann,"
+            - "59100 Roubaix,"
+            - "France"
+            - "([coordonnées complètes](https://www.ovh.com/fr/support/mentions-legales/))"
+        - "qui disposent toutes deux des éléments d'identification personnelle de l'éditeur du site."
+    - h: Réclamations
+      p:
+        - "En cas de réclamation sur le contenu du site, merci de bien vouloir adresser en premier lieu un courriel à [{claims_email}](mailto:{claims_email}) pour une résolution amiable."
+        - "La loi vous permet de vous adresser directement [à l'hébergeur](mailto:fraud@netlify.com?subject=Abuse%20report&body=Please%20include%20the%20site%20URL%20and%20reason%20for%20your%20report%2C%20and%20we%20will%20reply%20promptly.). Dans ce dernier cas, l'article 6, I, 4° de la loi 2004-575 du 21 juin 2004 prévoit cependant :"
+        - quote:
+            - "Le fait, pour toute personne, de présenter aux hébergeurs du site un contenu ou une activité comme étant illicite dans le but d'en obtenir le retrait ou d'en faire cesser la diffusion, alors qu'elle sait cette information inexacte, est puni d'une peine d'un an d'emprisonnement et de 15 000 Euros d'amende."
+    - h: Données personnelles
+      # Si les polices sont un jour hébergées sur le site (plus d'appel à Google Fonts), supprimer le deuxième paragraphe.
+      p:
+        - "Ce site n'utilise aucun cookie et ne dépose aucun traceur. Il n'intègre ni mesure d'audience ni publicité."
+        - "Pour s'afficher, les pages chargent leurs polices depuis les serveurs de Google Fonts : votre adresse IP et des informations techniques sur votre navigateur sont alors transmises à Google, qui les traite selon sa [politique de confidentialité](https://policies.google.com/privacy)."
+        - "Le site est hébergé par une société américaine : les journaux techniques de connexion (adresse IP, date, pages demandées) peuvent être conservés par l'hébergeur et traités aux États-Unis. Voir la [politique de confidentialité de Netlify](https://www.netlify.com/privacy/)."
+        - "Le formulaire de contact se contente d'ouvrir votre messagerie : le site n'enregistre rien. Les courriels reçus servent uniquement à répondre à votre demande. Vous pouvez en demander l'effacement, ou l'accès et la rectification des données vous concernant, en écrivant à [{email}](mailto:{email}). En cas de désaccord, vous pouvez saisir la [CNIL](https://www.cnil.fr/)."

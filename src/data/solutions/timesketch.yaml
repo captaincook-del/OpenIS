@@ -1,0 +1,16 @@
+id: timesketch
+updated: 2026-10
+summary: Analyse collaborative de chronologies d'événements.
+why:
+- Rassemble journaux et artefacts dans une même chronologie annotée et partagée.
+- S'appuie sur OpenSearch et s'intègre aux chaînes d'investigation.
+alternatives:
+- name: OpenSearch
+  id: opensearch
+  verdict: Recherche seule, sans le travail collaboratif de chronologie.
+- name: Plaso
+  url: https://plaso.readthedocs.io
+  verdict: Génère les chronologies à partir de disques ; il se combine avec Timesketch.
+limits:
+- Dépend d'OpenSearch, et son installation est assez lourde.
+when_not: Pour un incident simple, les journaux du SIEM suffisent.

@@ -1,0 +1,15 @@
+id: virtualisation
+name: Virtualisation
+status: partial
+intro: 'La fondation : héberger machines virtuelles et stockage.'
+sizing: {startup: 'Un hôte, quelques VM. Les snapshots font office de filet.', pme: 'Cluster de 3 nœuds, stockage répliqué.', grande: 'Plusieurs clusters par site, stockage distribué dédié.'}
+items:
+- name: Hyperviseur
+  role: Exécute les machines virtuelles
+  v: ['Proxmox VE, 1 nœud', 'Proxmox VE, 2 nœuds + témoin', 'Proxmox VE, cluster 3 à 7 nœuds', 'Proxmox VE multi-clusters, bascule automatique', OpenNebula ou Proxmox sur infrastructure qualifiée SecNumCloud]
+- name: Stockage
+  role: Disques des VM
+  v: [ZFS local, ZFS + réplication asynchrone, Ceph (3 nœuds), 'Ceph multi-sites, réplication synchrone', Ceph avec chiffrement au repos et clés maîtrisées]
+- name: Sauvegarde
+  role: Restauration après incident
+  v: [Proxmox Backup Server (disque USB), Proxmox Backup Server dédié, PBS + copie distante chiffrée, PBS redondants + copie hors ligne, 'PBS + copie sur stockage souverain, test de restauration mensuel']

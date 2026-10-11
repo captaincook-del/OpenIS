@@ -1,0 +1,13 @@
+id: snort
+updated: 2026-10
+summary: Détection et prévention d'intrusion réseau historique.
+why:
+- Référence ancienne, avec une grande base de règles et de documentation.
+- Snort 3 apporte le multi-thread et une architecture modernisée.
+alternatives:
+- name: Suricata
+  id: suricata
+  verdict: Concurrent plus récent, choisi dans ce catalogue pour son multi-thread et sa sortie JSON native.
+limits:
+- 'Une partie des règles de l''éditeur est réservée aux abonnés : à vérifier.'
+when_not: Pour un nouveau déploiement, Suricata est le choix retenu ici.

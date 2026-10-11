@@ -1,0 +1,18 @@
+id: ia-locale
+name: IA et modèles locaux
+status: complete
+intro: Modèles de langage et outils d'IA hébergés chez vous.
+sizing: {startup: Un modèle léger sur un poste., pme: 'Serveur GPU partagé, interface commune.', grande: 'Plusieurs modèles, recherche documentaire, cloisonnement.'}
+items:
+- name: Exécution des modèles
+  role: Faire tourner l'IA
+  v: [Ollama sur un poste, Ollama sur serveur GPU, vLLM sur serveurs GPU, vLLM multi-GPU avec bascule, vLLM sur infrastructure souveraine]
+- name: Interface de discussion
+  role: Pour les utilisateurs
+  v: [LibreChat, LibreChat, LibreChat + SSO Keycloak, LibreChat redondant, 'LibreChat, journalisation contrôlée']
+- name: Modèles
+  role: Poids ouverts
+  v: [Petit modèle (7 à 8 milliards de paramètres), Modèle de taille moyenne, Modèles spécialisés par métier, Plusieurs modèles avec routage, Modèles dont origine et licence sont documentées]
+- name: Recherche documentaire
+  role: Répondre à partir de vos documents
+  v: [pgvector, pgvector, Qdrant, Qdrant en grappe, 'Qdrant, cloisonnement par direction']

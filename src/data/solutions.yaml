@@ -1,0 +1,191 @@
+# Registre des solutions citées. Tout nom listé dans `names` est reconnu et lié automatiquement
+# dans les textes des fichiers domains/. Licences : identifiants SPDX, à vérifier à chaque nouvelle version majeure.
+# `labels` : à ne renseigner que si le label a été vérifié à la source (voir `labels` ci-dessous).
+
+families:
+  - { id: copyleft, name: Copyleft fort, desc: "Les modifications redistribuées doivent rester libres (GPL, AGPL).", color: "#14573A", bg: "#D9F0E3", prefixes: [AGPL, GPL, CeCILL] }
+  - { id: weak, name: Copyleft faible, desc: "Seules les modifications du composant lui-même restent libres (LGPL, MPL, EPL, CDDL).", color: "#1B4B8A", bg: "#DCE9F8", prefixes: [LGPL, MPL, EPL, CDDL] }
+  - { id: permissive, name: Permissive, desc: "Réutilisable presque sans condition (MIT, BSD, Apache).", color: "#5E3593", bg: "#EBE0F7", prefixes: [MIT, BSD, Apache, OLDAP, PostgreSQL] }
+  - { id: source, name: Code source disponible, desc: "Le code se lit mais la licence n'est pas libre au sens de l'OSI (BUSL, SSPL).", color: "#7A4300", bg: "#FBE6C8", prefixes: [BUSL, SSPL] }
+  - { id: unknown, name: Licence à renseigner, desc: "Information non encore saisie.", color: "#404040", bg: "#E3E3E3", prefixes: [] }
+
+labels:
+  - { id: sill, name: SILL, desc: "Référencé au Socle interministériel de logiciels libres", url: "https://code.gouv.fr/sill/" }
+  - { id: cspn, name: CSPN, desc: "Certification de sécurité de premier niveau de l'ANSSI", url: "https://cyber.gouv.fr/" }
+
+solutions:
+  - { id: proxmox-ve, names: [Proxmox VE], url: "https://www.proxmox.com/en/products/proxmox-virtual-environment/overview", license: AGPL-3.0 }
+  - { id: pbs, names: [Proxmox Backup Server, PBS], url: "https://www.proxmox.com/en/products/proxmox-backup-server/overview", license: AGPL-3.0 }
+  - { id: opennebula, names: [OpenNebula], url: "https://opennebula.io", license: Apache-2.0 }
+  - { id: zfs, names: [ZFS], url: "https://openzfs.org", license: CDDL-1.0 }
+  - { id: ceph, names: [Ceph], url: "https://ceph.io", license: LGPL-2.1 }
+  - { id: docker, names: [Docker], url: "https://www.docker.com", license: Apache-2.0 }
+  - { id: compose, names: [Docker Compose], url: "https://docs.docker.com/compose/", license: Apache-2.0 }
+  - { id: podman, names: [Podman], url: "https://podman.io", license: Apache-2.0 }
+  - { id: k3s, names: [K3s], url: "https://k3s.io", license: Apache-2.0 }
+  - { id: kubernetes, names: [Kubernetes], url: "https://kubernetes.io", license: Apache-2.0 }
+  - { id: rke2, names: [RKE2], url: "https://docs.rke2.io", license: Apache-2.0 }
+  - { id: harbor, names: [Harbor], url: "https://goharbor.io", license: Apache-2.0 }
+  - { id: gitea, names: [Gitea], url: "https://about.gitea.com", license: MIT }
+  - { id: forgejo, names: [Forgejo], url: "https://forgejo.org", license: GPL-3.0 }
+  - { id: cosign, names: [Cosign], url: "https://github.com/sigstore/cosign", license: Apache-2.0 }
+  - { id: caddy, names: [Caddy], url: "https://caddyserver.com", license: Apache-2.0 }
+  - { id: traefik, names: [Traefik], url: "https://traefik.io/traefik", license: MIT }
+  - { id: argocd, names: [Argo CD], url: "https://argo-cd.readthedocs.io", license: Apache-2.0 }
+  - { id: ansible, names: [Ansible], url: "https://docs.ansible.com", license: GPL-3.0 }
+  - { id: opentofu, names: [OpenTofu], url: "https://opentofu.org", license: MPL-2.0 }
+  - { id: terraform, names: [Terraform], url: "https://www.terraform.io", license: BUSL-1.1 }
+  - { id: unbound, names: [Unbound], url: "https://nlnetlabs.nl/projects/unbound/about/", license: BSD-3-Clause }
+  - { id: dnsmasq, names: [dnsmasq], url: "https://thekelleys.org.uk/dnsmasq/doc.html", license: GPL-2.0 }
+  - { id: bind9, names: [Bind9], url: "https://www.isc.org/bind/", license: MPL-2.0 }
+  - { id: powerdns, names: [PowerDNS], url: "https://www.powerdns.com", license: GPL-2.0 }
+  - { id: lldap, names: [LLDAP], url: "https://github.com/lldap/lldap", license: GPL-3.0 }
+  - { id: openldap, names: [OpenLDAP], url: "https://www.openldap.org", license: OLDAP-2.8 }
+  - { id: freeipa, names: [FreeIPA], url: "https://www.freeipa.org", license: GPL-3.0 }
+  - { id: 389ds, names: [389 Directory Server], url: "https://www.port389.org", license: GPL-3.0 }
+  - { id: chrony, names: [chrony], url: "https://chrony-project.org", license: GPL-2.0 }
+  - { id: authelia, names: [Authelia], url: "https://www.authelia.com", license: Apache-2.0 }
+  - { id: keycloak, names: [Keycloak], url: "https://www.keycloak.org", license: Apache-2.0, labels: [sill] }
+  - { id: step-ca, names: [step-ca], url: "https://smallstep.com/docs/step-ca/", license: Apache-2.0 }
+  - { id: nextcloud, names: [Nextcloud], url: "https://nextcloud.com", license: AGPL-3.0, labels: [sill] }
+  - { id: collabora, names: [Collabora], url: "https://www.collaboraonline.com", license: MPL-2.0 }
+  - { id: la-suite-docs, names: [La Suite Docs], url: "https://github.com/suitenumerique/docs", license: MIT }
+  - { id: la-suite-visio, names: [La Suite Visio], url: "https://github.com/suitenumerique/meet", license: MIT }
+  - { id: stalwart, names: [Stalwart Mail], url: "https://stalw.art", license: AGPL-3.0 }
+  - { id: postfix, names: [Postfix], url: "https://www.postfix.org", license: EPL-2.0 }
+  - { id: dovecot, names: [Dovecot], url: "https://www.dovecot.org", license: LGPL-2.1 }
+  - { id: rspamd, names: [Rspamd], url: "https://rspamd.com", license: Apache-2.0 }
+  - { id: mattermost, names: [Mattermost], url: "https://mattermost.com", license: AGPL-3.0 }
+  - { id: matrix, names: [Matrix], url: "https://matrix.org", license: Apache-2.0 }
+  - { id: synapse, names: [Synapse], url: "https://github.com/element-hq/synapse", license: AGPL-3.0 }
+  - { id: element, names: [Element], url: "https://element.io", license: AGPL-3.0 }
+  - { id: tchap, names: [Tchap], url: "https://www.tchap.gouv.fr" }
+  - { id: jitsi, names: [Jitsi], url: "https://jitsi.org", license: Apache-2.0, labels: [sill] }
+  - { id: livekit, names: [LiveKit], url: "https://livekit.io", license: Apache-2.0 }
+  - { id: ubuntu, names: [Ubuntu], url: "https://ubuntu.com", license: GPL-2.0+ }
+  - { id: debian, names: [Debian], url: "https://www.debian.org", license: GPL-2.0+ }
+  - { id: gnome, names: [GNOME], url: "https://www.gnome.org", license: GPL-2.0+ }
+  - { id: thunderbird, names: [Thunderbird], url: "https://www.thunderbird.net", license: MPL-2.0, labels: [sill] }
+  - { id: libreoffice, names: [LibreOffice], url: "https://www.libreoffice.org", license: MPL-2.0, labels: [sill] }
+  - { id: firefox, names: [Firefox], url: "https://www.mozilla.org/firefox/", license: MPL-2.0, labels: [sill] }
+  - { id: ublock, names: [uBlock], url: "https://github.com/gorhill/uBlock", license: GPL-3.0 }
+  - { id: eos, names: [/e/OS], url: "https://e.foundation/e-os/", license: Apache-2.0 }
+  - { id: graphene, names: [GrapheneOS], url: "https://grapheneos.org", license: MIT }
+  - { id: fdroid, names: [F-Droid], url: "https://f-droid.org", license: AGPL-3.0 }
+  - { id: headwind, names: [Headwind MDM], url: "https://h-mdm.com", license: Apache-2.0 }
+  - { id: opnsense, names: [OPNsense], url: "https://opnsense.org", license: BSD-2-Clause }
+  - { id: wireguard, names: [WireGuard], url: "https://www.wireguard.com", license: GPL-2.0 }
+  - { id: netbird, names: [NetBird], url: "https://netbird.io", license: BSD-3-Clause }
+  - { id: crowdsec, names: [CrowdSec], url: "https://www.crowdsec.net", license: MIT }
+  - { id: fail2ban, names: [Fail2ban], url: "https://github.com/fail2ban/fail2ban", license: GPL-2.0 }
+  - { id: wazuh, names: [Wazuh], url: "https://wazuh.com", license: GPL-2.0 }
+  - { id: suricata, names: [Suricata], url: "https://suricata.io", license: GPL-2.0 }
+  - { id: vaultwarden, names: [Vaultwarden], url: "https://github.com/dani-garcia/vaultwarden", license: AGPL-3.0 }
+  - { id: passbolt, names: [Passbolt], url: "https://www.passbolt.com", license: AGPL-3.0 }
+  - { id: openbao, names: [OpenBao], url: "https://openbao.org", license: MPL-2.0 }
+  - { id: journald, names: [journald], url: "https://www.freedesktop.org/software/systemd/man/latest/systemd-journald.service.html", license: LGPL-2.1 }
+  - { id: loki, names: [Loki], url: "https://grafana.com/oss/loki/", license: AGPL-3.0 }
+  - { id: grafana, names: [Grafana], url: "https://grafana.com/oss/grafana/", license: AGPL-3.0 }
+  - { id: uptime-kuma, names: [Uptime Kuma], url: "https://github.com/louislam/uptime-kuma", license: MIT }
+  - { id: prometheus, names: [Prometheus], url: "https://prometheus.io", license: Apache-2.0 }
+  - { id: alertmanager, names: [Alertmanager], url: "https://prometheus.io/docs/alerting/latest/alertmanager/", license: Apache-2.0 }
+  - { id: thanos, names: [Thanos], url: "https://thanos.io", license: Apache-2.0 }
+  - { id: mimir, names: [Mimir], url: "https://grafana.com/oss/mimir/", license: AGPL-3.0 }
+  - { id: netbox, names: [NetBox], url: "https://netboxlabs.com/oss/netbox/", license: Apache-2.0 }
+  - { id: glpi, names: [GLPI], url: "https://glpi-project.org", license: GPL-3.0 }
+  - { id: garage, names: [Garage], url: "https://garagehq.deuxfleurs.fr", license: AGPL-3.0 }
+  - { id: seaweedfs, names: [SeaweedFS], url: "https://github.com/seaweedfs/seaweedfs", license: Apache-2.0 }
+  - { id: samba, names: [Samba], url: "https://www.samba.org", license: GPL-3.0 }
+  - { id: restic, names: [restic], url: "https://restic.net", license: BSD-2-Clause }
+  - { id: rclone, names: [rclone], url: "https://rclone.org", license: MIT }
+  - { id: borg, names: [BorgBackup], url: "https://www.borgbackup.org", license: BSD-3-Clause }
+  - { id: postgresql, names: [PostgreSQL], url: "https://www.postgresql.org", license: PostgreSQL }
+  - { id: patroni, names: [Patroni], url: "https://github.com/patroni/patroni", license: MIT }
+  - { id: pgbackrest, names: [pgBackRest], url: "https://pgbackrest.org", license: MIT }
+  - { id: valkey, names: [Valkey], url: "https://valkey.io", license: BSD-3-Clause }
+  - { id: openwrt, names: [OpenWrt], url: "https://openwrt.org", license: GPL-2.0 }
+  - { id: freeradius, names: [FreeRADIUS], url: "https://freeradius.org", license: GPL-2.0 }
+  - { id: clamav, names: [ClamAV], url: "https://www.clamav.net", license: GPL-2.0 }
+  - { id: osquery, names: [osquery], url: "https://osquery.io", license: Apache-2.0 }
+  - { id: luks, names: [LUKS], url: "https://gitlab.com/cryptsetup/cryptsetup", license: GPL-2.0 }
+  - { id: clevis, names: [Clevis], url: "https://github.com/latchset/clevis", license: GPL-3.0 }
+  - { id: tang, names: [Tang], url: "https://github.com/latchset/tang", license: GPL-3.0 }
+  - { id: cups, names: [CUPS], url: "https://openprinting.github.io/cups/", license: Apache-2.0 }
+  - { id: asterisk, names: [Asterisk], url: "https://www.asterisk.org", license: GPL-2.0 }
+  - { id: freepbx, names: [FreePBX], url: "https://www.freepbx.org", license: GPL-3.0 }
+  - { id: freeswitch, names: [FreeSWITCH], url: "https://freeswitch.org", license: MPL-1.1 }
+  - { id: kamailio, names: [Kamailio], url: "https://www.kamailio.org", license: GPL-2.0 }
+  - { id: linphone, names: [Linphone], url: "https://www.linphone.org", license: GPL-3.0 }
+  - { id: zammad, names: [Zammad], url: "https://zammad.org", license: AGPL-3.0 }
+  - { id: bookstack, names: [BookStack], url: "https://www.bookstackapp.com", license: MIT }
+  - { id: rustdesk, names: [RustDesk], url: "https://rustdesk.com", license: AGPL-3.0 }
+  - { id: ollama, names: [Ollama], url: "https://ollama.com", license: MIT }
+  - { id: vllm, names: [vLLM], url: "https://github.com/vllm-project/vllm", license: Apache-2.0 }
+  - { id: librechat, names: [LibreChat], url: "https://www.librechat.ai", license: MIT }
+  - { id: pgvector, names: [pgvector], url: "https://github.com/pgvector/pgvector", license: PostgreSQL }
+  - { id: qdrant, names: [Qdrant], url: "https://qdrant.tech", license: Apache-2.0 }
+  - { id: vikunja, names: [Vikunja], url: "https://vikunja.io", license: AGPL-3.0 }
+  - { id: taiga, names: [Taiga], url: "https://taiga.io", license: MPL-2.0 }
+  - { id: openproject, names: [OpenProject], url: "https://www.openproject.org", license: GPL-3.0 }
+  - { id: dolibarr, names: [Dolibarr], url: "https://www.dolibarr.org", license: GPL-3.0 }
+  - { id: espocrm, names: [EspoCRM], url: "https://www.espocrm.com", license: AGPL-3.0 }
+  - { id: suitecrm, names: [SuiteCRM], url: "https://suitecrm.com", license: AGPL-3.0 }
+  - { id: listmonk, names: [Listmonk], url: "https://listmonk.app", license: AGPL-3.0 }
+  - { id: odoo, names: [Odoo Community], url: "https://www.odoo.com", license: LGPL-3.0 }
+  - { id: tryton, names: [Tryton], url: "https://www.tryton.org", license: GPL-3.0 }
+  - { id: orangehrm, names: [OrangeHRM], url: "https://www.orangehrm.com", license: GPL-2.0 }
+  - { id: hugo, names: [Hugo], url: "https://gohugo.io", license: Apache-2.0 }
+  - { id: wordpress, names: [WordPress], url: "https://wordpress.org", license: GPL-2.0 }
+  - { id: drupal, names: [Drupal], url: "https://www.drupal.org", license: GPL-2.0 }
+  - { id: nginx, names: [nginx], url: "https://nginx.org", license: BSD-2-Clause }
+  - { id: matomo, names: [Matomo], url: "https://matomo.org", license: GPL-3.0 }
+  - { id: plausible, names: [Plausible], url: "https://plausible.io", license: AGPL-3.0 }
+  - { id: paperless, names: [Paperless-ngx], url: "https://docs.paperless-ngx.com", license: GPL-3.0 }
+  - { id: mayan, names: [Mayan EDMS], url: "https://www.mayan-edms.com", license: Apache-2.0 }
+  - { id: tesseract, names: [Tesseract], url: "https://github.com/tesseract-ocr/tesseract", license: Apache-2.0 }
+  - { id: ocrmypdf, names: [OCRmyPDF], url: "https://ocrmypdf.readthedocs.io", license: MPL-2.0 }
+  - { id: docuseal, names: [DocuSeal], url: "https://www.docuseal.com", license: AGPL-3.0 }
+  - { id: documenso, names: [Documenso], url: "https://documenso.com", license: AGPL-3.0 }
+  - { id: metabase, names: [Metabase], url: "https://www.metabase.com", license: AGPL-3.0 }
+  - { id: superset, names: [Apache Superset], url: "https://superset.apache.org", license: Apache-2.0 }
+  - { id: duckdb, names: [DuckDB], url: "https://duckdb.org", license: MIT }
+  - { id: clickhouse, names: [ClickHouse], url: "https://clickhouse.com", license: Apache-2.0 }
+  - { id: airflow, names: [Apache Airflow], url: "https://airflow.apache.org", license: Apache-2.0 }
+  - { id: dbt, names: [dbt Core], url: "https://github.com/dbt-labs/dbt-core", license: Apache-2.0 }
+  - { id: vitam, names: [Vitam], url: "https://www.programmevitam.fr", license: CeCILL-2.1 }
+  - { id: drawio, names: [draw.io], url: "https://www.drawio.com", license: Apache-2.0 }
+  - { id: mermaid, names: [Mermaid], url: "https://mermaid.js.org", license: MIT }
+  - { id: moodle, names: [Moodle], url: "https://moodle.org", license: GPL-3.0 }
+  - { id: peertube, names: [PeerTube], url: "https://joinpeertube.org", license: AGPL-3.0 }
+  - { id: gophish, names: [Gophish], url: "https://getgophish.com", license: MIT }
+  - { id: nexus, names: [Nexus], url: "https://www.sonatype.com/products/sonatype-nexus-repository", license: AGPL-3.0 }
+  - { id: gitalb, names: [Gitlab], url: "https://about.gitlab.com", license: MIT }
+  - { id: rsyslog, names: [rsyslog], url: "https://www.rsyslog.com", license: GPL-3.0 }
+  - { id: fluent-bit, names: [Fluent Bit], url: "https://fluentbit.io", license: Apache-2.0 }
+  - { id: kafka, names: [Kafka], url: "https://kafka.apache.org", license: Apache-2.0 }
+  - { id: zeek, names: [Zeek], url: "https://zeek.org", license: BSD-3-Clause }
+  - { id: snort, names: [Snort], url: "https://www.snort.org", license: GPL-2.0 }
+  - { id: opensearch, names: [OpenSearch], url: "https://opensearch.org", license: Apache-2.0 }
+  - { id: yara, names: [YARA], url: "https://virustotal.github.io/yara/", license: BSD-3-Clause }
+  - { id: sigma, names: [Sigma], url: "https://sigmahq.io", license: LGPL-2.1 }
+  - { id: cape, names: [CAPE Sandbox], url: "https://github.com/kevoreilly/CAPEv2", license: GPL-3.0 }
+  - { id: openvas, names: [OpenVAS], url: "https://www.openvas.org", license: GPL-2.0 }
+  - { id: trivy, names: [Trivy], url: "https://trivy.dev", license: Apache-2.0 }
+  - { id: ntfy, names: [ntfy], url: "https://ntfy.sh", license: Apache-2.0 }
+  - { id: dfir-iris, names: [DFIR-IRIS], url: "https://dfir-iris.org", license: LGPL-3.0 }
+  - { id: openedr, names: [OpenEDR], url: "https://www.openedr.com", license: LGPL-3.0 }
+  - { id: velociraptor, names: [Velociraptor], url: "https://docs.velociraptor.app", license: AGPL-3.0 }
+  - { id: timesketch, names: [Timesketch], url: "https://timesketch.org", license: Apache-2.0 }
+  - { id: yeti, names: [Yeti], url: "https://yeti-platform.io", license: Apache-2.0 }
+  - { id: misp, names: [MISP], url: "https://www.misp-project.org", license: AGPL-3.0 }
+  - { id: opencti, names: [OpenCTI], url: "https://github.com/OpenCTI-Platform/opencti", license: Apache-2.0 }
+  - { id: shuffle, names: [Shuffle], url: "https://shuffler.io", license: AGPL-3.0 }
+  - { id: keespassxc, names: [KeespassXC], url: "https://keepassxc.org/", license: AGPL-3.0, labels: [cspn] }
+  - { id: freeootp, names: [FreeOTP], url: "https://freeotp.github.io/", license: Apache-2.0}
+  - { id: n8n, names: [n8n], url: "https://n8n.io/", license: Sustainable Use}
+  - { id: threat-dragon, names: [Threat Dragon], url: "https://owasp.org/projects/threat-dragon", license: Apache-2.0}
+  - { id: wikijs, names: [Wikijs], url: "https://js.wiki/", license: AGPL-3.0,}
+  - { id: docmost, names: [Docmost], url: "https://docmost.com/", license: AGPL-3.0,}
+  - { id: vuejs, names: [VueJS], url: "https://vuejs.org/", license: MIT}
+  - { id: django, names: [Django], url: "https://www.djangoproject.com/", license: BSD-3-Clause }
+  - { id: symfony, names: [Symfony], url: "https://symfony.com/", license: MIT}

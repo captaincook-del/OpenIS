@@ -1,0 +1,15 @@
+id: freeipa
+updated: 2026-10
+summary: 'Annuaire d''identité pour Linux : LDAP, Kerberos, DNS et certificats.'
+why:
+- Réunit annuaire, authentification forte et politiques d'accès aux serveurs.
+- Réplication multi-maîtres.
+alternatives:
+- name: OpenLDAP
+  id: openldap
+  verdict: Plus léger, mais sans interface d'administration ni Kerberos intégrés.
+- name: Active Directory
+  verdict: Standard en entreprise pour les postes Windows, propriétaire.
+limits:
+- Moins adapté à un grand parc de postes Windows.
+when_not: Si la majorité des postes sont sous Windows avec stratégies de groupe, regardez Samba en domaine ou Active Directory.

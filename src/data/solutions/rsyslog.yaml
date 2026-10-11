@@ -1,0 +1,16 @@
+id: rsyslog
+updated: 2026-10
+summary: Collecte et acheminement de journaux syslog.
+why:
+- Présent sur presque toutes les distributions, fiable et éprouvé.
+- Gère filtrage, files d'attente et transport chiffré TLS.
+alternatives:
+- name: Fluent Bit
+  id: fluent-bit
+  verdict: Plus moderne et adapté aux conteneurs.
+- name: syslog-ng
+  url: https://www.syslog-ng.com
+  verdict: Concurrent direct, avec une édition libre et une édition commerciale.
+limits:
+- Configuration austère et peu d'enrichissement moderne.
+when_not: Pour des journaux de conteneurs ou des formats JSON, Fluent Bit est plus à l'aise.

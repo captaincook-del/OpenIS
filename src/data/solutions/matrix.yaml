@@ -1,0 +1,16 @@
+id: matrix
+updated: 2026-10
+summary: Protocole ouvert de messagerie instantanée décentralisée.
+why:
+- Fédération possible entre organisations.
+- Chiffrement de bout en bout.
+alternatives:
+- name: Mattermost
+  id: mattermost
+  verdict: Plus simple, centralisé, proche de Slack.
+- name: Slack
+  url: https://slack.com
+  verdict: Plus d'intégrations, mais propriétaire.
+limits:
+- Le serveur Synapse est gourmand et la mise en œuvre plus complexe.
+when_not: Pour une seule organisation sans besoin de fédération, Mattermost suffit.

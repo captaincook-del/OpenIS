@@ -1,0 +1,16 @@
+id: pbs
+updated: 2026-10
+summary: 'Serveur de sauvegarde dédié aux VM et conteneurs Proxmox : dédoublonnage, chiffrement, vérification.'
+why:
+- Sauvegardes incrémentielles dédupliquées, rapides à restaurer.
+- Chiffrement côté client et vérification d'intégrité des données.
+alternatives:
+- name: restic
+  id: restic
+  verdict: Pour des fichiers de systèmes variés, moins intégré aux VM Proxmox.
+- name: Veeam
+  url: https://www.veeam.com
+  verdict: Très complet, mais propriétaire.
+limits:
+- Conçu pour l'écosystème Proxmox.
+when_not: Pour sauvegarder des serveurs hors Proxmox, préférez restic ou BorgBackup.

@@ -1,0 +1,18 @@
+id: ssi
+name: Sécurité (SSI)
+status: partial
+intro: Protéger, détecter, réagir.
+sizing: {startup: 'Hygiène de base : pare-feu, sauvegardes, mots de passe.', pme: 'Détection centralisée, VPN, gestion des secrets.', grande: 'Centre de supervision sécurité, cartographie des risques.'}
+items:
+- name: Pare-feu
+  role: Filtrage du réseau
+  v: [OPNsense, OPNsense + VLAN, OPNsense en paire redondante, OPNsense CARP multi-sites, OPNsense + segmentation par zone de confiance]
+- name: VPN
+  role: Accès distant
+  v: [WireGuard, WireGuard + 2FA, NetBird, NetBird redondant multi-sites, WireGuard avec contrôle d'accès par certificat]
+- name: Mots de passe et secrets
+  role: Coffre
+  v: [KeespassXC, Vaultwarden, Passbolt, OpenBao en grappe, OpenBao + HSM]
+- name: MFA
+  role: Authentification mutlifacteur et accès
+  v: [FreeOTP, FreeOTP, FreeOTP + Yubikey ,FreeOTP + Yubikey en paire redondante, Yubikey en paire redondante]

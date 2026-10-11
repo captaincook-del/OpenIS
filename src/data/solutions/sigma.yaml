@@ -1,0 +1,15 @@
+id: sigma
+updated: 2026-10
+summary: Format ouvert de règles de détection pour journaux.
+why:
+- On écrit une règle une fois et on la convertit pour Wazuh, OpenSearch ou d'autres SIEM.
+- Bénéficie d'un grand dépôt communautaire de règles.
+alternatives:
+- name: Règles natives de Wazuh
+  verdict: Simples à démarrer, mais non portables vers un autre SIEM.
+- name: YARA
+  id: yara
+  verdict: Vise les fichiers et la mémoire, pas les journaux.
+limits:
+- 'La conversion n''est pas parfaite ; la licence des règles diffère de celle des outils : à vérifier.'
+when_not: Pour un petit parc, les règles fournies par Wazuh suffisent.

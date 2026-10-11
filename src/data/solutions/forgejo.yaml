@@ -1,0 +1,16 @@
+id: forgejo
+updated: 2026-10
+summary: 'Forge logicielle auto-hébergée : dépôts Git, revues de code, tickets et intégration continue.'
+why:
+- Projet communautaire porté par une association à but non lucratif, ce qui limite le risque de changement de licence.
+- Léger à héberger et livré avec Forgejo Actions, largement compatible avec les workflows de GitHub Actions.
+alternatives:
+- name: GitLab
+  url: https://about.gitlab.com
+  verdict: Plus complet (CI, sécurité, registre) mais plus lourd, et plusieurs fonctions avancées sont réservées aux offres payantes.
+- name: Gitea
+  id: gitea
+  verdict: Souche d'origine de Forgejo ; la gouvernance est passée à une entreprise, d'où la scission. Pertinent si vous visez son offre commerciale.
+limits:
+- L'écosystème d'intégrations est plus petit que celui de GitHub.
+when_not: Pour une chaîne de livraison très outillée (analyse de sécurité, environnements de revue), GitLab est plus complet.

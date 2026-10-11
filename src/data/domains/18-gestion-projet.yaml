@@ -1,0 +1,15 @@
+id: gestion-projet
+name: Gestion de projet
+status: complete
+intro: Planifier, suivre et livrer.
+sizing: {startup: Une liste de tâches partagée., pme: Suivi de projets et d'équipes., grande: Portefeuille de projets et droits fins.}
+items:
+- name: Suivi des tâches
+  role: Qui fait quoi
+  v: [Vikunja, Taiga, OpenProject, OpenProject en grappe, 'OpenProject, droits par projet']
+- name: Code et révision
+  role: Travail des développeurs
+  v: [Forgejo, Forgejo, Gitlab + Actions, Forgejo redondant, 'Forgejo, signature des commits imposée']
+- name: Agendas partagés
+  role: Planning d'équipe
+  v: [Agenda Nextcloud, Agenda Nextcloud, Agendas Nextcloud par équipe, Nextcloud en grappe, 'Nextcloud, hébergement qualifié']

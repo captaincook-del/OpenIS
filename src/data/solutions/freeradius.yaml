@@ -1,0 +1,14 @@
+id: freeradius
+updated: 2026-10
+summary: Serveur RADIUS pour l'accès réseau 802.1X.
+why:
+- Référence libre, très flexible.
+- Prend en charge LDAP, EAP-TLS et les certificats.
+alternatives:
+- name: Microsoft NPS
+  verdict: Intégré à Windows Server.
+- name: RADIUS en service hébergé
+  verdict: Clé en main, sur abonnement.
+limits:
+- Configuration austère.
+when_not: Sans compétence réseau, une solution intégrée est plus rapide à mettre en œuvre.

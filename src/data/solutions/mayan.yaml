@@ -1,0 +1,15 @@
+id: mayan
+updated: 2026-10
+summary: Gestion électronique de documents.
+why:
+- Classification, reconnaissance de texte et workflows.
+- Licence Apache-2.0.
+alternatives:
+- name: Paperless-ngx
+  id: paperless
+  verdict: Plus simple, orienté archivage de documents scannés.
+- name: Alfresco
+  verdict: Plus complet, avec des licences commerciales.
+limits:
+- Interface moins moderne.
+when_not: Pour classer des scans, Paperless-ngx suffit.

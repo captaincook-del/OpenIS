@@ -1,0 +1,15 @@
+id: itsm
+name: Support et ITSM
+status: complete
+intro: Support aux utilisateurs et gestion des incidents.
+sizing: {startup: Une boîte partagée suffit., pme: Outil de tickets et base de connaissances., grande: Catalogue de services et astreinte.}
+items:
+- name: Gestion des tickets
+  role: Suivre les demandes
+  v: [Boîte courriel partagée, Zammad, GLPI, GLPI redondant, 'GLPI, journaux d''accès conservés']
+- name: Base de connaissances
+  role: Réponses réutilisables
+  v: [Wiki Forgejo, BookStack, BookStack + SSO Keycloak, BookStack redondant, 'BookStack, versions validées']
+- name: Assistance à distance
+  role: Dépanner sans se déplacer
+  v: [RustDesk, RustDesk, 'RustDesk, serveur interne', 'RustDesk, serveurs redondants', 'RustDesk, sessions journalisées']

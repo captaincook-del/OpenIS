@@ -1,0 +1,19 @@
+id: netbird
+updated: 2026-10
+summary: Réseau privé maillé fondé sur WireGuard, avec gestion centralisée.
+why:
+- Gère utilisateurs, groupes et règles d'accès, avec SSO, au-dessus de WireGuard.
+- Les machines se joignent sans ouvrir de ports entrants.
+alternatives:
+- name: WireGuard
+  id: wireguard
+  verdict: Plus simple pour peu de liens, mais sans gestion centralisée.
+- name: Headscale
+  url: https://headscale.net
+  verdict: Serveur libre compatible avec les clients Tailscale, projet communautaire.
+- name: Tailscale
+  url: https://tailscale.com
+  verdict: Très abouti, mais sa plateforme de coordination est propriétaire.
+limits:
+- Un serveur de gestion à héberger et à sauvegarder ; projet plus jeune que WireGuard.
+when_not: Pour deux ou trois liens fixes entre sites, WireGuard seul suffit.

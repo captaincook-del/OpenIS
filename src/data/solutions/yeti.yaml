@@ -1,0 +1,16 @@
+id: yeti
+updated: 2026-10
+summary: 'Plateforme de renseignement sur la menace : indicateurs et techniques d''attaque.'
+why:
+- Léger et simple à installer.
+- Relie indicateurs, acteurs et techniques dans un modèle clair.
+alternatives:
+- name: MISP
+  id: misp
+  verdict: Plus répandu et orienté partage entre organisations.
+- name: OpenCTI
+  id: opencti
+  verdict: Graphe de connaissances plus riche, mais plus lourd.
+limits:
+- Communauté plus modeste que celles de MISP et d'OpenCTI.
+when_not: Si vous devez échanger des indicateurs avec d'autres organisations, MISP est la norme.

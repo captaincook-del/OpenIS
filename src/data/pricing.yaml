@@ -1,0 +1,22 @@
+# ESTIMATIONS DE TRAVAIL, à valider avec des devis réels avant toute publication.
+currency: EUR
+horizon_years: 3
+etp_cost: 60000            # coût annuel chargé d'un équivalent temps plein (€)
+disclaimer: "Ordres de grandeur indicatifs sur 3 ans, hors formation et migration. Le comparatif propriétaire inclut licences, abonnements et support éditeur."
+# Une valeur par niveau, dans l'ordre : essentielle, standard, entreprise, ha, souveraine.
+sizes:
+  startup:
+    capex:       [1500, 4000, 9000, 18000, 30000]     # matériel et mise en place (€)
+    opex:        [600, 1800, 4000, 9000, 18000]       # hébergement, support, abonnements (€/an)
+    etp:         [0.05, 0.1, 0.2, 0.3, 0.4]           # temps d'administration
+    proprietary: [5000, 9000, 15000, 30000, 45000]    # équivalent propriétaire (€/an)
+  pme:
+    capex:       [8000, 20000, 45000, 90000, 140000]
+    opex:        [3000, 8000, 16000, 35000, 60000]
+    etp:         [0.2, 0.4, 0.8, 1.5, 2.2]
+    proprietary: [30000, 60000, 110000, 200000, 300000]
+  grande:
+    capex:       [60000, 120000, 250000, 500000, 800000]
+    opex:        [20000, 45000, 90000, 180000, 300000]
+    etp:         [1, 2, 4, 8, 12]
+    proprietary: [250000, 450000, 800000, 1500000, 2200000]

@@ -1,0 +1,15 @@
+id: impression
+name: Impression
+status: complete
+intro: Imprimer, scanner, numériser.
+sizing: {startup: Une imprimante partagée., pme: Serveur d'impression et scan vers dossier., grande: 'Impression sécurisée, files par site.'}
+items:
+- name: Serveur d'impression
+  role: Files d'impression
+  v: [CUPS, CUPS, CUPS redondant, 'CUPS en grappe, files par site', 'CUPS, impression sécurisée par badge']
+- name: Numérisation
+  role: Du papier au numérique
+  v: [Scan vers Samba, Scan vers Nextcloud, Scan + OCR vers Nextcloud, Scan + OCR + classement automatique, 'Scan + OCR, conservation maîtrisée']
+- name: Suivi des volumes
+  role: Coûts et usages
+  v: [Compteurs relevés à la main, Journaux CUPS, Journaux CUPS + Grafana, Alertes sur volumes anormaux, Journaux conservés selon la politique légale]

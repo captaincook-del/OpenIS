@@ -1,0 +1,15 @@
+id: postgresql
+updated: 2026-10
+summary: Base de données relationnelle.
+why:
+- Très riche (JSON, extensions, recherche de texte) et sous licence permissive.
+- Fiabilité reconnue et bon écosystème de haute disponibilité (Patroni).
+alternatives:
+- name: MariaDB
+  url: https://mariadb.org
+  verdict: Plus simple pour des applications web courantes, moins riche.
+- name: Oracle ou SQL Server
+  verdict: Fonctions avancées et support, mais licences élevées.
+limits:
+- Réglage et sauvegardes à organiser soi-même.
+when_not: Si une application ne prend en charge que MariaDB, restez-y.

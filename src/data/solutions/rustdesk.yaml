@@ -1,0 +1,16 @@
+id: rustdesk
+updated: 2026-10
+summary: Prise en main à distance auto-hébergeable.
+why:
+- Le serveur de relais est à vous, sans passer par un service tiers.
+- Fonctionne sur tous les systèmes courants.
+alternatives:
+- name: AnyDesk
+  url: https://anydesk.com
+  verdict: Très simple, mais service propriétaire hébergé chez un tiers.
+- name: Apache Guacamole
+  url: https://guacamole.apache.org
+  verdict: Accès par navigateur à des machines, moins adapté à la prise en main de postes nomades.
+limits:
+- 'La gestion centralisée est limitée dans l''édition libre : à vérifier.'
+when_not: Pour l'accès administrateur aux serveurs, SSH et un bastion suffisent.

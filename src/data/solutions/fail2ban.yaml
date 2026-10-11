@@ -1,0 +1,16 @@
+id: fail2ban
+updated: 2026-10
+summary: Bannissement automatique après des échecs répétés de connexion.
+why:
+- Simple, présent dans toutes les distributions, efficace contre les attaques par force brute.
+- Se configure par de petits fichiers de filtres lisibles.
+alternatives:
+- name: CrowdSec
+  id: crowdsec
+  verdict: Ajoute le partage de réputation et un blocage en amont.
+- name: SSHGuard
+  url: https://www.sshguard.net
+  verdict: Plus minimal, centré sur SSH.
+limits:
+- Décision locale à chaque machine, lente sur de très gros volumes de journaux.
+when_not: Au-delà de quelques serveurs, une solution centralisée comme CrowdSec est plus cohérente.

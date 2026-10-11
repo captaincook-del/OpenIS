@@ -1,0 +1,16 @@
+id: vaultwarden
+updated: 2026-10
+summary: Serveur compatible avec les clients Bitwarden, léger et auto-hébergeable.
+why:
+- Très léger, il utilise les clients officiels Bitwarden (navigateur, mobile, bureau).
+- Gère organisations et partage de mots de passe entre équipes.
+alternatives:
+- name: Bitwarden
+  url: https://bitwarden.com
+  verdict: Serveur officiel plus lourd, avec une offre entreprise payante.
+- name: KeePassXC
+  url: https://keepassxc.org
+  verdict: Coffre local sans serveur, avec une certification CSPN de l'ANSSI ; pas de partage en équipe.
+limits:
+- 'Projet non officiel de Bitwarden : suivez ses évolutions et sauvegardez la base.'
+when_not: Si vous exigez une édition certifiée et un support de l'éditeur, regardez l'offre officielle.

@@ -1,0 +1,15 @@
+id: erp
+name: Comptabilité et ERP
+status: complete
+intro: Gestion commerciale, comptabilité, facturation.
+sizing: {startup: Facturation et comptabilité simples., pme: Gestion commerciale complète., grande: 'Progiciel intégré, plusieurs sociétés.'}
+items:
+- name: Gestion et comptabilité
+  role: Cœur de gestion
+  v: [Dolibarr, Dolibarr, Odoo Community, Odoo Community en grappe, 'Tryton, hébergement qualifié']
+- name: Facturation électronique
+  role: Factures conformes
+  v: [Factur-X avec Dolibarr, Factur-X avec Dolibarr, Factur-X + plateforme agréée, Factur-X + plateforme agréée redondante, 'Factur-X, plateforme agréée française']
+- name: Sauvegarde et traçabilité
+  role: Pièces comptables
+  v: [Sauvegarde quotidienne, Sauvegarde + archivage PDF/A, Sauvegarde + piste d'audit, Réplication multi-sites, Conservation légale chiffrée]

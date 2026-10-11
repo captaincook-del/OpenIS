@@ -1,0 +1,16 @@
+id: crowdsec
+updated: 2026-10
+summary: Détection collaborative de comportements malveillants, avec blocage automatique.
+why:
+- Analyse les journaux et bloque les adresses fautives en pare-feu ou en reverse proxy grâce à des « bouncers ».
+- Profite de listes de réputation partagées par la communauté et reste léger.
+alternatives:
+- name: Fail2ban
+  id: fail2ban
+  verdict: Plus simple et entièrement local, mais sans partage de réputation.
+- name: Wazuh
+  id: wazuh
+  verdict: Supervision de sécurité complète, là où CrowdSec se concentre sur le blocage.
+limits:
+- 'Le partage de réputation passe par un service de l''éditeur, désactivable : à vérifier selon votre politique.'
+when_not: Si vous voulez corréler tous vos journaux et conformité, Wazuh est plus adapté.

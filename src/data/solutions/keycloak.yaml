@@ -1,0 +1,23 @@
+id: keycloak
+updated: 2026-10
+summary: "Serveur d'identité : connexion unique (SSO), fédération d'annuaires, normes OpenID Connect et SAML."
+why:
+  - "C'est la référence libre du SSO, sous licence Apache-2.0, et un projet de la Cloud Native Computing Foundation."
+  - "Il parle OpenID Connect, OAuth 2.0 et SAML 2.0, donc il se branche sur la quasi-totalité des applications du catalogue."
+  - "Il se relie à un annuaire LDAP ou FreeIPA existant et gère le second facteur et la fédération avec d'autres fournisseurs d'identité."
+  - "Il passe à l'échelle en grappe, avec une base PostgreSQL."
+alternatives:
+  - name: Authelia
+    id: authelia
+    verdict: "Plus léger et plus simple, idéal pour une petite structure derrière un reverse proxy. Moins complet pour la fédération et les grands annuaires : c'est le choix des niveaux Essentielle et Standard du catalogue."
+  - name: Authentik
+    url: "https://goauthentik.io"
+    verdict: "Interface soignée et flux configurables. Vérifiez la répartition entre fonctions libres et fonctions réservées à l'offre entreprise avant de décider."
+  - name: Microsoft Entra ID ou Okta
+    verdict: "Services propriétaires hébergés, simples à démarrer, mais vos identités dépendent d'un tiers et d'un coût par utilisateur, ce qui va à l'encontre de l'objectif d'indépendance."
+limits:
+  - "Plus gourmand en ressources (Java) et plus exigeant à régler finement."
+  - "Les montées de version majeures demandent de lire les notes de migration."
+when_not: "Pour moins de 25 comptes et quelques applications, Authelia suffit et coûte moins en exploitation."
+sources:
+  - { label: "Documentation Keycloak", url: "https://www.keycloak.org/documentation" }

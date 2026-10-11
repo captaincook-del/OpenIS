@@ -1,0 +1,16 @@
+id: matomo
+updated: 2026-10
+summary: Statistiques d'audience web respectueuses de la vie privée.
+why:
+- Les données restent chez vous, et une configuration conforme CNIL permet de se passer du bandeau de consentement.
+- Alternative directe à Google Analytics.
+alternatives:
+- name: Plausible
+  id: plausible
+  verdict: Plus léger, avec moins de détails.
+- name: Google Analytics
+  url: https://marketingplatform.google.com/about/analytics/
+  verdict: Gratuit, mais les transferts de données hors de l'Union européenne posent question.
+limits:
+- L'exemption CNIL demande un réglage précis, et l'hébergement d'une base MySQL.
+when_not: Pour un site simple, Plausible suffit.

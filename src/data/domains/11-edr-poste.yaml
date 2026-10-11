@@ -1,0 +1,15 @@
+id: edr-poste
+name: Protection du poste
+status: complete
+intro: Protéger postes et serveurs contre les menaces.
+sizing: {startup: Antivirus et chiffrement de disque., pme: Détection centralisée et correctifs automatiques., grande: 'Détection sur tout le parc, correctifs par vagues.'}
+items:
+- name: Détection
+  role: Voir une menace sur le poste
+  v: [ClamAV, ClamAV + Wazuh, Wazuh + osquery, Wazuh en grappe + osquery, 'Wazuh + osquery, règles maîtrisées en France']
+- name: Chiffrement des disques
+  role: Protéger un poste volé
+  v: [LUKS, 'LUKS, clés dans Vaultwarden', LUKS + Clevis et Tang, LUKS + Tang redondants, 'LUKS, clés séquestrées et jamais externalisées']
+- name: Correctifs
+  role: Garder les systèmes à jour
+  v: [unattended-upgrades, unattended-upgrades, 'Ansible, mises à jour par vagues', Ansible + dépôt miroir interne, 'Dépôt miroir interne signé, validation avant déploiement']

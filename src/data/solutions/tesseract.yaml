@@ -1,0 +1,13 @@
+id: tesseract
+updated: 2026-10
+summary: Reconnaissance de texte (OCR) libre.
+why:
+- Moteur OCR libre le plus répandu, avec plus de cent langues.
+- Se combine avec OCRmyPDF pour produire des PDF consultables.
+alternatives:
+- name: ABBYY
+  url: https://pdf.abbyy.com
+  verdict: Meilleure précision sur les mises en page complexes, mais propriétaire.
+limits:
+- La qualité dépend fortement de celle du scan.
+when_not: Sur des documents très dégradés ou des tableaux complexes, un moteur commercial peut être plus précis.

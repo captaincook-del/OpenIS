@@ -1,0 +1,33 @@
+# Feuille de route du catalogue. Le pourcentage affiché sur le site est calculé ici.
+# Pour livrer un domaine : créer src/data/domains/NN-id.yaml puis passer status à done.
+domains:
+  - { id: virtualisation, name: Virtualisation, group: Infrastructure, status: done }
+  - { id: conteneurisation, name: Conteneurisation, group: Infrastructure, status: done }
+  - { id: socles, name: "Socles (DNS, LDAP, NTP)", group: Infrastructure, status: done }
+  - { id: exploitation, name: Exploitation, group: Infrastructure, status: done }
+  - { id: stockage-objet, name: Stockage objet, group: Infrastructure, status: done }
+  - { id: bases-de-donnees, name: Bases de données, group: Infrastructure, status: done }
+  - { id: reseau-wifi, name: "Réseau local et Wi-Fi", group: Infrastructure, status: done }
+  - { id: ssi, name: Sécurité (SSI), group: Sécurité, status: done }
+  - { id: ssi-detection, name: Détection (SOC), group: Sécurité, status: plan }
+  - { id: ssi-response, name: Réponse (CISERT), group: Sécurité, status: plan }
+  - { id: edr-poste, name: Protection du poste, group: Sécurité, status: done }
+  - { id: pra-pca, name: "Continuité et reprise d'activité", group: Sécurité, status: done }
+  - { id: conformite, name: Conformité RGPD, group: Sécurité, status: done }
+  - { id: utilisateur, name: Poste utilisateur, group: Utilisateurs, status: done }
+  - { id: collaboration, name: Collaboration, group: Utilisateurs, status: done }
+  - { id: impression, name: Impression, group: Utilisateurs, status: done }
+  - { id: telephonie, name: Téléphonie, group: Utilisateurs, status: done }
+  - { id: itsm, name: Support et ITSM, group: Utilisateurs, status: done }
+  - { id: ia-locale, name: IA et modèles locaux, group: Utilisateurs, status: done }
+  - { id: gestion-projet, name: Gestion de projet, group: Applications métier, status: done }
+  - { id: crm, name: Relation client (CRM), group: Applications métier, status: done }
+  - { id: erp, name: Comptabilité et ERP, group: Applications métier, status: done }
+  - { id: rh, name: Ressources humaines et paie, group: Applications métier, status: done }
+  - { id: cms, name: Site web et CMS, group: Applications métier, status: done }
+  - { id: ged, name: Gestion documentaire, group: Applications métier, status: done }
+  - { id: signature, name: Signature électronique, group: Applications métier, status: done }
+  - { id: bi, name: Analyse de données, group: Applications métier, status: done }
+  - { id: archivage, name: Archivage légal, group: Applications métier, status: done }
+  - { id: cartographie, name: Cartographie du SI, group: Gouvernance, status: done }
+  - { id: formation, name: Formation et accompagnement, group: Gouvernance, status: done }

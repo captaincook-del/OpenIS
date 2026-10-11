@@ -1,0 +1,15 @@
+id: opnsense
+updated: 2026-10
+summary: Pare-feu et routeur libre basé sur FreeBSD, avec interface web.
+why:
+- Mises à jour régulières, interface claire et nombreuses fonctions intégrées (VPN, détection d'intrusion, haute disponibilité CARP).
+- 'Licence BSD à deux clauses : peu de contraintes, y compris en usage commercial.'
+alternatives:
+- name: pfSense
+  url: https://www.pfsense.org
+  verdict: Même origine, mais vérifiez le modèle de licence et de mise à jour de l'édition communautaire avant de choisir.
+- name: Pare-feu propriétaire (Fortinet, Palo Alto)
+  verdict: Matériel intégré, support constructeur et filtrage poussé, avec des licences annuelles coûteuses.
+limits:
+- Le matériel doit être compatible avec FreeBSD.
+when_not: Si vous voulez un support constructeur 24 h/24 avec remplacement de matériel, un pare-feu sous contrat est plus adapté.

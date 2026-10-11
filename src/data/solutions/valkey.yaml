@@ -1,0 +1,16 @@
+id: valkey
+updated: 2026-10
+summary: Cache et magasin clé-valeur compatible Redis.
+why:
+- Fork de Redis hébergé par la Linux Foundation, sous licence BSD.
+- Compatible avec les clients Redis existants.
+alternatives:
+- name: Redis
+  url: https://redis.io
+  verdict: 'Sa licence a changé en 2024 et évolué depuis : vérifiez les conditions actuelles.'
+- name: memcached
+  url: https://memcached.org
+  verdict: Plus simple, sans persistance.
+limits:
+- 'Projet récent : suivez de près les versions.'
+when_not: Pour un cache très simple, memcached suffit.

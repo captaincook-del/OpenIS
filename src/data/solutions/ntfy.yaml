@@ -1,0 +1,16 @@
+id: ntfy
+updated: 2026-10
+summary: Notifications par simple requête HTTP vers téléphone et navigateur.
+why:
+- Très simple et auto-hébergeable, avec des applications mobiles.
+- S'intègre en une ligne dans un script ou un outil d'alerte.
+alternatives:
+- name: Alertmanager
+  id: alertmanager
+  verdict: Gère le regroupement et le routage des alertes Prometheus.
+- name: PagerDuty
+  url: https://www.pagerduty.com
+  verdict: Astreinte avec escalade, mais propriétaire.
+limits:
+- Pas d'escalade ni de calendrier d'astreinte natifs.
+when_not: Pour une vraie astreinte avec escalade automatique, ajoutez un outil dédié.

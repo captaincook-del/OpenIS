@@ -1,0 +1,16 @@
+id: netbox
+updated: 2026-10
+summary: 'Référentiel d''infrastructure : adresses IP, équipements, racks et câblage.'
+why:
+- Une source de vérité unique, dotée d'une API bien documentée qui alimente Ansible et la supervision.
+- Modèle de données riche (IPAM, DCIM, circuits), adapté de la petite structure au multi-sites.
+alternatives:
+- name: GLPI
+  id: glpi
+  verdict: Meilleur pour le parc informatique et le support, moins précis pour l'adressage réseau. Les deux se complètent.
+- name: phpIPAM
+  url: https://phpipam.net
+  verdict: Plus simple, centré sur la gestion des adresses IP.
+limits:
+- 'Il faut organiser la saisie : un inventaire qui n''est pas tenu à jour perd sa valeur.'
+when_not: Pour une dizaine de machines, un tableur versionné suffit.

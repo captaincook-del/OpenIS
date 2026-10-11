@@ -1,0 +1,21 @@
+id: utilisateur
+name: Poste utilisateur
+status: partial
+intro: 'Ce que la personne voit : poste de travail et smartphone.'
+sizing: {startup: 'Postes gérés à la main, scripts de base.', pme: 'Parc géré par politiques, déploiement automatisé.', grande: 'Images maîtres, gestion centralisée par site.'}
+items:
+- name: Système du poste
+  role: OS de bureau
+  v: [Ubuntu LTS, Ubuntu LTS, 'Ubuntu LTS', 'Debian géré par Ansible, mises à jour en vagues', 'Debian durci, disque chiffré, démarrage sécurisé']
+- name: Courriel et agenda
+  role: Application desktop
+  v: [Thunderbird, Thunderbird, Thunderbird + configuration auto, Thunderbird + politiques centralisées, 'Thunderbird, chiffrement OpenPGP imposé']
+- name: Bureautique
+  role: Texte, tableur, présentation
+  v: [LibreOffice, LibreOffice, LibreOffice + modèles d'entreprise, LibreOffice + Collabora, 'LibreOffice, formats ouverts ODF imposés']
+- name: Navigateur
+  role: Accès au web
+  v: [Firefox, Firefox + uBlock, Firefox ESR + politiques, Firefox ESR géré, 'Firefox ESR durci, extensions validées']
+- name: Smartphone
+  role: Mobile
+  v: [Applications libres via F-Droid, /e/OS, /e/OS + Headwind MDM, 'Parc géré par MDM, double profil', 'GrapheneOS ou /e/OS durci, MDM souverain']

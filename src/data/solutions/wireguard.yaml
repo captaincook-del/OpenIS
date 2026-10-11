@@ -1,0 +1,16 @@
+id: wireguard
+updated: 2026-10
+summary: VPN moderne, intégré au noyau Linux.
+why:
+- Code très court, donc plus facile à auditer, et performances excellentes.
+- 'Configuration simple : une clé par machine et une liste d''adresses autorisées.'
+alternatives:
+- name: OpenVPN
+  url: https://openvpn.net
+  verdict: Plus ancien et plus souple (TCP, authentification variée), au prix de la complexité.
+- name: strongSwan (IPsec)
+  url: https://strongswan.org
+  verdict: Standard interopérable avec les équipements réseau.
+limits:
+- 'Pas de gestion native des utilisateurs ni d''attribution dynamique : les clés se distribuent à la main.'
+when_not: Au-delà de quelques dizaines d'accès, ajoutez une couche de gestion comme NetBird.

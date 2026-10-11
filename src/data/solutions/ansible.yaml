@@ -1,0 +1,16 @@
+id: ansible
+updated: 2026-10
+summary: Automatisation de la configuration sans agent, par SSH.
+why:
+- 'Rien à installer sur les machines : un accès SSH suffit pour commencer.'
+- Playbooks lisibles et versionnables dans Git, avec une grande bibliothèque de rôles.
+alternatives:
+- name: OpenTofu
+  id: opentofu
+  verdict: Décrit l'infrastructure à créer (VM, réseau) plutôt que sa configuration interne ; il s'utilise avec Ansible, pas à sa place.
+- name: Salt
+  url: https://saltproject.io
+  verdict: Modèle à agents, adapté aux très grands parcs qui veulent une convergence permanente.
+limits:
+- Sur de très grands parcs, l'exécution devient lente sans réglage.
+when_not: Pour plusieurs milliers de machines à maintenir en permanence dans un état donné, un outil à agents est plus adapté.

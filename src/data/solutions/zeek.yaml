@@ -1,0 +1,16 @@
+id: zeek
+updated: 2026-10
+summary: Analyseur de trafic réseau qui produit des journaux détaillés.
+why:
+- Décrit finement DNS, HTTP, TLS et connexions, idéal pour enquêter après coup.
+- Programmable par scripts, il complète un détecteur à signatures comme Suricata.
+alternatives:
+- name: Suricata
+  id: suricata
+  verdict: Alerte par règles ; à utiliser avec Zeek plutôt qu'à sa place.
+- name: Arkime
+  url: https://arkime.com
+  verdict: Capture complète des paquets pour revoir le trafic.
+limits:
+- Pas d'alertes par signatures par défaut, courbe d'apprentissage réelle.
+when_not: Pour seulement bloquer des intrusions connues, Suricata suffit.

@@ -1,0 +1,15 @@
+id: signature
+name: Signature électronique
+status: complete
+intro: Signer des documents en ligne.
+sizing: {startup: Signature de PDF par certificat., pme: Signature en ligne simple., grande: 'Signature avancée, traçabilité.'}
+items:
+- name: Signature électronique
+  role: Contrats et accords
+  v: [Certificat dans LibreOffice, DocuSeal, Documenso, Documenso redondant, Documenso + certificats qualifiés d'un prestataire]
+- name: Certificats
+  role: Identité du signataire
+  v: [Certificat interne (step-ca), Certificat interne (step-ca), Prestataire qualifié eIDAS, 'Prestataire qualifié, deux fournisseurs', Prestataire qualifié eIDAS français]
+- name: Horodatage
+  role: Prouver la date
+  v: [Horodatage de la signature, Serveur d'horodatage interne, Jeton d'horodatage qualifié, Jetons de deux prestataires, Jeton qualifié d'un prestataire français]

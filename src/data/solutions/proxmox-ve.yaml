@@ -1,0 +1,24 @@
+id: proxmox-ve                 # doit correspondre à l'id dans solutions.yaml (registre)
+updated: 2026-10
+summary: "Plateforme de virtualisation (machines KVM et conteneurs LXC) avec interface web, cluster, stockage ZFS ou Ceph et sauvegarde intégrés."
+why:
+  - "Un seul produit libre couvre la virtualisation, le cluster, la réplication ZFS, l'intégration de Ceph et, avec Proxmox Backup Server, la sauvegarde."
+  - "Il monte en gamme sans changer d'outil : un nœud pour une startup, un cluster avec Ceph pour une entreprise."
+  - "Le code est publié sous AGPL-3.0, sans licence par processeur : l'abonnement porte sur le support et l'accès aux dépôts stables."
+  - "La communauté et la documentation sont larges, donc les compétences sont faciles à trouver."
+alternatives:
+  - name: VMware vSphere
+    verdict: "Propriétaire. Les conditions de licence ont fortement changé depuis le rachat par Broadcom, ce qui pousse beaucoup d'organisations à chercher une sortie. Proxmox couvre l'essentiel des besoins courants à un coût bien inférieur, mais n'offre pas tout l'écosystème d'outils périphériques de VMware."
+  - name: XCP-ng
+    url: "https://xcp-ng.org"
+    verdict: "Hyperviseur Xen libre, pertinent si vos équipes connaissent déjà XenServer. Vérifiez quelles fonctions de gestion avancée relèvent d'offres payantes avant de vous engager."
+  - name: OpenNebula
+    id: opennebula
+    verdict: "Plateforme de cloud privé, plus adaptée aux grands parcs multi-sites ou au libre-service par équipe. Plus lourde à exploiter pour un petit parc ; c'est le choix du niveau Souveraine dans ce catalogue."
+limits:
+  - "La gestion de plusieurs clusters est moins mature que celle des outils dédiés."
+  - "Ceph demande au moins trois nœuds et un réseau rapide dédié."
+  - "Le support professionnel passe par l'éditeur ou par ses partenaires."
+when_not: "Choisissez plutôt OpenNebula pour un cloud privé avec libre-service, quotas et facturation interne. Si vous visez la qualification SecNumCloud, souvenez-vous qu'elle porte sur le service d'un hébergeur et non sur le logiciel : interrogez votre hébergeur."
+sources:
+  - { label: "Documentation Proxmox VE", url: "https://pve.proxmox.com/wiki/Main_Page" }

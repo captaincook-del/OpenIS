@@ -1,0 +1,15 @@
+id: cms
+name: Site web et CMS
+status: complete
+intro: Site web, publication et statistiques.
+sizing: {startup: Un site statique., pme: Site éditable par l'équipe., grande: 'Plusieurs sites, contributeurs, workflow.'}
+items:
+- name: Gestion de contenu
+  role: Publier
+  v: ['Hugo, site statique', 'VueJS, Symfony, Django', 'VueJS, Symfony, Django', 'VueJS, Symfony, Django en grappe', 'VueJS, Symfony, Django hébergement qualifié']
+- name: Serveur web
+  role: Diffusion
+  v: [Caddy, Caddy, nginx, nginx + répartiteur de charge, nginx + WAF]
+- name: Statistiques
+  role: Mesure d'audience respectueuse
+  v: [Plausible, Matomo, 'Matomo, données anonymisées', 'Matomo, anonymisation + hébergement redondant', 'Matomo, exemption de consentement CNIL']

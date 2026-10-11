@@ -1,0 +1,15 @@
+id: stockage-objet
+name: Stockage objet
+status: complete
+intro: Fichiers volumineux, copies et archives, accessibles par API S3 ou par partage réseau.
+sizing: {startup: 'Un seul serveur, partages simples.', pme: Trois nœuds avec réplication., grande: 'Plusieurs sites, cycles de vie et quotas par direction.'}
+items:
+- name: Serveur S3
+  role: Stockage compatible S3
+  v: ['Garage, 1 nœud', 'Garage, 3 nœuds', SeaweedFS en grappe, Ceph RGW multi-sites, 'Ceph RGW, chiffrement côté serveur, clés maîtrisées']
+- name: Partage de fichiers
+  role: Accès réseau aux dossiers
+  v: [Samba, 'Samba + droits ACL', Samba avec FreeIPA, Samba en grappe (CTDB), 'Samba, journalisation des accès conservée']
+- name: Copies de données
+  role: Sauvegarde chiffrée des fichiers
+  v: [restic vers disque externe, restic + rclone vers S3, BorgBackup + rclone chiffré, restic vers deux sites distincts, 'restic, copies chiffrées sur stockage souverain']

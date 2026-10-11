@@ -1,0 +1,19 @@
+id: openedr
+updated: 2026-10
+summary: Agent de détection et de réponse sur les postes (EDR) libre.
+why:
+- Rare solution EDR sous licence libre (LGPL-3.0), avec détection et réponse sur le poste.
+- Peut compléter la réponse active de Wazuh.
+alternatives:
+- name: Wazuh
+  id: wazuh
+  verdict: Plus mature sur Linux et plus largement utilisé.
+- name: Velociraptor
+  id: velociraptor
+  verdict: Orienté investigation à distance plutôt que protection continue.
+- name: CrowdStrike
+  url: https://www.crowdstrike.com
+  verdict: Très abouti et clé en main, mais propriétaire.
+limits:
+- 'Surtout pensé pour Windows, avec une communauté plus modeste : à vérifier pour votre parc.'
+when_not: Sur un parc majoritairement Linux, la réponse active de Wazuh est plus adaptée.

@@ -1,0 +1,16 @@
+id: yara
+updated: 2026-10
+summary: Règles de détection de fichiers par motifs.
+why:
+- Standard de fait pour décrire des malwares, avec une large communauté de règles.
+- Rapide et utilisable en ligne de commande comme en bibliothèque.
+alternatives:
+- name: ClamAV
+  id: clamav
+  verdict: Antivirus par signatures, plus simple à installer.
+- name: Sigma
+  id: sigma
+  verdict: 'Vise les journaux, pas les fichiers : les deux se complètent.'
+limits:
+- Il faut écrire et entretenir des règles, et gérer les faux positifs.
+when_not: Sans personne pour entretenir des règles, restez sur ClamAV.

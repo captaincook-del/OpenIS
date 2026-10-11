@@ -1,0 +1,15 @@
+id: librechat
+updated: 2026-10
+summary: Interface de discussion avec des modèles d'IA, locaux ou distants.
+why:
+- Accepte plusieurs fournisseurs et modèles locaux dans une même interface.
+- Prend en charge le SSO, l'historique et la gestion des utilisateurs.
+alternatives:
+- name: Open WebUI
+  url: https://openwebui.com
+  verdict: 'Très complet, mais sa licence a changé en 2025 : à vérifier avant adoption.'
+- name: ChatGPT Enterprise
+  verdict: Qualité et simplicité, mais les données sortent de votre contrôle.
+limits:
+- 'Aucun modèle n''est fourni : le moteur reste à installer.'
+when_not: Si le sujet est confidentiel, restez sur des modèles hébergés chez vous.

@@ -1,0 +1,23 @@
+id: conteneurisation
+name: Conteneurisation
+status: partial
+intro: Faire tourner les applications de façon reproductible.
+sizing: {startup: 'Quelques conteneurs, un seul hôte.', pme: 'Un cluster léger, une vingtaine de services.', grande: 'Plusieurs clusters, équipes plateforme, multi-tenant.'}
+items:
+- name: Orchestration
+  role: Déploie et maintient les conteneurs
+  v: [Docker Compose, Podman + Quadlet, K3s (3 nœuds), 'Kubernetes RKE2, plan de contrôle redondant', 'Kubernetes durci (CIS), nœuds en zone qualifiée']
+  by_size:
+    grande:
+      standard: {text: 'K3s, 3 nœuds', why: 'Avec plusieurs équipes qui déploient, un orchestrateur évite de gérer les hôtes un par un, même au niveau Essentielle.'}
+      essentielle: {text: 'Podman + Quadlet', why: 'Les docker compose ne permettent pas une gestion plus complexe a cette échelle.'}
+- name: Registre d'images
+  role: Stocke les images signées
+  v: [Registre Docker simple, Gitea Packages, Harbor, Harbor répliqué entre sites, Harbor + signature Cosign + analyse de vulnérabilités]
+  sizes: [pme, grande]
+- name: Entrée réseau
+  role: Expose les services en HTTPS
+  v: [Caddy, Traefik, Traefik + certificats automatiques, Ingress redondant avec VIP, 'Ingress + WAF, TLS maîtrisé de bout en bout']
+- name: Déploiement continu
+  role: Applique la configuration depuis Git
+  v: [Scripts manuels, Forgejo Actions, Forgejo + Ansible, Argo CD, Argo CD + validation à quatre yeux]

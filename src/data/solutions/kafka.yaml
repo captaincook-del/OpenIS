@@ -1,0 +1,16 @@
+id: kafka
+updated: 2026-10
+summary: Bus de messages pour acheminer des flux de journaux.
+why:
+- 'Sert de tampon durable : on peut rejouer les messages et découpler collecte et analyse.'
+- Résiste aux pannes, adapté aux gros volumes.
+alternatives:
+- name: Redpanda
+  url: https://redpanda.com
+  verdict: Compatible avec Kafka et plus simple à exploiter, mais sous licence non libre.
+- name: NATS
+  url: https://nats.io
+  verdict: Plus léger, pour des besoins de messagerie plus simples.
+limits:
+- Lourd à exploiter et à surveiller.
+when_not: Sous quelques gigaoctets de journaux par jour, un tampon aussi lourd est inutile.

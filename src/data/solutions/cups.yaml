@@ -1,0 +1,13 @@
+id: cups
+updated: 2026-10
+summary: Système d'impression standard sous Linux et macOS.
+why:
+- Présent par défaut sur la plupart des distributions, avec un large support du protocole IPP.
+- Stable depuis longtemps et peu gourmand.
+alternatives:
+- name: PaperCut
+  url: https://www.papercut.com
+  verdict: Comptabilité par utilisateur et impression sécurisée par badge, mais propriétaire.
+limits:
+- Pas de suivi des coûts par utilisateur sans outil complémentaire.
+when_not: Pour refacturer les impressions ou imposer une libération par badge, ajoutez un outil dédié.

@@ -1,0 +1,16 @@
+id: grafana
+updated: 2026-10
+summary: Tableaux de bord et alertes pour métriques et journaux.
+why:
+- Se branche sur Prometheus, Loki et de nombreuses autres sources.
+- Très répandu, avec de nombreux tableaux de bord prêts à l'emploi.
+alternatives:
+- name: Kibana
+  url: https://www.elastic.co/kibana
+  verdict: Associé à Elasticsearch, avec une licence qui a changé selon les versions.
+- name: Zabbix
+  url: https://www.zabbix.com
+  verdict: Supervision complète en un seul produit.
+limits:
+- Sa licence AGPL-3.0 est à connaître si vous redistribuez le logiciel.
+when_not: Pour une supervision classique sans développement, Zabbix est plus clé en main.

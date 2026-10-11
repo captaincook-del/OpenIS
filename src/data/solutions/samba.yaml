@@ -1,0 +1,15 @@
+id: samba
+updated: 2026-10
+summary: Partage de fichiers et d'impression compatible Windows (SMB).
+why:
+- Les postes Windows, macOS et Linux accèdent aux mêmes dossiers.
+- Gère les droits ACL et se relie à un annuaire.
+alternatives:
+- name: Nextcloud
+  id: nextcloud
+  verdict: Accès web et mobile, partage externe ; moins adapté aux lecteurs réseau classiques.
+- name: NFS
+  verdict: Simple entre serveurs Linux, moins pratique avec des postes Windows.
+limits:
+- Les performances demandent du réglage avec un très grand nombre de fichiers.
+when_not: Si les utilisateurs n'ont pas besoin de lecteurs réseau, Nextcloud suffit.

@@ -1,0 +1,16 @@
+id: opencti
+updated: 2026-10
+summary: Plateforme de renseignement sur la menace en graphe de connaissances.
+why:
+- Modélise acteurs, campagnes et indicateurs en STIX 2 avec leurs relations.
+- Nombreux connecteurs d'import et d'export.
+alternatives:
+- name: MISP
+  id: misp
+  verdict: Plus léger, centré sur le partage d'indicateurs.
+- name: Yeti
+  id: yeti
+  verdict: Plus simple, pour de petites équipes.
+limits:
+- 'Lourd : plusieurs services associés (recherche, cache, files de messages, stockage) ; des fonctions relèvent d''une édition entreprise.'
+when_not: Sans équipe dédiée au renseignement, MISP est suffisant.

@@ -1,0 +1,16 @@
+id: misp
+updated: 2026-10
+summary: Plateforme de partage d'indicateurs de compromission.
+why:
+- Standard de fait entre CERT et organisations d'un même secteur.
+- Formats d'échange normalisés et nombreux connecteurs.
+alternatives:
+- name: OpenCTI
+  id: opencti
+  verdict: Graphe de relations plus riche, mais plus lourd à exploiter.
+- name: Yeti
+  id: yeti
+  verdict: Plus léger, avec moins de partage.
+limits:
+- Interface plus ancienne, et une pile à entretenir (PHP, base de données, cache).
+when_not: Pour modéliser acteurs et campagnes en graphe, regardez OpenCTI.

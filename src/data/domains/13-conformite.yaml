@@ -1,0 +1,18 @@
+id: conformite
+name: Conformité et RGPD
+status: complete
+intro: RGPD et référentiels de sécurité.
+sizing: {startup: Un registre et une charte courts., pme: 'Registre, analyse de risques, référent formé.', grande: 'Politique formalisée, audits réguliers.'}
+items:
+- name: Registre des traitements
+  role: Obligation RGPD
+  v: [Modèle CNIL en tableur, Registre versionné dans Forgejo, 'Registre outillé, revue annuelle', Registre relié à la cartographie, Registre relié à la cartographie et aux contrats]
+- name: Analyse de risques
+  role: Mesurer avant d'agir
+  v: [EBIOS RM simplifiée, EBIOS RM, EBIOS RM + Threat Dragon + revue annuelle, EBIOS RM + homologation, EBIOS RM + homologation + audit externe]
+- name: Politique de sécurité
+  role: Règles pour tous
+  v: [Charte d'usage de deux pages, Charte + règles de mots de passe, PSSI formalisée, PSSI + audits annuels, PSSI alignée sur SecNumCloud]
+- name: Protection des données
+  role: Rôle de pilotage
+  v: [Référent interne, Référent formé, DPO externe mutualisé, DPO dédié, DPO dédié + comité de suivi]

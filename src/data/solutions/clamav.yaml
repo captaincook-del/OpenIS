@@ -1,0 +1,15 @@
+id: clamav
+updated: 2026-10
+summary: Antivirus libre à signatures.
+why:
+- Signatures mises à jour en continu, intégration simple à la messagerie et aux serveurs de fichiers.
+- Léger à mettre en place.
+alternatives:
+- name: YARA
+  id: yara
+  verdict: Règles écrites sur mesure, plus précises mais plus exigeantes.
+- name: Antivirus commerciaux
+  verdict: Meilleure détection des menaces récentes, avec console et support.
+limits:
+- La détection est plus faible que celle des produits commerciaux sur les menaces récentes.
+when_not: Sur les postes, une solution de détection et réponse est plus protectrice.

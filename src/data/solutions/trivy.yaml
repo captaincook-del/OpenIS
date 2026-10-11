@@ -1,0 +1,16 @@
+id: trivy
+updated: 2026-10
+summary: Scanner de vulnérabilités, de secrets et de mauvaises configurations.
+why:
+- Un seul binaire, rapide, avec une bonne intégration aux chaînes de livraison.
+- Analyse images, dépôts, fichiers d'infrastructure et paquets.
+alternatives:
+- name: Grype
+  url: https://github.com/anchore/grype
+  verdict: Équivalent plus ciblé sur les vulnérabilités.
+- name: OpenVAS
+  id: openvas
+  verdict: Pour scanner le réseau et les services exposés.
+limits:
+- Ne scanne pas le réseau et dépend de bases de vulnérabilités publiques.
+when_not: Pour auditer des machines en réseau, ajoutez OpenVAS.

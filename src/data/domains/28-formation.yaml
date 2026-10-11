@@ -1,0 +1,18 @@
+id: formation
+name: Formation et accompagnement
+status: complete
+intro: Accompagner, documenter, sensibiliser.
+sizing: {startup: Un guide de démarrage., pme: Ateliers de prise en main., grande: Parcours par métier et référents.}
+items:
+- name: Accompagnement
+  role: Changer sans subir
+  v: [Guide de démarrage de deux pages, Atelier de prise en main, Parcours par métier, Référents dans chaque service, Parcours certifiants et suivi de maturité]
+- name: Documentation
+  role: Retrouver la procédure
+  v: [Wiki Forgejo, BookStack, BookStack + SSO Keycloak, BookStack redondant, 'BookStack, versions validées']
+- name: Supports d'apprentissage
+  role: Se former à son rythme
+  v: [Vidéos courtes hébergées en interne, PeerTube, Moodle, Moodle en grappe, 'Moodle, hébergement qualifié']
+- name: Sensibilisation sécurité
+  role: Les bons réflexes
+  v: [Mémo de bonnes pratiques, Atelier annuel, Gophish, Gophish + parcours obligatoire, Gophish + exercices de crise]

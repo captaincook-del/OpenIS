@@ -1,0 +1,15 @@
+id: crm
+name: Relation client (CRM)
+status: complete
+intro: Relation client et prospection.
+sizing: {startup: Un carnet de contacts partagé., pme: CRM simple et envois groupés., grande: CRM intégré à la facturation et à la messagerie.}
+items:
+- name: Gestion de la relation client
+  role: Suivre clients et prospects
+  v: [Dolibarr, EspoCRM, SuiteCRM, SuiteCRM en grappe, 'SuiteCRM, conservation des données maîtrisée']
+- name: Contacts
+  role: Annuaire commun
+  v: [Contacts Nextcloud, Contacts Nextcloud, Contacts synchronisés avec le CRM, Annuaire unique via FreeIPA, 'Annuaire unique, accès journalisés']
+- name: Envois groupés
+  role: Courriels aux clients
+  v: [Listmonk, Listmonk, Listmonk + Postfix dédié, Listmonk redondant, 'Listmonk, consentements tracés']

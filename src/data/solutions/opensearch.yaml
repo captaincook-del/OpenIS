@@ -1,0 +1,16 @@
+id: opensearch
+updated: 2026-10
+summary: Moteur de recherche et d'analyse de données, issu d'un fork d'Elasticsearch.
+why:
+- Licence Apache-2.0 et gouvernance sous la Linux Foundation.
+- Sert d'indexeur à Wazuh et à de nombreux outils de sécurité.
+alternatives:
+- name: Elasticsearch
+  url: https://www.elastic.co/elasticsearch
+  verdict: 'Même origine ; sa licence a changé en 2021 puis a évolué depuis : vérifiez les conditions actuelles.'
+- name: Loki
+  id: loki
+  verdict: Plus économe, sans recherche plein texte complète.
+limits:
+- Gourmand en mémoire ; une grappe demande de l'expertise.
+when_not: Pour de petits volumes, le tout-en-un de Wazuh évite de gérer une grappe.

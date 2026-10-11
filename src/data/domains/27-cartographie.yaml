@@ -1,0 +1,15 @@
+id: cartographie
+name: Cartographie du SI
+status: complete
+intro: Savoir ce qu'on possède et comment c'est relié.
+sizing: {startup: Un schéma et un tableur., pme: Inventaire outillé., grande: Cartographie à jour reliée aux risques.}
+items:
+- name: Inventaire
+  role: Équipements et services
+  v: [Tableur, NetBox, NetBox + GLPI, NetBox + GLPI + découverte réseau, 'NetBox + GLPI, relié au registre RGPD']
+- name: Schémas d'architecture
+  role: Comprendre d'un coup d'œil
+  v: [draw.io, draw.io, Mermaid versionné dans Forgejo, Mermaid + revue d'architecture, Mermaid + revue d'architecture annuelle]
+- name: Flux de données
+  role: Qui parle à qui
+  v: [Schéma des flux principaux, Matrice des flux, Matrice des flux dans NetBox, Matrice des flux + contrôle automatique, Matrice des flux + preuve de conformité]

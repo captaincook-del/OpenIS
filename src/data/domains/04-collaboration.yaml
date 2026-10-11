@@ -1,0 +1,18 @@
+id: collaboration
+name: Collaboration
+status: partial
+intro: Les outils de travail au quotidien, façon La Suite.
+sizing: {startup: 'Fichiers, chat et visio dans une seule instance.', pme: 'Services séparés, quotas, sauvegardes dédiées.', grande: 'Instances par direction, montée en charge horizontale.'}
+items:
+- name: Fichiers et documents
+  role: Stockage partagé, édition collaborative
+  v: [Nextcloud, Nextcloud + Collabora, La Suite Docs + Nextcloud, Nextcloud en grappe, 'La Suite Docs, chiffrement côté serveur maîtrisé']
+- name: Messagerie électronique
+  role: Courriel et agendas
+  v: [Stalwart Mail, Postfix + Dovecot, Postfix + Dovecot + antispam Rspamd, Cluster de messagerie redondant, 'Messagerie chiffrée, journaux conservés en France']
+- name: Discussion
+  role: Messagerie instantanée
+  v: [Mattermost, Matrix (Synapse), Matrix + Element, 'Matrix fédéré, haute disponibilité', 'Matrix souverain, type Tchap']
+- name: Visioconférence
+  role: Réunions en ligne
+  v: [Jitsi, Jitsi, La Suite Visio (LiveKit), LiveKit multi-nœuds, LiveKit sur infrastructure souveraine]

@@ -1,0 +1,15 @@
+id: reseau-wifi
+name: Réseau local et Wi-Fi
+status: complete
+intro: Réseau local, Wi-Fi et accès invités.
+sizing: {startup: Un routeur et une borne., pme: 'Commutateurs managés, VLAN par usage.', grande: 'Cœur redondant, segmentation par site.'}
+items:
+- name: Routage et pare-feu
+  role: Cœur du réseau
+  v: [OPNsense, OPNsense + VLAN, OPNsense en paire redondante, OPNsense CARP multi-sites, 'OPNsense, zones de confiance']
+- name: Wi-Fi
+  role: Accès sans fil
+  v: ['OpenWrt, une borne', 'OpenWrt, plusieurs bornes + VLAN', OpenWrt + 802.1X, 'OpenWrt, contrôle centralisé redondant', 'OpenWrt, 802.1X avec certificats']
+- name: Authentification réseau
+  role: Qui se connecte
+  v: [Clé partagée, FreeRADIUS, FreeRADIUS + LDAP, FreeRADIUS redondant, FreeRADIUS + certificats clients]

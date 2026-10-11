@@ -1,0 +1,15 @@
+id: rh
+name: Ressources humaines et paie
+status: complete
+intro: Dossiers du personnel, congés, paie.
+sizing: {startup: Tableur protégé., pme: Outil RH de base et congés., grande: RH intégré à l'annuaire et au SSO.}
+items:
+- name: Gestion des ressources humaines
+  role: Dossiers et organigramme
+  v: ['Dolibarr, module RH', OrangeHRM, OrangeHRM + SSO Keycloak, OrangeHRM en grappe, 'OrangeHRM, accès cloisonnés']
+- name: Congés et absences
+  role: Demandes et validation
+  v: [Agenda Nextcloud partagé, OrangeHRM, OrangeHRM + agendas, 'OrangeHRM + agendas, délégations', 'OrangeHRM, journalisation des validations']
+- name: Paie
+  role: Bulletins et déclarations
+  v: [Prestataire de paie externe, Prestataire de paie externe, Prestataire + export vers l'ERP, Prestataire + connexion SSO, Prestataire hébergeant en France]

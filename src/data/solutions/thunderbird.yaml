@@ -1,0 +1,16 @@
+id: thunderbird
+updated: 2026-10
+summary: Client de messagerie, agenda et contacts.
+why:
+- Référence libre du courriel de bureau, maintenu par une filiale de la fondation Mozilla.
+- Prend en charge OpenPGP, IMAP et CalDAV, avec plusieurs comptes.
+alternatives:
+- name: Outlook
+  url: https://www.microsoft.com/microsoft-365/outlook
+  verdict: Intégration profonde à Exchange et Microsoft 365, mais propriétaire.
+- name: Roundcube
+  url: https://roundcube.net
+  verdict: Messagerie web qui évite d'installer un client sur les postes.
+limits:
+- L'intégration à Exchange est moins complète.
+when_not: Si votre messagerie est Exchange, vérifiez les connecteurs avant de migrer.

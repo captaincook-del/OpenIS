@@ -1,0 +1,16 @@
+id: openbao
+updated: 2026-10
+summary: Gestionnaire de secrets pour applications, issu d'un fork de Vault.
+why:
+- Libre sous la Linux Foundation (MPL-2.0), avec secrets dynamiques, PKI et chiffrement en service.
+- Reprend les concepts et l'API de Vault, donc l'écosystème existant.
+alternatives:
+- name: HashiCorp Vault
+  url: https://www.vaultproject.io
+  verdict: Référence du domaine, mais sous licence BUSL depuis 2023.
+- name: Passbolt
+  id: passbolt
+  verdict: Pour les mots de passe humains, pas pour les secrets d'applications.
+limits:
+- Projet jeune ; le déverrouillage (unseal) et la protection des clés sont à organiser avec soin.
+when_not: Pour un simple coffre d'équipe, Vaultwarden ou Passbolt sont plus adaptés.

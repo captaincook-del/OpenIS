@@ -1,0 +1,18 @@
+id: pra-pca
+name: Continuité et reprise d'activité
+status: complete
+intro: Reprendre l'activité après un incident.
+sizing: {startup: Une procédure simple et une copie hors ligne., pme: 'Scénarios documentés, restauration testée.', grande: 'Bascule entre sites, exercices réguliers.'}
+items:
+- name: Plan de reprise
+  role: Procédures écrites
+  v: [Fiche papier + copie hors ligne, Procédures versionnées dans Forgejo, Procédures + exercice annuel, Bascule automatisée entre sites, 'Bascule testée chaque trimestre, site de repli qualifié']
+- name: Réplication des données
+  role: Copie vers un autre lieu
+  v: [ZFS send vers un second disque, 'ZFS, réplication asynchrone', Ceph RBD mirroring, Ceph multi-sites synchrone, 'Ceph chiffré, site de repli souverain']
+- name: Objectifs de reprise
+  role: Perte de données et durée tolérées
+  v: ['24 h de perte, 24 h de reprise', '24 h de perte, 8 h de reprise', '1 h de perte, 4 h de reprise', 'Aucune perte, moins de 15 min', 'Aucune perte, moins de 15 min, sites distincts qualifiés']
+- name: Tests de restauration
+  role: Prouver que ça marche
+  v: [Un fichier restauré chaque mois, Une VM restaurée chaque trimestre, Restauration complète annuelle, Exercice de bascule semestriel, Exercice trimestriel avec rapport signé]

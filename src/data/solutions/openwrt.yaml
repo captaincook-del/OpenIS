@@ -1,0 +1,15 @@
+id: openwrt
+updated: 2026-10
+summary: Système libre pour routeurs et bornes Wi-Fi.
+why:
+- Fonctionne sur de nombreux matériels, souvent mis à jour bien après les constructeurs.
+- Gère VLAN, 802.1X et VPN.
+alternatives:
+- name: Micrologiciel du constructeur
+  verdict: Simple, mais mises à jour et fonctions limitées.
+- name: UniFi
+  url: https://www.ui.com
+  verdict: Gestion centralisée prête à l'emploi, mais propriétaire.
+limits:
+- Le matériel doit être compatible et la gestion centralisée reste à construire.
+when_not: Pour des dizaines de bornes avec contrôleur clé en main, une solution de constructeur est plus rapide.

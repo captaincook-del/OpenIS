@@ -1,0 +1,13 @@
+id: chrony
+updated: 2026-10
+summary: Synchronisation de l'heure (NTP) moderne.
+why:
+- Se resynchronise vite et convient aux machines virtuelles ou à connexion intermittente.
+- Prend en charge NTS pour authentifier les sources de temps.
+alternatives:
+- name: ntpd
+  url: https://www.ntp.org
+  verdict: Historique et plus lourd, remplacé par chrony dans de nombreuses distributions.
+limits:
+- La précision dépend de la qualité des sources.
+when_not: Pour une précision de l'ordre de la microseconde, ajoutez du matériel (GPS, PTP).

@@ -1,0 +1,15 @@
+id: archivage
+name: Archivage légal
+status: complete
+intro: Conserver les documents avec valeur de preuve.
+sizing: {startup: Un dossier en lecture seule., pme: PDF/A et stockage verrouillé., grande: 'Système d''archivage, durées de conservation.'}
+items:
+- name: Archivage
+  role: Garder et prouver
+  v: [Dossier en lecture seule, PDF/A sur stockage verrouillé, PDF/A + journal des accès, Vitam en grappe, 'Vitam, hébergement qualifié']
+- name: Stockage immuable
+  role: Empêcher la modification
+  v: ['ZFS, instantanés', 'ZFS, instantanés verrouillés', Ceph RGW avec verrouillage d'objet, Ceph RGW multi-sites, 'Ceph RGW, copie sur stockage souverain']
+- name: Durées de conservation
+  role: Règles d'effacement
+  v: [Tableau des durées, Tableau + rappels, Politique d'archivage validée, Politique + effacement automatisé, Politique + effacement certifié]

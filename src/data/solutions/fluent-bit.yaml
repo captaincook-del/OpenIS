@@ -1,0 +1,19 @@
+id: fluent-bit
+updated: 2026-10
+summary: Collecteur léger de journaux et de métriques.
+why:
+- Très économe en ressources, avec de nombreux modules d'entrée et de sortie.
+- Standard dans le monde des conteneurs, sous licence Apache-2.0.
+alternatives:
+- name: rsyslog
+  id: rsyslog
+  verdict: Plus simple et déjà présent, moins souple.
+- name: Vector
+  url: https://vector.dev
+  verdict: Collecteur très complet, sous licence MPL-2.0.
+- name: Logstash
+  url: https://www.elastic.co/logstash
+  verdict: Puissant pour transformer, mais plus lourd.
+limits:
+- Les transformations complexes sont limitées.
+when_not: Pour des transformations lourdes, ajoutez un traitement en aval.

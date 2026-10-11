@@ -1,0 +1,36 @@
+id: ssi-detection
+name: SOC (détection)
+status: complete
+intro: 'Voir ce qui se passe : collecter, détecter, corréler, qualifier, prévenir.'
+sizing: {startup: 'Quelques machines : journaux centralisés et alertes par courriel.', pme: 'Détection centralisée, une personne qui lit les alertes.', grande: 'Centre de supervision sécurité, astreinte, cartographie des risques.'}
+items:
+- name: Collecte des journaux
+  role: Rassembler les logs de toutes les machines
+  v: [rsyslog, Fluent Bit, Fluent Bit, Fluent Bit + Kafka (tampon), 'Fluent Bit + Kafka, transport TLS mutuel']
+  by_size:
+    grande:
+      essentielle: {text: Fluent Bit, why: 'À cette échelle, rsyslog seul n''offre ni tampon ni filtrage fin.'}
+- name: Détection réseau
+  role: Voir ce qui circule sur le réseau
+  v: [CrowdSec, CrowdSec + Fail2ban, Suricata, Suricata + Zeek, Suricata + Zeek sur sondes dédiées]
+- name: SIEM
+  role: Conserver, corréler et rechercher dans les journaux
+  v: [Wazuh, Wazuh, Wazuh + OpenSearch, OpenSearch en grappe + Wazuh, 'OpenSearch en grappe, chiffrement et conservation maîtrisés']
+  by_size:
+    startup:
+      essentielle: {text: 'Wazuh, installation tout-en-un', why: 'Pour quelques machines, indexeur, serveur et tableau de bord tiennent sur un seul hôte.'}
+    grande:
+      essentielle: {text: Wazuh en grappe + OpenSearch, why: 'À plusieurs centaines d''agents, l''indexation doit être séparée du serveur d''analyse.'}
+      standard: Wazuh en grappe + OpenSearch
+- name: Règles de détection
+  role: Décrire ce que l’on cherche
+  v: [Règles Wazuh fournies, Règles Wazuh + Sigma, 'Sigma, règles versionnées dans Forgejo', Sigma + tests automatisés des règles, 'Sigma, règles revues et signées']
+- name: Malwares
+  role: Détecter les fichiers malveillants
+  v: [ClamAV, ClamAV + YARA, ClamAV + YARA, YARA + CAPE Sandbox, 'YARA + CAPE Sandbox, analyse sans sortie réseau']
+- name: Vulnérabilités
+  role: Trouver les failles connues
+  v: [Wazuh, OpenVAS, 'OpenVAS + Trivy, scans planifiés', 'OpenVAS + Trivy, résultats dans OpenSearch', 'OpenVAS + Trivy, flux de vulnérabilités hébergé en interne']
+- name: Alertes et astreinte
+  role: Prévenir la bonne personne
+  v: [Courriel, ntfy, Alertmanager + ntfy, Alertmanager + astreinte tournante, 'Alertmanager + ntfy auto-hébergé, astreinte 24 h/24']

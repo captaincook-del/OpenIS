@@ -1,0 +1,15 @@
+id: pgbackrest
+updated: 2026-10
+summary: Sauvegarde et restauration pour PostgreSQL.
+why:
+- Sauvegardes incrémentielles et restauration à un instant donné.
+- Compression et chiffrement intégrés.
+alternatives:
+- name: Barman
+  url: https://pgbarman.org
+  verdict: Équivalent proche, centré sur un serveur de sauvegarde.
+- name: pg_dump
+  verdict: Simple, mais sans restauration à un instant précis.
+limits:
+- Configuration à soigner.
+when_not: Pour une petite base, un pg_dump planifié suffit.

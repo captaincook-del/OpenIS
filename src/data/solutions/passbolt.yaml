@@ -1,0 +1,16 @@
+id: passbolt
+updated: 2026-10
+summary: Gestionnaire de mots de passe pour les équipes, chiffrement de bout en bout.
+why:
+- 'Chaque secret est chiffré pour ses destinataires (GPG) : le serveur ne les lit pas.'
+- Pensé pour le partage en équipe, avec une édition communautaire libre.
+alternatives:
+- name: Vaultwarden
+  id: vaultwarden
+  verdict: Plus léger et très simple, avec une interface grand public.
+- name: Bitwarden
+  url: https://bitwarden.com
+  verdict: Plus répandu, avec des fonctions d'entreprise payantes.
+limits:
+- 'Plusieurs fonctions (SSO, journalisation avancée) relèvent de l''édition payante : à vérifier.'
+when_not: Pour un usage individuel ou très petit, Vaultwarden suffit.

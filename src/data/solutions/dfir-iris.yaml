@@ -1,0 +1,16 @@
+id: dfir-iris
+updated: 2026-10
+summary: Plateforme collaborative de gestion d'incidents de sécurité.
+why:
+- Dossiers, chronologie, pièces, tâches et notes partagés dans une seule application libre.
+- Modules d'intégration, par exemple avec MISP.
+alternatives:
+- name: TheHive
+  url: https://strangebee.com/thehive/
+  verdict: 'Connu pour la réponse à incident ; la version actuelle est commerciale avec une édition communautaire limitée : à vérifier.'
+- name: GLPI
+  id: glpi
+  verdict: Pour les tickets de support, pas pour l'investigation.
+limits:
+- Projet communautaire de taille modeste, sans haute disponibilité native.
+when_not: Pour des incidents sans enjeu de sécurité, un outil de tickets suffit.

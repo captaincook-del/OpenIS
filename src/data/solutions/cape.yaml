@@ -1,0 +1,16 @@
+id: cape
+updated: 2026-10
+summary: Bac à sable d'analyse de malwares, descendant de Cuckoo.
+why:
+- Exécute un fichier suspect dans un environnement isolé et en extrait comportement et configuration.
+- Activement développé, sous licence GPL-3.0.
+alternatives:
+- name: Cuckoo
+  url: https://cuckoosandbox.org
+  verdict: Historique mais peu maintenu.
+- name: Any.Run
+  url: https://any.run
+  verdict: Service en ligne très pratique, mais propriétaire et hébergé chez un tiers.
+limits:
+- 'Lourd à installer : machines virtuelles Windows à préparer, avec leurs licences ; l''isolement réseau est critique.'
+when_not: Pour une petite structure, YARA et ClamAV suffisent.

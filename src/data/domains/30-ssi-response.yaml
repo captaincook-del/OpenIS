@@ -1,0 +1,30 @@
+id: ssi-response
+name: CSIRT (réponse à incident)
+status: complete
+intro: 'Réagir : qualifier, contenir, investiguer, rétablir, capitaliser.'
+sizing: {startup: Une procédure écrite et un dossier par incident., pme: 'Équipe réduite, outils partagés avec le SOC.', grande: 'Équipe de réponse dédiée, astreinte et renseignement sur la menace.'}
+items:
+- name: Gestion des incidents
+  role: Un dossier par incident, de l’alerte à la clôture
+  v: [DFIR-IRIS, DFIR-IRIS, DFIR-IRIS, 'DFIR-IRIS, base répliquée', 'DFIR-IRIS, hébergement qualifié, accès cloisonnés']
+- name: Réponse sur les postes
+  role: Agir sur une machine compromise
+  v: ['Wazuh, réponse active', 'Wazuh, réponse active', OpenEDR + Wazuh, OpenEDR + Wazuh, 'OpenEDR + Wazuh, console hébergée en interne']
+- name: Confinement
+  role: Isoler sans éteindre
+  v: [Isolement manuel (débrancher le câble), 'OPNsense, VLAN de quarantaine', OPNsense + isolation déclenchée par Wazuh, OPNsense CARP + isolation automatique, 'OPNsense CARP + isolation automatique, validation à deux personnes']
+- name: Investigation numérique
+  role: Collecter et dater les preuves
+  v: [Collecte manuelle avec les outils système, Velociraptor, Velociraptor + Timesketch, Velociraptor + Timesketch, 'Velociraptor + Timesketch, stations d’analyse isolées']
+- name: Renseignement sur la menace
+  role: Savoir qui attaque et comment
+  v: [Yeti, MISP, OpenCTI, OpenCTI + MISP, 'OpenCTI + MISP, partage avec le CERT sectoriel']
+- name: Automatisation
+  role: Enchaîner les actions sans erreur
+  v: [Scripts manuels, Scripts + n8n, Shuffle, Shuffle redondant, 'Shuffle, playbooks validés à quatre yeux']
+- name: Coordination de crise
+  role: Se parler quand le reste est en panne
+  v: [Canal de discussion dédié, 'Mattermost, canal d’incident', Mattermost + Jitsi, 'Matrix + Jitsi, hors infrastructure principale', 'Matrix chiffré + Jitsi, hors infrastructure principale']
+- name: Procédures
+  role: Quoi faire, dans quel ordre
+  v: [Fiche de réflexes, Playbooks dans Forgejo, Playbooks + exercice annuel, Playbooks + exercices semestriels, Playbooks + exercices de crise avec rapport]

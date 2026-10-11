@@ -1,0 +1,16 @@
+id: bookstack
+updated: 2026-10
+summary: Wiki structuré en étagères, livres, chapitres et pages.
+why:
+- 'Organisation intuitive et éditeur simple : les non-techniciens l''adoptent vite.'
+- Se relie à un annuaire LDAP et à un SSO.
+alternatives:
+- name: Wiki.js
+  url: https://js.wiki
+  verdict: Plus souple, notamment pour des contenus synchronisés avec Git, mais plus technique.
+- name: Confluence
+  url: https://www.atlassian.com/software/confluence
+  verdict: Plus riche, mais propriétaire et facturé par utilisateur.
+limits:
+- Structure en quatre niveaux, peu adaptée à une organisation très libre.
+when_not: Pour de la documentation technique versionnée avec le code, un wiki Forgejo suffit.

@@ -1,0 +1,19 @@
+id: openvas
+updated: 2026-10
+summary: Scanner de vulnérabilités réseau (projet Greenbone).
+why:
+- Large base de tests et scans planifiés, avec rapports exploitables.
+- Alternative libre aux scanners commerciaux.
+alternatives:
+- name: Trivy
+  id: trivy
+  verdict: Plutôt pour les images de conteneurs et les dépôts, pas pour le réseau.
+- name: Nessus
+  url: https://www.tenable.com/products/nessus
+  verdict: Très répandu, mais propriétaire.
+- name: Nuclei
+  url: https://projectdiscovery.io/nuclei
+  verdict: Plus léger, fondé sur des modèles de tests.
+limits:
+- 'Installation lourde ; l''étendue du flux de tests dépend de l''offre choisie : à vérifier.'
+when_not: Pour les images de conteneurs et le code, Trivy est plus adapté.

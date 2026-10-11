@@ -1,0 +1,16 @@
+id: restic
+updated: 2026-10
+summary: Sauvegarde de fichiers chiffrée et dédupliquée.
+why:
+- Un seul binaire et chiffrement par défaut.
+- Nombreuses destinations possibles (S3, SFTP).
+alternatives:
+- name: BorgBackup
+  id: borg
+  verdict: Mêmes principes, très efficace sur SSH.
+- name: Veeam
+  url: https://www.veeam.com
+  verdict: Plus de fonctions, mais propriétaire.
+limits:
+- Pas de console centralisée.
+when_not: Pour des centaines de machines avec rapports, utilisez une console de sauvegarde.

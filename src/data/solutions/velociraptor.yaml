@@ -1,0 +1,16 @@
+id: velociraptor
+updated: 2026-10
+summary: Collecte et investigation à distance sur postes et serveurs.
+why:
+- Un langage de requêtes (VQL) permet de chasser une menace sur tout le parc en quelques minutes.
+- Déploiement léger et très utilisé en réponse à incident.
+alternatives:
+- name: osquery
+  id: osquery
+  verdict: Interroge l'état des machines comme une base de données, avec moins d'outils d'investigation.
+- name: GRR
+  url: https://github.com/google/grr
+  verdict: Projet comparable de Google, moins actif.
+limits:
+- 'Un outil puissant : les droits d''accès doivent être strictement encadrés ; le langage demande de la formation.'
+when_not: Pour une petite structure sans équipe d'analyse, Wazuh couvre l'essentiel.

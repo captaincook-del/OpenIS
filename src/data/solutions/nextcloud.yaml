@@ -1,0 +1,23 @@
+id: nextcloud
+updated: 2026-10
+summary: "Plateforme de fichiers, agendas, contacts et édition collaborative que l'on héberge soi-même."
+why:
+  - "Elle réunit stockage, partage, agendas, contacts, discussion et édition en ligne dans un seul produit sous AGPL-3.0."
+  - "Elle est très répandue dans les administrations et les entreprises européennes : recrutement et support en sont facilités."
+  - "Elle s'intègre avec le SSO Keycloak, les annuaires LDAP et une suite bureautique en ligne comme Collabora."
+  - "Elle propose le chiffrement, la double authentification et la journalisation."
+alternatives:
+  - name: Microsoft 365 ou Google Workspace
+    verdict: "Plus intégrés et familiers, mais propriétaires, facturés par utilisateur et soumis à des législations extra-européennes sur l'accès aux données."
+  - name: La Suite numérique (Docs, Visio)
+    id: la-suite-docs
+    verdict: "Briques sobres développées par l'État français pour l'édition collaborative et la visio. À combiner avec Nextcloud plutôt qu'à lui opposer, car le périmètre fichiers, agendas et contacts est moins complet. À vérifier selon l'avancement du projet."
+  - name: Seafile
+    url: "https://www.seafile.com"
+    verdict: "Très efficace pour synchroniser de gros volumes de fichiers, moins riche en applications annexes."
+limits:
+  - "Dès quelques centaines d'utilisateurs, cache, base de données et stockage demandent un réglage soigné."
+  - "Certaines fonctions avancées relèvent de l'offre Enterprise payante."
+when_not: "Pour synchroniser seulement des fichiers entre quelques postes, Seafile ou un simple partage Samba est plus léger."
+sources:
+  - { label: "Documentation Nextcloud", url: "https://docs.nextcloud.com" }

@@ -1,0 +1,16 @@
+id: dolibarr
+updated: 2026-10
+summary: 'ERP et CRM modulaire pour petites structures : devis, factures, comptabilité.'
+why:
+- Simple à installer et à prendre en main.
+- 'Modulaire : on n''active que ce dont on a besoin.'
+alternatives:
+- name: Odoo Community
+  id: odoo
+  verdict: Plus vaste, mais plusieurs applications sont réservées à l'édition payante.
+- name: Sage
+  url: https://www.sage.com
+  verdict: Logiciels très répandus chez les comptables français, propriétaires.
+limits:
+- Les modules complexes demandent de l'accompagnement et l'interface est moins moderne.
+when_not: Si votre cabinet comptable impose son propre logiciel, alignez-vous avec lui.

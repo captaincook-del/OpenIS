@@ -1,0 +1,15 @@
+id: firefox
+updated: 2026-10
+summary: Navigateur web libre de Mozilla, avec une version à support étendu (ESR).
+why:
+- Moteur indépendant de Chromium, ce qui préserve la diversité du web.
+- Politiques d'entreprise et version ESR pour des mises à jour maîtrisées.
+alternatives:
+- name: Chromium
+  url: https://www.chromium.org
+  verdict: Moteur très répandu, dont dépendent aussi Chrome et Edge.
+- name: Chrome ou Edge
+  verdict: Compatibilité maximale avec certains services web, mais propriétaires.
+limits:
+- Quelques services d'entreprise ne sont testés que sur Chrome.
+when_not: Si une application métier impose Chromium, gardez-le comme second navigateur.

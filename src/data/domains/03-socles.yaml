@@ -1,0 +1,30 @@
+id: socles
+name: Socles
+status: partial
+intro: 'DNS, LDAP, NTP : ce que tout le reste suppose.'
+sizing: {startup: Un résolveur et un annuaire léger suffisent., pme: 'Deux de chaque, sur des hôtes distincts.', grande: 'Services répliqués par site, supervisés.'}
+items:
+- name: DNS
+  role: Noms internes et résolution
+  v: [Unbound + dnsmasq, Bind9 primaire + secondaire, PowerDNS + DNSSEC, PowerDNS anycast multi-sites, 'PowerDNS, zones signées, résolveurs souverains']
+- name: Annuaire LDAP
+  role: Comptes et groupes
+  v: [LLDAP, OpenLDAP, FreeIPA, 389 Directory Server multi-maître, 'FreeIPA multi-sites, HSM pour les clés']
+  by_size:
+    startup:
+      essentielle: {text: 'LLDAP, attributs POSIX saisis à la main', why: 'Avec quelques comptes, ajouter à la main les identifiants et groupes POSIX reste raisonnable.'}
+      standard: {text: 'LLDAP + sauvegarde de la base, attributs POSIX saisis à la main'}
+    pme:
+      essentielle: {text: FreeIPA, why: 'LLDAP n''a pas de gestion native de POSIX (identifiants, groupes, interpréteurs) : à plusieurs centaines de comptes, la saisie manuelle devient une source d''erreurs.'}
+    grande:
+      essentielle: {text: FreeIPA, why: 'À cette échelle, il faut une gestion native de POSIX et de la réplication.'}
+      standard: {text: 'FreeIPA, 2 serveurs répliqués'}
+- name: Temps NTP
+  role: Horloge cohérente partout
+  v: [chrony (pools publics), chrony sur 2 serveurs internes, chrony + sources multiples authentifiées (NTS), chrony multi-sites + GPS, 'chrony + horloge GNSS et NTS, temps traçable']
+- name: SSO
+  role: Une seule connexion pour tout
+  v: [Authelia, Authelia + 2FA, Keycloak, Keycloak en grappe, Keycloak + FranceConnect / ProConnect]
+- name: PKI
+  role: Certificats internes
+  v: [step-ca, step-ca, step-ca + ACME interne, step-ca redondante, 'Autorité racine hors ligne, HSM']

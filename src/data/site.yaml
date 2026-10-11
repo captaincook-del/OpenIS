@@ -1,0 +1,10 @@
+levels:
+- {id: essentielle, icon: 🟢, name: Essentielle, color: '#2E9E5B', pitch: 'Le strict nécessaire, simple à opérer.'}
+- {id: standard, icon: 🔵, name: Standard, color: '#2F6FDE', pitch: Redondance de base et sauvegardes testées.}
+- {id: entreprise, icon: 🟣, name: Entreprise, color: '#7E4FD1', pitch: 'Annuaire central, SSO, journalisation, conformité.'}
+- {id: ha, icon: 🟠, name: Haute disponibilité, color: '#E27B1D', pitch: 'Aucun point unique de défaillance, multi-sites.'}
+- {id: souveraine, icon: 🟡, name: Souveraine, color: '#C9A100', pitch: 'Hébergement et chiffrement maîtrisés, SecNumCloud.'}
+sizes:
+- {id: startup, name: Startup, users: 1 – 25, hosts: 1 à 2 serveurs, profil: 'Startup, petite association'}
+- {id: pme, name: PME, users: 25 – 500, hosts: 3 à 6 serveurs, profil: 'PME, association, petite collectivité'}
+- {id: grande, name: Grande entreprise, users: 500 +, hosts: '10 serveurs et plus, multi-sites', profil: 'Grand groupe, collectivité, établissement public'}

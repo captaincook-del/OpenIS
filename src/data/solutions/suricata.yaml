@@ -1,0 +1,16 @@
+id: suricata
+updated: 2026-10
+summary: Détection et prévention d'intrusion réseau par signatures et protocoles.
+why:
+- Multi-thread, il tient de gros débits et produit des événements JSON faciles à envoyer vers un SIEM.
+- S'appuie sur de larges jeux de règles libres.
+alternatives:
+- name: Snort
+  id: snort
+  verdict: Pionnier du domaine ; Snort 3 est aussi multi-thread, mais une partie des règles de l'éditeur est réservée aux abonnés.
+- name: Zeek
+  id: zeek
+  verdict: Décrit le trafic au lieu de déclencher des alertes ; les deux se complètent.
+limits:
+- Demande un point d'écoute du trafic (miroir ou passerelle) et une machine dimensionnée ; le trafic chiffré reste opaque.
+when_not: Pour simplement bloquer des adresses abusives, CrowdSec est plus léger.

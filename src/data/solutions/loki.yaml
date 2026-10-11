@@ -1,0 +1,16 @@
+id: loki
+updated: 2026-10
+summary: Stockage de journaux indexés par étiquettes, intégré à Grafana.
+why:
+- N'indexe pas le contenu des lignes, donc coûte peu de stockage et de mémoire.
+- S'intègre naturellement à Grafana et à Prometheus.
+alternatives:
+- name: OpenSearch
+  id: opensearch
+  verdict: Recherche plein texte et corrélation, au prix d'un coût plus élevé.
+- name: Graylog
+  url: https://graylog.org
+  verdict: Gestion de journaux avec interface dédiée ; vérifiez les fonctions réservées aux offres payantes.
+limits:
+- La recherche dans le contenu est plus lente ; licence AGPL-3.0.
+when_not: Pour un SOC qui corrèle et enquête, un SIEM comme Wazuh avec OpenSearch convient mieux.

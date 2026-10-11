@@ -1,0 +1,15 @@
+id: bi
+name: Analyse de données
+status: complete
+intro: Tableaux de bord et analyse de données.
+sizing: {startup: Quelques graphiques dans un tableur., pme: Tableaux de bord partagés., grande: 'Entrepôt de données, pipelines.'}
+items:
+- name: Tableaux de bord
+  role: Voir les chiffres
+  v: [Metabase, Metabase, Apache Superset, Apache Superset en grappe, 'Apache Superset, accès par ligne']
+- name: Entrepôt de données
+  role: Stocker pour analyser
+  v: [DuckDB, PostgreSQL, ClickHouse, ClickHouse en grappe, 'ClickHouse chiffré, hébergement qualifié']
+- name: Pipelines
+  role: Alimenter l'entrepôt
+  v: [Scripts planifiés, dbt Core, Apache Airflow, Apache Airflow en grappe, 'Apache Airflow, accès aux données journalisés']

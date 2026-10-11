@@ -1,0 +1,15 @@
+id: linphone
+updated: 2026-10
+summary: Téléphonie logicielle (SIP) pour poste et mobile, d'origine française.
+why:
+- Édité par une entreprise française, Belledonne Communications.
+- Chiffre les appels avec SRTP ou ZRTP.
+alternatives:
+- name: Zoiper
+  url: https://www.zoiper.com
+  verdict: Plus simple, mais propriétaire.
+- name: Teams Phone
+  verdict: Intégré à Microsoft 365, propriétaire.
+limits:
+- Moins connu des utilisateurs.
+when_not: Si l'organisation est déjà sur Teams, évitez d'ajouter un second softphone.

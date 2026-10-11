@@ -1,0 +1,18 @@
+id: ged
+name: Gestion documentaire
+status: complete
+intro: Gestion documentaire et recherche.
+sizing: {startup: Un dossier classé., pme: 'Numérisation, OCR et classement.', grande: 'Workflows de validation, droits fins.'}
+items:
+- name: Gestion documentaire
+  role: Classer et retrouver
+  v: [Paperless-ngx, Alfresco, Mayan EDMS, Mayan EDMS en grappe, 'Mayan EDMS, archivage chiffré']
+- name: Reconnaissance de texte
+  role: OCR
+  v: [Tesseract, Tesseract, Tesseract + OCRmyPDF, Tesseract + OCRmyPDF en grappe, 'OCRmyPDF, traitement sur site uniquement']
+- name: Wiki
+  role: Documentation technique
+  v: [Wikijs, Docmost, Docmost, Docmost en grappe, Docmost en grappe']
+- name: Circuit de validation
+  role: Relecture et approbation
+  v: [Courriel, Nextcloud Flow, Workflows Mayan EDMS, Workflows + délégations, Workflows + piste d'audit]
