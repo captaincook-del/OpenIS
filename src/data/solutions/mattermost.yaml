@@ -1,0 +1,19 @@
+id: mattermost
+updated: 2026-10
+summary: Messagerie d'équipe proche de Slack, auto-hébergeable.
+why:
+- Interface familière, canaux, fils de discussion, intégrations nombreuses.
+- Édition communautaire libre et déploiement simple.
+alternatives:
+- name: Matrix
+  id: matrix
+  verdict: Décentralisé et fédérable, plus complexe à mettre en œuvre.
+- name: Rocket.Chat
+  url: https://www.rocket.chat
+  verdict: Concurrent comparable, avec son propre modèle d'offres.
+- name: Slack
+  url: https://slack.com
+  verdict: Plus d'intégrations, mais propriétaire.
+limits:
+- 'Certaines fonctions avancées relèvent d''une édition payante : à vérifier.'
+when_not: Pour de la fédération entre organisations, préférez Matrix.

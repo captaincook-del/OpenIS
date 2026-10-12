@@ -1,0 +1,19 @@
+id: openproject
+updated: 2026-10
+summary: 'Gestion de projet complète : tâches, diagrammes de Gantt, temps, budgets.'
+why:
+- Couvre planning, suivi du temps et gestion de portefeuille dans une édition libre.
+- Éditeur européen, avec un support commercial possible.
+alternatives:
+- name: Vikunja
+  id: vikunja
+  verdict: Plus léger, pour des listes de tâches simples.
+- name: Taiga
+  id: taiga
+  verdict: Orienté méthodes agiles.
+- name: Jira
+  url: https://www.atlassian.com/software/jira
+  verdict: Très répandu, mais propriétaire et facturé par utilisateur.
+limits:
+- 'Certaines fonctions avancées relèvent de l''édition payante : à vérifier.'
+when_not: Pour de simples listes de tâches, Vikunja suffit.

@@ -1,0 +1,16 @@
+id: clickhouse
+updated: 2026-10
+summary: Base de données orientée colonnes pour l'analyse de très gros volumes.
+why:
+- Extrêmement rapide pour les requêtes analytiques sur des milliards de lignes.
+- Licence Apache-2.0 et compression efficace.
+alternatives:
+- name: PostgreSQL
+  id: postgresql
+  verdict: Polyvalent, mais moins efficace pour l'analyse massive.
+- name: DuckDB
+  id: duckdb
+  verdict: Analytique sur un poste, sans serveur.
+limits:
+- Pas conçu pour les transactions classiques ; exploitation plus technique.
+when_not: Pour des volumes modestes, PostgreSQL suffit.

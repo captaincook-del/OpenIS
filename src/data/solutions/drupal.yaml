@@ -1,0 +1,16 @@
+id: drupal
+updated: 2026-10
+summary: Système de gestion de contenu pour sites complexes.
+why:
+- Très souple pour des sites riches, multilingues ou avec des rôles complexes.
+- Maintenance de sécurité régulière et grande communauté.
+alternatives:
+- name: WordPress
+  id: wordpress
+  verdict: Plus simple et plus répandu, avec un énorme écosystème d'extensions.
+- name: Hugo
+  id: hugo
+  verdict: 'Site statique : aucune maintenance de serveur, mais sans édition en ligne.'
+limits:
+- Courbe d'apprentissage plus raide.
+when_not: Pour un site vitrine ou un blog, WordPress ou Hugo suffisent.

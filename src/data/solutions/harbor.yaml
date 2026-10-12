@@ -1,0 +1,16 @@
+id: harbor
+updated: 2026-10
+summary: Registre d'images de conteneurs avec droits, signature et analyse de vulnérabilités.
+why:
+- Gère projets, droits par équipe, quotas et réplication entre sites.
+- Intègre l'analyse de vulnérabilités et la signature d'images.
+alternatives:
+- name: Gitea
+  id: gitea
+  verdict: Son registre de paquets suffit pour un petit besoin, sans analyse intégrée.
+- name: Registre Docker simple
+  url: https://distribution.github.io/distribution/
+  verdict: Très léger, sans interface ni gestion de droits.
+limits:
+- Plusieurs composants à exploiter, plus lourd qu'un simple registre.
+when_not: Pour quelques images internes, un registre simple suffit.

@@ -1,0 +1,16 @@
+id: superset
+updated: 2026-10
+summary: Tableaux de bord et exploration de données.
+why:
+- Très riche en graphiques et connecteurs, avec un éditeur SQL intégré.
+- Projet de la fondation Apache.
+alternatives:
+- name: Metabase
+  id: metabase
+  verdict: Plus simple pour des utilisateurs non techniques.
+- name: Grafana
+  id: grafana
+  verdict: Plus adapté aux séries temporelles et à la supervision.
+limits:
+- Installation et réglage plus lourds.
+when_not: Pour des tableaux de bord simples, Metabase suffit.

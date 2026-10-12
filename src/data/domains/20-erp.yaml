@@ -1,6 +1,6 @@
 id: erp
 name: Comptabilité et ERP
-status: complete
+status: partial
 intro: Gestion commerciale, comptabilité, facturation.
 sizing: {startup: Facturation et comptabilité simples., pme: Gestion commerciale complète., grande: 'Progiciel intégré, plusieurs sociétés.'}
 items:

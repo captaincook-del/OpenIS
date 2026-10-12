@@ -1,0 +1,13 @@
+id: ocrmypdf
+updated: 2026-10
+summary: Ajoute une couche de texte consultable à des PDF scannés.
+why:
+- Une commande transforme un scan en PDF où l'on peut chercher et copier du texte.
+- Conserve l'image d'origine et produit du PDF/A.
+alternatives:
+- name: Tesseract
+  id: tesseract
+  verdict: Moteur d'OCR utilisé par OCRmyPDF ; seul, il ne produit pas de PDF consultable.
+limits:
+- Dépend de la qualité du scan et de Tesseract.
+when_not: Pour traiter des documents très abîmés, prévoyez un moteur plus puissant.

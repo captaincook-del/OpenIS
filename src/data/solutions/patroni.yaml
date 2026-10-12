@@ -1,0 +1,15 @@
+id: patroni
+updated: 2026-10
+summary: Orchestration de la haute disponibilité de PostgreSQL.
+why:
+- Élit un primaire et bascule seul en cas de panne, avec un fonctionnement éprouvé.
+- S'appuie sur un magasin de consensus (etcd, Consul).
+alternatives:
+- name: repmgr
+  url: https://repmgr.org
+  verdict: Plus simple, avec une bascule moins automatique.
+- name: Service géré (cloud)
+  verdict: Aucune exploitation à faire, mais dépendance à un fournisseur.
+limits:
+- Demande un magasin de consensus et une bonne maîtrise de PostgreSQL.
+when_not: Pour une seule instance avec sauvegarde, Patroni est superflu.

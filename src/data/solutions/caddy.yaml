@@ -1,0 +1,16 @@
+id: caddy
+updated: 2026-10
+summary: Serveur web et reverse proxy avec HTTPS automatique.
+why:
+- 'Obtient et renouvelle seul les certificats : le HTTPS marche sans réglage.'
+- Configuration très courte et lisible.
+alternatives:
+- name: nginx
+  id: nginx
+  verdict: Plus répandu, plus performant à très grande échelle, configuration plus longue.
+- name: Traefik
+  id: traefik
+  verdict: Découvre automatiquement les conteneurs, adapté aux environnements dynamiques.
+limits:
+- Écosystème de modules plus petit que celui de nginx.
+when_not: Pour un trafic très élevé ou des règles de réécriture complexes, nginx est plus éprouvé.

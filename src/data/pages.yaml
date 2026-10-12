@@ -1,3 +1,4 @@
+disclaimer: "Ces propositions s'appuient sur la documentation des projets et sur l'expérience de l'éditeur, qui ne connaît pas tous les domaines : elles n'ont pas toutes été testées. Vérifiez avant de déployer."
 links:
   # Valeur de secours : en production, l'adresse vient de VITE_REPO_URL (voir netlify.toml). Vide = logo GitHub masqué.
   repo: https://github.com/votre-compte/monde-libre

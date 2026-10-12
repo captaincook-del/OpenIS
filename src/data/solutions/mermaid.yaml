@@ -1,0 +1,13 @@
+id: mermaid
+updated: 2026-10
+summary: Dessiner des schémas à partir de texte.
+why:
+- Les schémas se versionnent comme du code et s'affichent dans Forgejo, GitLab ou des wikis.
+- Licence MIT, sans outil de dessin à installer.
+alternatives:
+- name: draw.io
+  id: drawio
+  verdict: Éditeur graphique libre, plus visuel pour des schémas complexes.
+limits:
+- Mise en page automatique peu contrôlable pour des schémas très détaillés.
+when_not: Pour des schémas d'architecture très soignés, un éditeur graphique convient mieux.

@@ -1,0 +1,16 @@
+id: alertmanager
+updated: 2026-10
+summary: Regroupement, routage et mise en sourdine des alertes Prometheus.
+why:
+- 'Évite le déluge d''alertes : il regroupe, déduplique et achemine vers la bonne personne.'
+- Prend en charge courriel, webhooks et de nombreux canaux de notification.
+alternatives:
+- name: ntfy
+  id: ntfy
+  verdict: Plus simple pour envoyer une notification, sans logique de regroupement.
+- name: Grafana Alerting
+  id: grafana
+  verdict: Intégré à Grafana, plus visuel, avec un modèle de règles différent.
+limits:
+- Pas de calendrier d'astreinte ni d'escalade natifs.
+when_not: Pour une vraie astreinte avec escalade, ajoutez un outil dédié.

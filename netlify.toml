@@ -7,10 +7,10 @@
   # Adresses publiées sur le site, injectées à la construction (préfixe VITE_ obligatoire).
   # Pour ne pas les inscrire dans le dépôt Git, supprimez ces deux lignes et définissez les mêmes
   # variables dans Netlify : Site configuration > Environment variables.
-  VITE_CONTACT_EMAIL = "contact@monde-libre.example"
-  VITE_CLAIMS_EMAIL = "reclamations@monde-libre.example"
+  VITE_CONTACT_EMAIL = "mon_si_libre@proton.me"
+  VITE_CLAIMS_EMAIL = "mon_si_libre@proton.me"
   # Dépôt Git affiché par le logo GitHub (laisser vide pour masquer le logo)
-  VITE_REPO_URL = "https://github.com/votre-compte/monde-libre"
+  VITE_REPO_URL = "https://github.com/captaincook-del/OpenIS"
 
 # Aperçus de déploiement : adresse de test pour ne pas publier la vraie
 [context.deploy-preview.environment]

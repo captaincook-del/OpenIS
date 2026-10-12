@@ -1,0 +1,19 @@
+id: prometheus
+updated: 2026-10
+summary: Collecte de métriques et supervision, au format de séries temporelles.
+why:
+- Interroge les services pour récupérer leurs métriques, avec un langage de requêtes puissant.
+- Standard dans le monde des conteneurs, projet de la CNCF.
+alternatives:
+- name: Zabbix
+  url: https://www.zabbix.com
+  verdict: Supervision tout-en-un avec agents et interface, plus classique.
+- name: VictoriaMetrics
+  url: https://victoriametrics.com
+  verdict: Compatible Prometheus, plus économe en ressources.
+- name: Thanos
+  id: thanos
+  verdict: Complète Prometheus pour la conservation longue et la vue globale.
+limits:
+- Conservation longue durée et haute disponibilité demandent des composants complémentaires.
+when_not: Pour superviser un parc de serveurs classiques sans conteneurs, Zabbix est clé en main.

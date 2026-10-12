@@ -1,0 +1,19 @@
+id: kubernetes
+updated: 2026-10
+summary: Orchestrateur de conteneurs de référence.
+why:
+- Standard de l'industrie, avec un écosystème très large et un projet de la CNCF.
+- Gère déploiement, mise à l'échelle et auto-réparation.
+alternatives:
+- name: K3s
+  id: k3s
+  verdict: Plus léger, pour de petits clusters.
+- name: Docker Compose
+  id: compose
+  verdict: Beaucoup plus simple sur un seul serveur.
+- name: OpenShift
+  url: https://www.redhat.com/openshift
+  verdict: Plateforme complète de Red Hat, propriétaire.
+limits:
+- 'Complexe à exploiter : demande du temps et des compétences.'
+when_not: Pour quelques services sur un serveur, Kubernetes est disproportionné.

@@ -1,0 +1,16 @@
+id: moodle
+updated: 2026-10
+summary: Plateforme d'apprentissage en ligne.
+why:
+- Très répandue dans l'éducation et la formation, avec une immense communauté.
+- Gère cours, évaluations, suivi et certificats.
+alternatives:
+- name: Open edX
+  url: https://openedx.org
+  verdict: Orienté grands cours en ligne ouverts, plus complexe.
+- name: Chamilo
+  url: https://chamilo.org
+  verdict: Plus simple, avec une approche plus légère.
+limits:
+- Interface datée et administration chargée.
+when_not: Pour quelques vidéos et documents, un wiki ou PeerTube suffisent.

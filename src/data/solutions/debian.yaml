@@ -1,0 +1,16 @@
+id: debian
+updated: 2026-10
+summary: Système d'exploitation communautaire, stable et sans entreprise derrière.
+why:
+- Réputé pour sa stabilité et ses longs cycles de support, base de nombreuses autres distributions.
+- Gouvernance communautaire et critères stricts sur les logiciels libres.
+alternatives:
+- name: Ubuntu
+  id: ubuntu
+  verdict: Plus récent et plus de support commercial, avec des cycles plus courts.
+- name: Rocky Linux
+  url: https://rockylinux.org
+  verdict: Compatible RHEL, intéressant si vous avez l'habitude de cet écosystème.
+limits:
+- Les paquets sont plus anciens que sur d'autres distributions.
+when_not: Si vous avez besoin de logiciels très récents ou d'un support commercial, regardez Ubuntu.

@@ -1,0 +1,16 @@
+id: argocd
+updated: 2026-10
+summary: Déploiement continu fondé sur Git (GitOps) pour Kubernetes.
+why:
+- L'état voulu est dans Git et Argo CD aligne le cluster dessus.
+- Interface claire, projet de la CNCF.
+alternatives:
+- name: Flux
+  url: https://fluxcd.io
+  verdict: Alternative GitOps sans interface graphique intégrée.
+- name: Ansible
+  id: ansible
+  verdict: Pour appliquer des changements sans cluster Kubernetes.
+limits:
+- Suppose un cluster Kubernetes et une discipline Git.
+when_not: Sans Kubernetes, Ansible suffit.

@@ -1,6 +1,6 @@
 id: ssi
 name: Sécurité (SSI)
-status: partial
+status: complete
 intro: Protéger, détecter, réagir.
 sizing: {startup: 'Hygiène de base : pare-feu, sauvegardes, mots de passe.', pme: 'Détection centralisée, VPN, gestion des secrets.', grande: 'Centre de supervision sécurité, cartographie des risques.'}
 items:

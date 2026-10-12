@@ -1,0 +1,18 @@
+id: eos
+updated: 2026-10
+summary: Système mobile dérivé d'Android, sans services Google, développé en France.
+why:
+- Réduit l'envoi de données à Google tout en gardant la compatibilité avec la plupart des applications.
+- Porté par la fondation /e/, avec des appareils reconditionnés et un service de synchronisation optionnel.
+alternatives:
+- name: GrapheneOS
+  id: graphene
+  verdict: Plus durci en sécurité, mais limité à certains téléphones.
+- name: LineageOS
+  url: https://lineageos.org
+  verdict: Large choix d'appareils, sans les services du projet /e/.
+- name: Android standard
+  verdict: Compatibilité maximale, mais intégré aux services de Google.
+limits:
+- Quelques applications bancaires ou de paiement peuvent ne pas fonctionner.
+when_not: Si votre priorité est la sécurité maximale, GrapheneOS est plus exigeant.

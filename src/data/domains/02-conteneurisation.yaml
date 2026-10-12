@@ -1,6 +1,6 @@
 id: conteneurisation
 name: Conteneurisation
-status: partial
+status: complete
 intro: Faire tourner les applications de façon reproductible.
 sizing: {startup: 'Quelques conteneurs, un seul hôte.', pme: 'Un cluster léger, une vingtaine de services.', grande: 'Plusieurs clusters, équipes plateforme, multi-tenant.'}
 items:

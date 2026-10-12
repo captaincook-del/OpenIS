@@ -1,0 +1,16 @@
+id: collabora
+updated: 2026-10
+summary: Édition de documents en ligne fondée sur LibreOffice.
+why:
+- Les documents s'ouvrent dans le navigateur avec une grande fidélité aux formats bureautiques.
+- Se branche sur Nextcloud et d'autres plateformes.
+alternatives:
+- name: OnlyOffice
+  url: https://www.onlyoffice.com
+  verdict: Interface proche d'Office, avec un modèle de licence à vérifier.
+- name: LibreOffice
+  id: libreoffice
+  verdict: Version de bureau, sans édition collaborative.
+limits:
+- 'Plusieurs services à déployer ; la version communautaire a des limites d''usage : à vérifier.'
+when_not: Pour de petites équipes sans édition simultanée, LibreOffice de bureau suffit.

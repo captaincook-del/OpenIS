@@ -1,0 +1,16 @@
+id: osquery
+updated: 2026-10
+summary: Interroger l'état des machines comme une base de données SQL.
+why:
+- Un langage SQL pour demander processus, paquets, ports ouverts ou utilisateurs.
+- Multiplateforme et utilisé en supervision de sécurité.
+alternatives:
+- name: Wazuh
+  id: wazuh
+  verdict: Ajoute alertes, règles et console, là où osquery se contente d'interroger.
+- name: Velociraptor
+  id: velociraptor
+  verdict: Plus orienté investigation à distance.
+limits:
+- 'Un outil de collecte : il faut ajouter le stockage et l''analyse.'
+when_not: Sans besoin d'interroger finement le parc, Wazuh suffit.

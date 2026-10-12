@@ -1,0 +1,16 @@
+id: postfix
+updated: 2026-10
+summary: Serveur de messagerie (MTA) éprouvé.
+why:
+- Sûr, performant et configurable, utilisé depuis des décennies.
+- S'associe à Dovecot et Rspamd pour une messagerie complète.
+alternatives:
+- name: Stalwart
+  id: stalwart
+  verdict: Serveur tout-en-un plus récent, avec moins de pièces à assembler.
+- name: Exim
+  url: https://www.exim.org
+  verdict: Très flexible, mais d'une configuration plus délicate.
+limits:
+- Il faut assembler plusieurs briques et soigner SPF, DKIM et DMARC.
+when_not: Pour une messagerie sans compétence dédiée, un serveur tout-en-un est plus simple.

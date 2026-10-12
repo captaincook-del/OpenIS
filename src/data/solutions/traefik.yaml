@@ -1,0 +1,16 @@
+id: traefik
+updated: 2026-10
+summary: Reverse proxy qui découvre automatiquement les services.
+why:
+- Se configure par étiquettes sur les conteneurs, avec HTTPS automatique.
+- Tableau de bord intégré.
+alternatives:
+- name: Caddy
+  id: caddy
+  verdict: Configuration plus simple pour des cas statiques.
+- name: nginx
+  id: nginx
+  verdict: Plus répandu, configuration manuelle.
+limits:
+- La configuration dynamique peut surprendre au début.
+when_not: Pour quelques sites statiques, Caddy est plus simple.

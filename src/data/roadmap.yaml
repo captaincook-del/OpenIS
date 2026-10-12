@@ -9,8 +9,8 @@ domains:
   - { id: bases-de-donnees, name: Bases de données, group: Infrastructure, status: done }
   - { id: reseau-wifi, name: "Réseau local et Wi-Fi", group: Infrastructure, status: done }
   - { id: ssi, name: Sécurité (SSI), group: Sécurité, status: done }
-  - { id: ssi-detection, name: Détection (SOC), group: Sécurité, status: plan }
-  - { id: ssi-response, name: Réponse (CISERT), group: Sécurité, status: plan }
+  - { id: ssi-detection, name: Détection (SOC), group: Sécurité, status: done }
+  - { id: ssi-response, name: Réponse (CISERT), group: Sécurité, status: done }
   - { id: edr-poste, name: Protection du poste, group: Sécurité, status: done }
   - { id: pra-pca, name: "Continuité et reprise d'activité", group: Sécurité, status: done }
   - { id: conformite, name: Conformité RGPD, group: Sécurité, status: done }
@@ -27,7 +27,7 @@ domains:
   - { id: cms, name: Site web et CMS, group: Applications métier, status: done }
   - { id: ged, name: Gestion documentaire, group: Applications métier, status: done }
   - { id: signature, name: Signature électronique, group: Applications métier, status: done }
-  - { id: bi, name: Analyse de données, group: Applications métier, status: done }
+  - { id: bi, name: Analyse de données, group: Applications métier, status: plan }
   - { id: archivage, name: Archivage légal, group: Applications métier, status: done }
   - { id: cartographie, name: Cartographie du SI, group: Gouvernance, status: done }
   - { id: formation, name: Formation et accompagnement, group: Gouvernance, status: done }

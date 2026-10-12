@@ -1,0 +1,16 @@
+id: vllm
+updated: 2026-10
+summary: Moteur d'inférence rapide pour modèles de langage sur GPU.
+why:
+- Optimisé pour servir de nombreuses requêtes en parallèle sur des GPU.
+- Expose une API compatible avec celle d'OpenAI.
+alternatives:
+- name: Ollama
+  id: ollama
+  verdict: Plus simple pour un poste ou un petit serveur, moins efficace en forte charge.
+- name: llama.cpp
+  url: https://github.com/ggml-org/llama.cpp
+  verdict: Très portable, y compris sans GPU.
+limits:
+- Demande des GPU adaptés et du réglage.
+when_not: Pour un usage individuel ou léger, Ollama suffit.

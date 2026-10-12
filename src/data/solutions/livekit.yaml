@@ -1,0 +1,16 @@
+id: livekit
+updated: 2026-10
+summary: Infrastructure temps réel (audio, vidéo) pour applications WebRTC.
+why:
+- Brique moderne, performante et facile à intégrer dans une application.
+- Sert de base à La Suite Visio.
+alternatives:
+- name: Jitsi
+  id: jitsi
+  verdict: Solution de visio prête à l'emploi plutôt qu'une brique.
+- name: BigBlueButton
+  url: https://bigbluebutton.org
+  verdict: Orienté enseignement, avec tableau blanc et salles de groupe.
+limits:
+- Plutôt un composant à intégrer qu'un produit fini.
+when_not: Pour une visio clé en main sans développement, Jitsi suffit.
