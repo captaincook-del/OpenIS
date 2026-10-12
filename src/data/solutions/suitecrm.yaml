@@ -1,0 +1,19 @@
+id: suitecrm
+updated: 2026-10
+summary: Gestion de la relation client, fork libre de SugarCRM.
+why:
+- Large couverture fonctionnelle (ventes, marketing, support) dans une version libre.
+- Grande communauté et nombreuses extensions.
+alternatives:
+- name: EspoCRM
+  id: espocrm
+  verdict: Plus léger et plus moderne, avec moins de fonctions.
+- name: Dolibarr
+  id: dolibarr
+  verdict: Intègre le CRM à la gestion commerciale et comptable.
+- name: Salesforce
+  url: https://www.salesforce.com
+  verdict: Référence du marché, propriétaire et coûteuse.
+limits:
+- Interface plus ancienne et installation plus lourde.
+when_not: Pour de petits besoins de suivi de contacts, EspoCRM ou Dolibarr suffisent.

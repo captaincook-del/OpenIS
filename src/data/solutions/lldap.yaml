@@ -1,0 +1,16 @@
+id: lldap
+updated: 2026-10
+summary: Annuaire LDAP léger avec interface web, pour petits besoins.
+why:
+- Un seul binaire, très simple, avec une interface d'administration.
+- Suffisant pour un SSO sur quelques dizaines de comptes.
+alternatives:
+- name: OpenLDAP
+  id: openldap
+  verdict: Plus complet et plus souple, mais bien plus technique.
+- name: FreeIPA
+  id: freeipa
+  verdict: Annuaire complet avec gestion native de POSIX, plus lourd.
+limits:
+- Pas de gestion native de POSIX (identifiants, groupes, interpréteurs) ni de réplication avancée.
+when_not: Au-delà de quelques dizaines de comptes ou si vous avez des postes Linux à gérer, FreeIPA est plus adapté.

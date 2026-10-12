@@ -1,0 +1,19 @@
+id: qdrant
+updated: 2026-10
+summary: Base de données vectorielle pour la recherche sémantique.
+why:
+- Performante, écrite en Rust, avec filtrage par métadonnées.
+- Déploiement simple et mise à l'échelle en grappe.
+alternatives:
+- name: pgvector
+  id: pgvector
+  verdict: Extension PostgreSQL, idéale pour garder une seule base.
+- name: Milvus
+  url: https://milvus.io
+  verdict: Orientée très gros volumes, plus lourde.
+- name: Weaviate
+  url: https://weaviate.io
+  verdict: Concurrent comparable, avec des modules intégrés.
+limits:
+- Un composant supplémentaire à exploiter.
+when_not: Pour quelques centaines de milliers de vecteurs, pgvector suffit.

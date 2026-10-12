@@ -1,0 +1,19 @@
+id: k3s
+updated: 2026-10
+summary: Kubernetes léger, livré en un seul binaire.
+why:
+- Se déploie en quelques minutes et consomme peu de ressources.
+- Certifié Kubernetes, avec presque toutes ses fonctions.
+alternatives:
+- name: Kubernetes
+  id: kubernetes
+  verdict: Version complète, plus lourde à installer.
+- name: RKE2
+  id: rke2
+  verdict: Plus durci, orienté conformité.
+- name: Docker Compose
+  id: compose
+  verdict: Plus simple, sans orchestration multi-nœuds.
+limits:
+- Les composants sont moins personnalisables que dans une installation complète.
+when_not: Pour un seul hôte sans haute disponibilité, Docker Compose suffit.

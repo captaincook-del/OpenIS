@@ -1,0 +1,19 @@
+id: jitsi
+updated: 2026-10
+summary: Visioconférence libre, utilisable sans compte depuis un navigateur.
+why:
+- Les participants rejoignent une réunion par un simple lien, sans installation.
+- Auto-hébergeable, sous licence Apache-2.0, avec chiffrement de bout en bout disponible dans certaines configurations.
+alternatives:
+- name: LiveKit
+  id: livekit
+  verdict: Brique WebRTC plus moderne, pensée pour être intégrée à d'autres applications.
+- name: La Suite Visio
+  id: la-suite-visio
+  verdict: Service de visio de l'État français, bâti sur LiveKit.
+- name: Zoom ou Teams
+  url: https://www.microsoft.com/microsoft-teams/
+  verdict: Plus de fonctions et plus familiers, mais propriétaires et facturés par utilisateur.
+limits:
+- Au-delà de quelques dizaines de participants par salle, il faut dimensionner et répartir la charge.
+when_not: Pour des webinaires très larges ou des salles de classe avancées, regardez BigBlueButton.

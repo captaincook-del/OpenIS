@@ -1,0 +1,18 @@
+id: airflow
+updated: 2026-10
+summary: Orchestration de flux de traitement de données planifiés.
+why:
+- Décrit les enchaînements en Python, avec reprise sur erreur et suivi visuel.
+- Projet de la fondation Apache, très répandu.
+alternatives:
+- name: dbt Core
+  id: dbt
+  verdict: Transforme les données dans l'entrepôt, sans orchestrer l'ensemble.
+- name: Dagster
+  url: https://dagster.io
+  verdict: Alternative plus récente, orientée données.
+- name: cron
+  verdict: Planification simple, sans suivi ni reprise.
+limits:
+- Plusieurs composants à exploiter, lourd pour de petits besoins.
+when_not: Pour quelques tâches planifiées, cron ou un script suffit.

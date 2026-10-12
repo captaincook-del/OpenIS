@@ -1,0 +1,16 @@
+id: freeswitch
+updated: 2026-10
+summary: Plateforme de téléphonie et de communication temps réel.
+why:
+- Très scalable et modulaire, adaptée aux grands volumes d'appels.
+- Prend en charge visioconférence et passerelles variées.
+alternatives:
+- name: Asterisk
+  id: asterisk
+  verdict: Plus répandu et mieux documenté, orienté standard téléphonique.
+- name: Kamailio
+  id: kamailio
+  verdict: Routage SIP à très grande échelle, sans traitement des médias.
+limits:
+- Plus technique à configurer qu'un standard clé en main.
+when_not: Pour un petit standard avec interface d'administration, Asterisk avec FreePBX est plus simple.

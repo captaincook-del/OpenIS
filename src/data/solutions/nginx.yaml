@@ -1,0 +1,19 @@
+id: nginx
+updated: 2026-10
+summary: Serveur web et reverse proxy performant.
+why:
+- Très répandu, rapide et peu gourmand, avec une documentation abondante.
+- Sert aussi de répartiteur de charge.
+alternatives:
+- name: Caddy
+  id: caddy
+  verdict: HTTPS automatique et configuration plus simple.
+- name: Apache HTTP Server
+  url: https://httpd.apache.org
+  verdict: Plus modulaire, avec des fichiers .htaccess par dossier.
+- name: HAProxy
+  url: https://www.haproxy.org
+  verdict: Spécialisé dans la répartition de charge.
+limits:
+- Pas de certificats automatiques sans outil complémentaire.
+when_not: Pour un petit site avec HTTPS sans effort, Caddy est plus simple.

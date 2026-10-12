@@ -1,0 +1,16 @@
+id: documenso
+updated: 2026-10
+summary: Signature électronique de documents, alternative libre à DocuSign.
+why:
+- Envoie des documents à signer en ligne, avec suivi et piste d'audit.
+- Interface moderne et auto-hébergeable.
+alternatives:
+- name: DocuSeal
+  id: docuseal
+  verdict: Plus simple et plus léger, avec des fonctions comparables.
+- name: DocuSign
+  url: https://www.docusign.com
+  verdict: Référence du marché, propriétaire et facturée par enveloppe.
+limits:
+- 'La valeur juridique dépend du niveau de signature : une signature avancée ou qualifiée exige un prestataire de confiance.'
+when_not: Pour des contrats à forte valeur légale, passez par un prestataire qualifié eIDAS.

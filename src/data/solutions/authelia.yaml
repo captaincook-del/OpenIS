@@ -1,0 +1,16 @@
+id: authelia
+updated: 2026-10
+summary: Portail d'authentification et d'autorisation pour applications web.
+why:
+- Léger, il protège des services derrière un reverse proxy avec double authentification.
+- Prend en charge OpenID Connect et plusieurs sources d'identité.
+alternatives:
+- name: Keycloak
+  id: keycloak
+  verdict: Plus complet, avec fédération et grands annuaires.
+- name: Authentik
+  url: https://goauthentik.io
+  verdict: Interface soignée, vérifiez les fonctions réservées à l'offre entreprise.
+limits:
+- Moins adapté aux grandes organisations et aux scénarios de fédération.
+when_not: Au-delà de quelques centaines d'utilisateurs, Keycloak est plus adapté.

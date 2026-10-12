@@ -1,0 +1,16 @@
+id: powerdns
+updated: 2026-10
+summary: Serveur DNS faisant autorité ou résolveur, avec API et DNSSEC.
+why:
+- Stocke les zones dans une base de données et s'administre par API.
+- Gère DNSSEC et la réplication entre serveurs.
+alternatives:
+- name: Bind9
+  id: bind9
+  verdict: Référence historique, très complet, configuration par fichiers.
+- name: Unbound
+  id: unbound
+  verdict: Résolveur uniquement, très sûr, sans zones faisant autorité.
+limits:
+- Deux produits distincts (faisant autorité, résolveur) à bien distinguer.
+when_not: Pour un petit réseau interne, Unbound avec dnsmasq suffit.

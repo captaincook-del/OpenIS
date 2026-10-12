@@ -1,0 +1,12 @@
+id: gophish
+updated: 2026-10
+summary: Simulation de campagnes d'hameçonnage pour sensibiliser.
+why:
+- Prépare et suit des campagnes de faux courriels, avec statistiques.
+- Simple à installer, sous licence MIT.
+alternatives:
+- name: Services commerciaux de sensibilisation
+  verdict: Contenus et parcours prêts à l'emploi, avec une offre payante.
+limits:
+- 'Demande un cadrage : informer la direction et respecter les règles internes et légales.'
+when_not: Sans accompagnement pédagogique, une simulation seule peut braquer les équipes.
