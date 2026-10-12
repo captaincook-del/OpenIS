@@ -1,5 +1,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/7a7881d2-51e4-410c-89d5-b3c4a0953845/deploy-status)](https://app.netlify.com/projects/openis/deploys)
 
+![GitHub License](https://img.shields.io/github/license/captaincook-del/OpenIS)
+
 # Mon SI Libre
 
 Site vitrine qui présente un système d'information complet fondé sur des logiciels libres ou ouverts, de la virtualisation jusqu'au poste de l'utilisateur. Il s'adresse aux startups, PME, grandes entreprises, associations et collectivités.
@@ -228,4 +230,4 @@ Voir [CONTRIBUTING.md](CONTRIBUTING.md) : règles de contenu, format des fichier
 
 ## Licence
 
-À définir.
+Voir [LICENSE](./LICENSE)
