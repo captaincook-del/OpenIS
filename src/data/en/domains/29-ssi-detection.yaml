@@ -1,0 +1,34 @@
+name: SOC (detection)
+intro: 'Seeing what happens: collect, detect, correlate, qualify, alert.'
+sizing: {startup: 'A few machines: centralised logs and email alerts.', pme: 'Central detection, one person reading the alerts.', grande: 'Security operations centre, on-call duty, risk mapping.'}
+items:
+- name: Log collection
+  role: Gathering logs from every machine
+  v: [rsyslog, Fluent Bit, Fluent Bit, Fluent Bit + Kafka (buffer), 'Fluent Bit + Kafka, mutual TLS transport']
+  by_size:
+    grande:
+      essentielle: {text: Fluent Bit, why: 'At this scale, rsyslog alone offers no buffering or fine filtering.'}
+- name: Network detection
+  role: Seeing what flows on the network
+  v: [CrowdSec, CrowdSec + Fail2ban, Suricata, Suricata + Zeek, Suricata + Zeek on dedicated sensors]
+- name: SIEM
+  role: Storing, correlating and searching logs
+  v: [Wazuh, Wazuh, Wazuh + OpenSearch, OpenSearch cluster + Wazuh, 'OpenSearch cluster, controlled encryption and retention']
+  by_size:
+    startup:
+      essentielle: {text: 'Wazuh, all-in-one installation', why: 'For a few machines, indexer, server and dashboard fit on a single host.'}
+    grande:
+      essentielle: {text: Wazuh cluster + OpenSearch, why: 'With several hundred agents, indexing must be separated from the analysis server.'}
+      standard: Wazuh cluster + OpenSearch
+- name: Detection rules
+  role: Describing what we look for
+  v: [Built-in Wazuh rules, Wazuh rules + Sigma, 'Sigma, rules versioned in Forgejo', Sigma + automated rule tests, 'Sigma, reviewed and signed rules']
+- name: Malware
+  role: Detecting malicious files
+  v: [ClamAV, ClamAV + YARA, ClamAV + YARA, YARA + CAPE Sandbox, 'YARA + CAPE Sandbox, analysis without network egress']
+- name: Vulnerabilities
+  role: Finding known flaws
+  v: [Wazuh, OpenVAS, 'OpenVAS + Trivy, scheduled scans', 'OpenVAS + Trivy, results in OpenSearch', 'OpenVAS + Trivy, vulnerability feed hosted internally']
+- name: Alerts and on-call
+  role: Notifying the right person
+  v: [Email, ntfy, Alertmanager + ntfy, Alertmanager + rotating on-call, 'Self-hosted Alertmanager + ntfy, 24/7 on-call']

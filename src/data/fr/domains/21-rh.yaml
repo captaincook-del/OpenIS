@@ -1,0 +1,18 @@
+id: rh
+name: Ressources humaines et paie
+status: partial
+intro: Dossiers du personnel, congés, paie.
+sizing: {startup: Tableur protégé., pme: Outil RH de base et congés., grande: RH intégré à l'annuaire et au SSO.}
+items:
+- name: Gestion des ressources humaines
+  role: Dossiers et organigramme
+  cost: { unit: user, price: 70, min: 1000, setup: [300, 4000, 40000], etp: [0.005, 0.04, 0.25], ref: "Lucca / Workday" }
+  v: ['Dolibarr, module RH', OrangeHRM, OrangeHRM + SSO Keycloak, OrangeHRM en grappe, 'OrangeHRM, accès cloisonnés']
+- name: Congés et absences
+  role: Demandes et validation
+  cost: { unit: flat, price: 0, setup: [0, 300, 2000], etp: [0.001, 0.005, 0.03], ref: "Inclus dans le SIRH" }
+  v: [Agenda Nextcloud partagé, OrangeHRM, OrangeHRM + agendas, 'OrangeHRM + agendas, délégations', 'OrangeHRM, journalisation des validations']
+- name: Paie
+  role: Bulletins et déclarations
+  cost: { unit: flat, price: 0, setup: [0, 0, 0], etp: [0, 0, 0], ref: "Prestataire de paie identique" }
+  v: [Prestataire de paie externe, Prestataire de paie externe, Prestataire + export vers l'ERP, Prestataire + connexion SSO, Prestataire hébergeant en France]

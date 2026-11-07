@@ -1,0 +1,8 @@
+/* Les boutons gardent leur fond par défaut du navigateur avec le reset tailwind-compat : on le neutralise */
+button { background-color: transparent; color: inherit; font: inherit; }
+body { background: #EEF1EC; }
+a { color: inherit; }
+/* Un fieldset ne rétrécit pas sous la largeur de son contenu par défaut : sur téléphone, les listes défilantes débordaient */
+fieldset { min-width: 0; }
+/* Ancres de la fiche : ne pas passer sous l'en-tête */
+[id] { scroll-margin-top: 1rem; }

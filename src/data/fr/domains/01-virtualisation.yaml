@@ -1,0 +1,18 @@
+id: virtualisation
+name: Virtualisation
+status: complete
+intro: 'La fondation : héberger machines virtuelles et stockage.'
+sizing: {startup: 'Un hôte, quelques VM. Les snapshots font office de filet.', pme: 'Cluster de 3 nœuds, stockage répliqué.', grande: 'Plusieurs clusters par site, stockage distribué dédié.'}
+items:
+- name: Hyperviseur
+  role: Exécute les machines virtuelles
+  cost: { unit: core, price: 315, min: 5000, support: 34, setup: [2000, 8000, 40000], etp: [0.05, 0.2, 1], ref: "VMware Cloud Foundation (vCenter, vSAN, NSX), 350 $/cœur/an", src: "https://redresscompliance.com/vmware-cloud-foundation-cost-per-core.html ; https://www.proxmox.com/proxmox-ve/pricing" }
+  v: ['Proxmox VE, 1 nœud', 'Proxmox VE, 2 nœuds + témoin', 'Proxmox VE, cluster 3 à 7 nœuds', 'Proxmox VE multi-clusters, bascule automatique', OpenNebula ou Proxmox sur infrastructure qualifiée SecNumCloud]
+- name: Stockage
+  role: Disques des VM
+  cost: { unit: server, price: 0, setup: [500, 4000, 25000], etp: [0.02, 0.1, 0.5], ref: "vSAN inclus dans VMware Cloud Foundation", src: "https://redresscompliance.com/broadcom-vmware-vcf-vs-vvf-licensing-comparison-2026.html" }
+  v: [ZFS local, ZFS + réplication asynchrone, Ceph (3 nœuds), 'Ceph multi-sites, réplication synchrone', Ceph avec chiffrement au repos et clés maîtrisées]
+- name: Sauvegarde
+  role: Restauration après incident
+  cost: { unit: server, price: 2100, min: 2000, support: 370, setup: [500, 3000, 15000], etp: [0.02, 0.08, 0.4], ref: "Veeam Data Platform Foundation, 155 $/charge de travail/an (≈ 15 VM par serveur)", src: "https://eon.io/blog/veeam-pricing ; https://proxmox.com/en/proxmox-backup-server/pricing" }
+  v: [Proxmox Backup Server (disque USB), Proxmox Backup Server dédié, PBS + copie distante chiffrée, PBS redondants + copie hors ligne, 'PBS + copie sur stockage souverain, test de restauration mensuel']

@@ -1,0 +1,13 @@
+name: Analytics
+intro: Dashboards and data analysis.
+sizing: {startup: A few charts in a spreadsheet., pme: Shared dashboards., grande: 'Data warehouse, pipelines.'}
+items:
+- name: Dashboards
+  role: Seeing the figures
+  v: [Metabase, Metabase, Apache Superset, Apache Superset cluster, 'Apache Superset, row-level access']
+- name: Data warehouse
+  role: Storing for analysis
+  v: [DuckDB, PostgreSQL, ClickHouse, ClickHouse cluster, 'Encrypted ClickHouse, qualified hosting']
+- name: Pipelines
+  role: Feeding the warehouse
+  v: [Scheduled scripts, dbt Core, Apache Airflow, Apache Airflow cluster, 'Apache Airflow, data access logged']

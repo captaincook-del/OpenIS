@@ -1,0 +1,26 @@
+id: utilisateur
+name: Poste utilisateur
+status: complete
+intro: 'Ce que la personne voit : poste de travail et smartphone.'
+sizing: {startup: 'Postes gérés à la main, scripts de base.', pme: 'Parc géré par politiques, déploiement automatisé.', grande: 'Images maîtres, gestion centralisée par site.'}
+items:
+- name: Système du poste
+  role: OS de bureau
+  cost: { unit: user, price: 80, support: 23, setup: [300, 5000, 40000], etp: [0.05, 0.3, 2], ref: "Windows 11 Enterprise, part de Microsoft 365 E3", src: "https://redriver.com/collaboration/microsoft-365-price-increase-2026 ; https://ubuntu.com/pricing/pro" }
+  v: [Ubuntu LTS, Ubuntu LTS, 'Ubuntu LTS', 'Debian géré par Ansible, mises à jour en vagues', 'Debian durci, disque chiffré, démarrage sécurisé']
+- name: Courriel et agenda
+  role: Application desktop
+  cost: { unit: user, price: 0, setup: [0, 500, 4000], etp: [0.005, 0.02, 0.1], ref: "Outlook inclus dans Microsoft 365 Apps", src: "https://redriver.com/collaboration/microsoft-365-price-increase-2026" }
+  v: [Thunderbird, Thunderbird, Thunderbird + configuration auto, Thunderbird + politiques centralisées, 'Thunderbird, chiffrement OpenPGP imposé']
+- name: Bureautique
+  role: Texte, tableur, présentation
+  cost: { unit: user, price: 100, setup: [200, 3000, 20000], etp: [0.01, 0.05, 0.3], ref: "Microsoft 365 Apps, part de Microsoft 365 E3", src: "https://redriver.com/collaboration/microsoft-365-price-increase-2026" }
+  v: [LibreOffice, LibreOffice, LibreOffice + modèles d'entreprise, LibreOffice + Collabora, 'LibreOffice, formats ouverts ODF imposés']
+- name: Navigateur
+  role: Accès au web
+  cost: { unit: user, price: 0, setup: [0, 300, 2000], etp: [0.005, 0.02, 0.1], ref: "Chrome Enterprise Core / Edge (gratuits)" }
+  v: [Firefox, Firefox + uBlock, Firefox ESR + politiques, Firefox ESR géré, 'Firefox ESR durci, extensions validées']
+- name: Smartphone
+  role: Mobile
+  cost: { unit: user, price: 50, support: 3, setup: [100, 1500, 10000], etp: [0.01, 0.05, 0.3], ref: "Microsoft Intune Plan 1, part de Microsoft 365 E3 (8 $/mois seul)", src: "https://ttms.com/microsoft-365-licensing-pricing-complete-buyers-guide/" }
+  v: [Applications libres via F-Droid, /e/OS, /e/OS + Headwind MDM, 'Parc géré par MDM, double profil', 'GrapheneOS ou /e/OS durci, MDM souverain']

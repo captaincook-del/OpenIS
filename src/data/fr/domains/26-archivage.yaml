@@ -1,0 +1,18 @@
+id: archivage
+name: Archivage légal
+status: complete
+intro: Conserver les documents avec valeur de preuve.
+sizing: {startup: Un dossier en lecture seule., pme: PDF/A et stockage verrouillé., grande: 'Système d''archivage, durées de conservation.'}
+items:
+- name: Archivage
+  role: Garder et prouver
+  cost: { unit: user, price: 15, min: 1500, setup: [200, 3000, 20000], etp: [0.005, 0.03, 0.2], ref: "Archivage à valeur probante en ligne (CDC Arkhinéo, Locarchives)" }
+  v: [Dossier en lecture seule, PDF/A sur stockage verrouillé, PDF/A + journal des accès, Vitam en grappe, 'Vitam, hébergement qualifié']
+- name: Stockage immuable
+  role: Empêcher la modification
+  cost: { unit: server, price: 500, setup: [0, 500, 3000], etp: [0.002, 0.01, 0.05], ref: "Baie WORM / option Object Lock" }
+  v: ['ZFS, instantanés', 'ZFS, instantanés verrouillés', Ceph RGW avec verrouillage d'objet, Ceph RGW multi-sites, 'Ceph RGW, copie sur stockage souverain']
+- name: Durées de conservation
+  role: Règles d'effacement
+  cost: { unit: flat, price: 0, setup: [100, 1000, 5000], etp: [0.002, 0.01, 0.05], ref: "Démarche identique" }
+  v: [Tableau des durées, Tableau + rappels, Politique d'archivage validée, Politique + effacement automatisé, Politique + effacement certifié]

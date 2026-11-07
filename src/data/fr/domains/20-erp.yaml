@@ -1,0 +1,18 @@
+id: erp
+name: Comptabilité et ERP
+status: partial
+intro: Gestion commerciale, comptabilité, facturation.
+sizing: {startup: Facturation et comptabilité simples., pme: Gestion commerciale complète., grande: 'Progiciel intégré, plusieurs sociétés.'}
+items:
+- name: Gestion et comptabilité
+  role: Cœur de gestion
+  cost: { unit: user, price: 150, min: 2000, support: 10, setup: [1000, 15000, 120000], etp: [0.02, 0.1, 0.6], ref: "Sage 100 / SAP Business One / Dynamics 365 Business Central" }
+  v: [Dolibarr, Dolibarr, Odoo Community, Odoo Community en grappe, 'Tryton, hébergement qualifié']
+- name: Facturation électronique
+  role: Factures conformes
+  cost: { unit: user, price: 10, min: 600, setup: [100, 1500, 10000], etp: [0.005, 0.02, 0.1], ref: "Plateforme de dématérialisation partenaire (payante)" }
+  v: [Factur-X avec Dolibarr, Factur-X avec Dolibarr, Factur-X + plateforme agréée, Factur-X + plateforme agréée redondante, 'Factur-X, plateforme agréée française']
+- name: Sauvegarde et traçabilité
+  role: Pièces comptables
+  cost: { unit: user, price: 3, setup: [50, 500, 3000], etp: [0.002, 0.01, 0.05], ref: "Archivage à valeur probante (option de l'ERP)" }
+  v: [Sauvegarde quotidienne, Sauvegarde + archivage PDF/A, Sauvegarde + piste d'audit, Réplication multi-sites, Conservation légale chiffrée]

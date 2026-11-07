@@ -1,0 +1,16 @@
+name: Compliance and GDPR
+intro: GDPR and security frameworks.
+sizing: {startup: A short register and charter., pme: 'Register, risk analysis, trained contact person.', grande: 'Formal policy, regular audits.'}
+items:
+- name: Processing register
+  role: GDPR obligation
+  v: [CNIL spreadsheet template, Register versioned in Forgejo, 'Tooled register, annual review', Register linked to the mapping, Register linked to the mapping and to contracts]
+- name: Risk analysis
+  role: Measure before acting
+  v: [Simplified EBIOS RM, EBIOS RM, EBIOS RM + Threat Dragon + annual review, EBIOS RM + accreditation, EBIOS RM + accreditation + external audit]
+- name: Security policy
+  role: Rules for everyone
+  v: [Two-page usage charter, Charter + password rules, Formal security policy, Policy + annual audits, Policy aligned with SecNumCloud]
+- name: Data protection
+  role: Steering role
+  v: [Internal contact, Trained contact, Shared external DPO, Dedicated DPO, Dedicated DPO + steering committee]

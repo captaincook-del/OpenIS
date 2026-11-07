@@ -1,0 +1,16 @@
+name: Collaboration
+intro: Everyday work tools, in the spirit of La Suite.
+sizing: {startup: 'Files, chat and video in a single instance.', pme: 'Separate services, quotas, dedicated backups.', grande: 'One instance per department, horizontal scaling.'}
+items:
+- name: Files and documents
+  role: Shared storage, collaborative editing
+  v: [Nextcloud, Nextcloud + Collabora, La Suite Docs + Nextcloud, Nextcloud cluster, 'La Suite Docs, controlled server-side encryption']
+- name: Email
+  role: Mail and calendars
+  v: [Stalwart Mail, Postfix + Dovecot, Postfix + Dovecot + Rspamd antispam, Redundant mail cluster, 'Encrypted mail, logs kept in France']
+- name: Chat
+  role: Instant messaging
+  v: [Mattermost, Matrix (Synapse), Matrix + Element, 'Federated Matrix, high availability', 'Sovereign Matrix, Tchap-style']
+- name: Video conferencing
+  role: Online meetings
+  v: [Jitsi, Jitsi, La Suite Visio (LiveKit), Multi-node LiveKit, LiveKit on sovereign infrastructure]

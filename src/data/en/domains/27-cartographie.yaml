@@ -1,0 +1,13 @@
+name: Information system mapping
+intro: Knowing what we own and how it is connected.
+sizing: {startup: A diagram and a spreadsheet., pme: Tooled inventory., grande: Up-to-date mapping linked to risks.}
+items:
+- name: Inventory
+  role: Equipment and services
+  v: [Spreadsheet, NetBox, NetBox + GLPI, NetBox + GLPI + network discovery, 'NetBox + GLPI, linked to the GDPR register']
+- name: Architecture diagrams
+  role: Understanding at a glance
+  v: [draw.io, draw.io, Mermaid versioned in Forgejo, Mermaid + architecture review, Mermaid + annual architecture review]
+- name: Data flows
+  role: Who talks to whom
+  v: [Diagram of main flows, Flow matrix, Flow matrix in NetBox, Flow matrix + automatic check, Flow matrix + compliance evidence]

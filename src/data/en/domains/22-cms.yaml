@@ -1,0 +1,13 @@
+name: Website and CMS
+intro: Website, publishing and statistics.
+sizing: {startup: A static site., pme: A site editable by the team., grande: 'Several sites, contributors, workflow.'}
+items:
+- name: Content management
+  role: Publishing
+  v: ['Hugo, static site', 'Vue.js, Symfony, Django', 'Vue.js, Symfony, Django', 'Vue.js, Symfony, Django cluster', 'Vue.js, Symfony, Django, qualified hosting']
+- name: Web server
+  role: Delivery
+  v: [Caddy, Caddy, nginx, nginx + load balancer, nginx + WAF]
+- name: Statistics
+  role: Privacy-friendly audience measurement
+  v: [Plausible, Matomo, 'Matomo, anonymised data', 'Matomo, anonymisation + redundant hosting', 'Matomo, CNIL consent exemption']

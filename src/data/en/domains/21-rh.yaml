@@ -1,0 +1,13 @@
+name: HR and payroll
+intro: Staff records, leave, payroll.
+sizing: {startup: Protected spreadsheet., pme: Basic HR tool and leave., grande: HR integrated with the directory and SSO.}
+items:
+- name: Human resources management
+  role: Records and org chart
+  v: ['Dolibarr, HR module', OrangeHRM, OrangeHRM + Keycloak SSO, OrangeHRM cluster, 'OrangeHRM, compartmentalised access']
+- name: Leave and absences
+  role: Requests and approval
+  v: [Shared Nextcloud calendar, OrangeHRM, OrangeHRM + calendars, 'OrangeHRM + calendars, delegations', 'OrangeHRM, approvals logged']
+- name: Payroll
+  role: Payslips and filings
+  v: [External payroll provider, External payroll provider, Provider + export to the ERP, Provider + SSO connection, Provider hosting in France]

@@ -1,0 +1,43 @@
+# ESTIMATIONS DE TRAVAIL, à valider avec des devis réels avant toute publication.
+# Prix vérifiés le 2026-11-07 sur les pages des éditeurs ou des revendeurs (1 $ ≈ 0,90 €) pour les composants qui ont un `src` ;
+# les autres gardent une estimation, car l'éditeur ne publie pas ses prix (Splunk, Darktrace, ServiceNow, Infoblox…).
+# Le budget = somme des composants du catalogue (fr/domains/*.yaml) visibles pour la taille choisie.
+#
+# Chaque composant porte son coût, au niveau Standard, dans un bloc `cost:` :
+#   unit     ce qui se compte : user, server, core, site, ou flat (une seule fois)
+#   price    prix annuel de l'équivalent propriétaire, en € par unité (prix public ou constaté, avant remise)
+#   min      contrat minimal annuel côté propriétaire (€), facultatif
+#   from     niveau à partir duquel l'équivalent propriétaire est réellement acheté (facultatif, défaut : essentielle)
+#   support  souscription de support du logiciel libre, en € par unité et par an (facultatif)
+#   setup    mise en place, une fois, pour [startup, pme, grande] (€)
+#   etp      temps d'administration pour [startup, pme, grande], en équivalents temps plein
+#   ref      produit propriétaire de référence et prix public retenu : c'est lui qu'il faut vérifier
+#   src      pages consultées pour vérifier le prix (absent = estimation, prix non publié)
+#   Un produit inclus dans une offre déjà comptée (Microsoft 365 E3, VMware Cloud Foundation, Veeam) vaut 0 : on ne le paie pas deux fois.
+#
+# Formules, pour un niveau n :
+#   libre        = setup × levels.setup[n] + années × (unités × support × levels.support[n] + etp × levels.etp[n] × etp_cost)
+#   propriétaire = setup × levels.setup[n] × share.setup
+#                + années × (max(min × min_factor, unités × price × price_factor) × levels.proprietary[n]
+#                            + etp × levels.etp[n] × share.etp × etp_cost)
+currency: EUR
+horizon_years: 3
+etp_cost: 60000            # coût annuel chargé d'un équivalent temps plein (€)
+
+# Volumes par taille. min_factor / price_factor : éditions PME (Essentials) et remises de volume.
+sizes:
+  startup: { users: 15, servers: 2, cores: 32, sites: 1, min_factor: 0.15, price_factor: 0.4 }
+  pme:     { users: 200, servers: 6, cores: 192, sites: 2, min_factor: 1, price_factor: 1 }
+  grande:  { users: 2000, servers: 40, cores: 1280, sites: 8, min_factor: 1, price_factor: 0.85 }
+
+# Multiplicateurs par niveau, dans l'ordre : essentielle, standard, entreprise, ha, souveraine.
+levels:
+  setup:       [0.5, 1, 1.8, 3, 3.5]     # redondance, durcissement, homologation
+  support:     [0, 1, 1.5, 2.5, 3]       # pas de support payant au niveau Essentielle
+  etp:         [0.6, 1, 1.5, 2.2, 2.6]
+  proprietary: [0.7, 1, 1.3, 1.7, 2]     # éditions supérieures, options de haute disponibilité
+
+# Part payée aussi côté propriétaire : un logiciel propriétaire s'installe et s'administre, un peu plus vite.
+share:
+  setup: 0.6
+  etp: 0.8

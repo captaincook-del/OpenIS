@@ -1,0 +1,51 @@
+disclaimer: "These proposals rely on the projects' documentation and on the editor's experience; the editor does not know every domain, so not all of them have been tested. Check before deploying."
+contact:
+  title: Complaints and discussion
+  intro: "Use this form to report an error, file a complaint about content, or discuss a technical choice. The message opens in your email app: nothing is stored on this site."
+  notice: "This is a non-professional project: it offers no quotes, consulting or support. Commercial or service requests will not receive a reply."
+  topics:
+    - Complaint about content
+    - Error to correct (licence, link, inaccurate fact)
+    - Discussion of a technical choice
+    - Other remark
+about:
+  title: About
+  sections:
+    - h: Our idea
+      p:
+        - "Organisations of every size depend on a handful of vendors for their whole information system. We show that another way exists, built entirely on free software."
+        - "From the virtualisation server to the application on each person's phone, we describe a complete stack adapted to the size of the organisation."
+    - h: Who it is for
+      p:
+        - "Startups, SMEs, large companies, associations and local authorities."
+    - h: Five levels of requirement
+      p:
+        - "Essential, Standard, Enterprise, High availability, Sovereign. The level is chosen according to the risks to cover and the budget, not fashion."
+    - h: Catalogue status
+      p:
+        - "The catalogue covers all planned domains, from infrastructure to training (list below). The technical choices should still be reviewed with an expert before any production use."
+legal:
+  title: Legal notice (the French version prevails)
+  sections:
+    - h: Legal framework
+      p:
+        - "This site is an online public communication service published on a non-professional basis within the meaning of [article 6, III, 2° of French law no. 2004-575 of 21 June 2004](http://legifrance.gouv.fr/affichTexteArticle.do?idArticle=LEGIARTI000028345121&cidTexte=LEGITEXT000005789847). In accordance with that article, its publisher has chosen to remain anonymous."
+    - h: Host
+      p:
+        - "This site is hosted by:"
+        - ~
+        - "with a domain name registered with:"
+        - ~
+        - "both of which hold the publisher's personal identification details."
+    - h: Complaints
+      p:
+        - "For any complaint about the site's content, please first send an email to [{claims_email}](mailto:{claims_email}) so that it can be resolved amicably."
+        - "The law also allows you to contact [the host](mailto:fraud@netlify.com?subject=Abuse%20report&body=Please%20include%20the%20site%20URL%20and%20reason%20for%20your%20report%2C%20and%20we%20will%20reply%20promptly.) directly. In that case, article 6, I, 4° of law no. 2004-575 of 21 June 2004 provides:"
+        - quote:
+            - "Any person who presents to the site's hosts content or an activity as unlawful in order to obtain its removal or to stop its distribution, knowing that information to be inaccurate, is punishable by one year's imprisonment and a fine of €15,000."
+    - h: Personal data
+      p:
+        - "This site uses no cookies and sets no trackers. It includes no audience measurement or advertising."
+        - "To display, the pages load their fonts from Google Fonts servers: your IP address and technical information about your browser are then sent to Google, which processes them under its [privacy policy](https://policies.google.com/privacy)."
+        - "The site is hosted by a US company: technical connection logs (IP address, date, pages requested) may be kept by the host and processed in the United States. See [Netlify's privacy policy](https://www.netlify.com/privacy/)."
+        - "The contact form only opens your email app: the site stores nothing. Emails received are used only to answer your request. You may ask for their erasure, or for access to or correction of data about you, by writing to [{email}](mailto:{email}). If you disagree, you may contact the [CNIL](https://www.cnil.fr/)."

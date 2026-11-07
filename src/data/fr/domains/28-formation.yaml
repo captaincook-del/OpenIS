@@ -1,0 +1,22 @@
+id: formation
+name: Formation et accompagnement
+status: complete
+intro: Accompagner, documenter, sensibiliser.
+sizing: {startup: Un guide de démarrage., pme: Ateliers de prise en main., grande: Parcours par métier et référents.}
+items:
+- name: Accompagnement
+  role: Changer sans subir
+  cost: { unit: flat, price: 0, setup: [500, 5000, 30000], etp: [0.005, 0.03, 0.2], ref: "Démarche identique" }
+  v: [Guide de démarrage de deux pages, Atelier de prise en main, Parcours par métier, Référents dans chaque service, Parcours certifiants et suivi de maturité]
+- name: Documentation
+  role: Retrouver la procédure
+  cost: { unit: flat, price: 0, setup: [0, 200, 1500], etp: [0.001, 0.005, 0.03], ref: "Wiki déjà compté dans Support et ITSM" }
+  v: [Wiki Forgejo, BookStack, BookStack + SSO Keycloak, BookStack redondant, 'BookStack, versions validées']
+- name: Supports d'apprentissage
+  role: Se former à son rythme
+  cost: { unit: user, price: 20, min: 2000, setup: [100, 2000, 15000], etp: [0.005, 0.03, 0.2], ref: "360Learning / Cornerstone (LMS)" }
+  v: [Vidéos courtes hébergées en interne, PeerTube, Moodle, Moodle en grappe, 'Moodle, hébergement qualifié']
+- name: Sensibilisation sécurité
+  role: Les bons réflexes
+  cost: { unit: user, price: 20, min: 500, setup: [100, 1000, 8000], etp: [0.005, 0.03, 0.15], ref: "KnowBe4 / Mantra (hameçonnage simulé)" }
+  v: [Mémo de bonnes pratiques, Atelier annuel, Gophish, Gophish + parcours obligatoire, Gophish + exercices de crise]

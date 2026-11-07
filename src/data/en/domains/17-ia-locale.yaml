@@ -1,0 +1,16 @@
+name: Local AI
+intro: Language models and AI tools hosted on your own premises.
+sizing: {startup: A light model on a workstation., pme: 'Shared GPU server, common interface.', grande: 'Several models, document search, compartmentalisation.'}
+items:
+- name: Model execution
+  role: Running the AI
+  v: [Ollama on a workstation, Ollama on a GPU server, vLLM on GPU servers, Multi-GPU vLLM with failover, vLLM on sovereign infrastructure]
+- name: Chat interface
+  role: For users
+  v: [LibreChat, LibreChat, LibreChat + Keycloak SSO, Redundant LibreChat, 'LibreChat, controlled logging']
+- name: Models
+  role: Open weights
+  v: [Small model (7 to 8 billion parameters), Medium-sized model, Models specialised by profession, Several models with routing, Models whose origin and licence are documented]
+- name: Document search
+  role: Answering from your documents
+  v: [pgvector, pgvector, Qdrant, Qdrant cluster, 'Qdrant, compartmentalised by department']

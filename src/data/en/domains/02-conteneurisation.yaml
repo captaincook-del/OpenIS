@@ -1,0 +1,20 @@
+name: Containerisation
+intro: Running applications in a reproducible way.
+sizing: {startup: 'A few containers, a single host.', pme: 'A lightweight cluster, about twenty services.', grande: 'Several clusters, platform teams, multi-tenant.'}
+items:
+- name: Orchestration
+  role: Deploys and maintains containers
+  v: [Docker Compose, Podman + Quadlet, K3s (3 nodes), 'Kubernetes RKE2, redundant control plane', 'Hardened Kubernetes (CIS), nodes in a qualified zone']
+  by_size:
+    grande:
+      standard: {text: 'K3s, 3 nodes', why: 'With several teams deploying, an orchestrator avoids managing hosts one by one, even at the Essential level.'}
+      essentielle: {text: 'Podman + Quadlet', why: 'Docker Compose does not allow more complex management at this scale.'}
+- name: Image registry
+  role: Stores signed images
+  v: [Simple Docker registry, Gitea Packages, Harbor, Harbor replicated across sites, Harbor + Cosign signing + vulnerability scanning]
+- name: Network entry
+  role: Exposes services over HTTPS
+  v: [Caddy, Traefik, Traefik + automatic certificates, Redundant ingress with VIP, 'Ingress + WAF, end-to-end controlled TLS']
+- name: Continuous deployment
+  role: Applies configuration from Git
+  v: [Manual scripts, Forgejo Actions, Forgejo + Ansible, Argo CD, Argo CD + four-eyes approval]

@@ -1,0 +1,16 @@
+summary: "Identity server: single sign-on (SSO), directory federation, OpenID Connect and SAML standards."
+why:
+  - "It is the free-software reference for SSO, under the Apache-2.0 licence, and a project of the Cloud Native Computing Foundation."
+  - "It speaks OpenID Connect, OAuth 2.0 and SAML 2.0, so it plugs into almost every application in the catalogue."
+  - "It connects to an existing LDAP or FreeIPA directory and handles second factors and federation with other identity providers."
+  - "It scales out as a cluster with a PostgreSQL database."
+alternatives:
+  - { verdict: "Lighter and simpler, ideal for a small organisation behind a reverse proxy. Less complete for federation and large directories: it is the choice for the Essential and Standard levels of this catalogue." }
+  - { verdict: "Polished interface and configurable flows. Check the split between free features and enterprise-only features before deciding." }
+  - { name: "Microsoft Entra ID or Okta", verdict: "Hosted proprietary services, easy to start with, but your identities depend on a third party and a per-user cost, which runs against the goal of independence." }
+limits:
+  - "More resource-hungry (Java) and more demanding to tune."
+  - "Major version upgrades require reading the migration notes."
+when_not: "For fewer than 25 accounts and a few applications, Authelia is enough and costs less to run."
+sources:
+  - { label: "Keycloak documentation" }

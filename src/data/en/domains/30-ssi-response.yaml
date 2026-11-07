@@ -1,0 +1,28 @@
+name: CSIRT (incident response)
+intro: 'React: qualify, contain, investigate, recover, learn.'
+sizing: {startup: A written procedure and one file per incident., pme: 'Small team, tools shared with the SOC.', grande: 'Dedicated response team, on-call duty and threat intelligence.'}
+items:
+- name: Incident management
+  role: One file per incident, from alert to closure
+  v: [DFIR-IRIS, DFIR-IRIS, DFIR-IRIS, 'DFIR-IRIS, replicated database', 'DFIR-IRIS, qualified hosting, compartmentalised access']
+- name: Endpoint response
+  role: Acting on a compromised machine
+  v: ['Wazuh, active response', 'Wazuh, active response', OpenEDR + Wazuh, OpenEDR + Wazuh, 'OpenEDR + Wazuh, console hosted internally']
+- name: Containment
+  role: Isolating without switching off
+  v: [Manual isolation (unplug the cable), 'OPNsense, quarantine VLAN', OPNsense + isolation triggered by Wazuh, OPNsense CARP + automatic isolation, 'OPNsense CARP + automatic isolation, two-person approval']
+- name: Digital investigation
+  role: Collecting and dating evidence
+  v: [Manual collection with system tools, Velociraptor, Velociraptor + Timesketch, Velociraptor + Timesketch, 'Velociraptor + Timesketch, isolated analysis workstations']
+- name: Threat intelligence
+  role: Knowing who attacks and how
+  v: [Yeti, MISP, OpenCTI, OpenCTI + MISP, 'OpenCTI + MISP, sharing with the sector CERT']
+- name: Automation
+  role: Chaining actions without errors
+  v: [Manual scripts, Scripts + n8n, Shuffle, Redundant Shuffle, 'Shuffle, playbooks approved by four eyes']
+- name: Crisis coordination
+  role: Talking when everything else is down
+  v: [Dedicated chat channel, 'Mattermost, incident channel', Mattermost + Jitsi, 'Matrix + Jitsi, outside the main infrastructure', 'Encrypted Matrix + Jitsi, outside the main infrastructure']
+- name: Procedures
+  role: What to do, in which order
+  v: [Reflex card, Playbooks in Forgejo, Playbooks + annual exercise, Playbooks + six-monthly exercises, Playbooks + crisis exercises with report]

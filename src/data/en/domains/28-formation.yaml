@@ -1,0 +1,16 @@
+name: Training
+intro: Support, document, raise awareness.
+sizing: {startup: A starter guide., pme: Hands-on workshops., grande: Role-based paths and champions.}
+items:
+- name: Support
+  role: Changing without suffering
+  v: [Two-page starter guide, Hands-on workshop, Role-based path, Champions in each department, Certifying paths and maturity tracking]
+- name: Documentation
+  role: Finding the procedure
+  v: [Forgejo wiki, BookStack, BookStack + Keycloak SSO, Redundant BookStack, 'BookStack, validated versions']
+- name: Learning materials
+  role: Learning at your own pace
+  v: [Short videos hosted internally, PeerTube, Moodle, Moodle cluster, 'Moodle, qualified hosting']
+- name: Security awareness
+  role: Good reflexes
+  v: [Good-practice memo, Annual workshop, Gophish, Gophish + mandatory path, Gophish + crisis exercises]

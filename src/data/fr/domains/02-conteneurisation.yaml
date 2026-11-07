@@ -1,0 +1,27 @@
+id: conteneurisation
+name: Conteneurisation
+status: complete
+intro: Faire tourner les applications de façon reproductible.
+sizing: {startup: 'Quelques conteneurs, un seul hôte.', pme: 'Un cluster léger, une vingtaine de services.', grande: 'Plusieurs clusters, équipes plateforme, multi-tenant.'}
+items:
+- name: Orchestration
+  role: Déploie et maintient les conteneurs
+  cost: { unit: core, price: 55, min: 5000, from: entreprise, support: 15, setup: [500, 10000, 60000], etp: [0.02, 0.3, 2], ref: "Red Hat OpenShift, 477 $/2 cœurs/an (¼ des cœurs pour les conteneurs)", src: "https://www.cdw.com/category/software/programming-web-development/devops/?w=FO2" }
+  v: [Docker Compose, Podman + Quadlet, K3s (3 nœuds), 'Kubernetes RKE2, plan de contrôle redondant', 'Kubernetes durci (CIS), nœuds en zone qualifiée']
+  by_size:
+    grande:
+      standard: {text: 'K3s, 3 nœuds', why: 'Avec plusieurs équipes qui déploient, un orchestrateur évite de gérer les hôtes un par un, même au niveau Essentielle.'}
+      essentielle: {text: 'Podman + Quadlet', why: 'Les docker compose ne permettent pas une gestion plus complexe a cette échelle.'}
+- name: Registre d'images
+  role: Stocke les images signées
+  cost: { unit: user, price: 26, min: 1000, setup: [0, 1500, 8000], etp: [0, 0.05, 0.2], ref: "Docker Business, 24 $/développeur/mois (10 % des utilisateurs)", src: "https://costbench.com/compare/docker-vs-gitlab/" }
+  v: [Registre Docker simple, Gitea Packages, Harbor, Harbor répliqué entre sites, Harbor + signature Cosign + analyse de vulnérabilités]
+  sizes: [pme, grande]
+- name: Entrée réseau
+  role: Expose les services en HTTPS
+  cost: { unit: server, price: 1500, min: 2500, setup: [200, 1500, 8000], etp: [0.01, 0.04, 0.2], ref: "F5 BIG-IP / NGINX Plus" }
+  v: [Caddy, Traefik, Traefik + certificats automatiques, Ingress redondant avec VIP, 'Ingress + WAF, TLS maîtrisé de bout en bout']
+- name: Déploiement continu
+  role: Applique la configuration depuis Git
+  cost: { unit: user, price: 23, min: 2000, setup: [300, 3000, 15000], etp: [0.02, 0.08, 0.4], ref: "GitHub Enterprise, 21 $/développeur/mois (10 % des utilisateurs)", src: "https://toolradar.com/tools/github/pricing" }
+  v: [Scripts manuels, Forgejo Actions, Forgejo + Ansible, Argo CD, Argo CD + validation à quatre yeux]

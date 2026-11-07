@@ -1,0 +1,13 @@
+name: Support and ITSM
+intro: User support and incident handling.
+sizing: {startup: A shared mailbox is enough., pme: Ticketing tool and knowledge base., grande: Service catalogue and on-call duty.}
+items:
+- name: Ticketing
+  role: Following requests
+  v: [Shared mailbox, Zammad, GLPI, Redundant GLPI, 'GLPI, access logs retained']
+- name: Knowledge base
+  role: Reusable answers
+  v: [Forgejo wiki, BookStack, BookStack + Keycloak SSO, Redundant BookStack, 'BookStack, validated versions']
+- name: Remote assistance
+  role: Helping without travelling
+  v: [RustDesk, RustDesk, 'RustDesk, internal server', 'RustDesk, redundant servers', 'RustDesk, sessions logged']

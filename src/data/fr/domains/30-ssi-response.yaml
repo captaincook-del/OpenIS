@@ -1,0 +1,38 @@
+id: ssi-response
+name: CSIRT (réponse à incident)
+status: complete
+intro: 'Réagir : qualifier, contenir, investiguer, rétablir, capitaliser.'
+sizing: {startup: Une procédure écrite et un dossier par incident., pme: 'Équipe réduite, outils partagés avec le SOC.', grande: 'Équipe de réponse dédiée, astreinte et renseignement sur la menace.'}
+items:
+- name: Gestion des incidents
+  role: Un dossier par incident, de l’alerte à la clôture
+  cost: { unit: user, price: 20, min: 15300, from: standard, setup: [200, 3000, 20000], etp: [0.01, 0.1, 0.6], ref: "TheHive (StrangeBee) Gold ≈ 17 000 $/an, Platinum 23 000 $, Cloud 41 000 à 48 000 $", src: "https://trustradius.com/products/thehive/pricing" }
+  v: [DFIR-IRIS, DFIR-IRIS, DFIR-IRIS, 'DFIR-IRIS, base répliquée', 'DFIR-IRIS, hébergement qualifié, accès cloisonnés']
+- name: Réponse sur les postes
+  role: Agir sur une machine compromise
+  cost: { unit: user, price: 15, setup: [100, 1000, 6000], etp: [0.005, 0.03, 0.15], ref: "Module de réponse EDR (CrowdStrike Falcon Insight)" }
+  v: ['Wazuh, réponse active', 'Wazuh, réponse active', OpenEDR + Wazuh, OpenEDR + Wazuh, 'OpenEDR + Wazuh, console hébergée en interne']
+- name: Confinement
+  role: Isoler sans éteindre
+  cost: { unit: user, price: 5, setup: [100, 1000, 6000], etp: [0.005, 0.02, 0.1], ref: "NAC / quarantaine Fortinet (option)" }
+  v: [Isolement manuel (débrancher le câble), 'OPNsense, VLAN de quarantaine', OPNsense + isolation déclenchée par Wazuh, OPNsense CARP + isolation automatique, 'OPNsense CARP + isolation automatique, validation à deux personnes']
+- name: Investigation numérique
+  role: Collecter et dater les preuves
+  cost: { unit: user, price: 20, min: 10000, from: entreprise, setup: [100, 2000, 15000], etp: [0.01, 0.08, 0.5], ref: "Magnet AXIOM Cyber / Rapid7 Velociraptor (support)" }
+  v: [Collecte manuelle avec les outils système, Velociraptor, Velociraptor + Timesketch, Velociraptor + Timesketch, 'Velociraptor + Timesketch, stations d’analyse isolées']
+- name: Renseignement sur la menace
+  role: Savoir qui attaque et comment
+  cost: { unit: user, price: 150, min: 20000, from: entreprise, setup: [100, 2000, 15000], etp: [0.01, 0.08, 0.5], ref: "Recorded Future / Google Threat Intelligence" }
+  v: [Yeti, MISP, OpenCTI, OpenCTI + MISP, 'OpenCTI + MISP, partage avec le CERT sectoriel']
+- name: Automatisation
+  role: Enchaîner les actions sans erreur
+  cost: { unit: user, price: 100, min: 15000, from: entreprise, setup: [200, 3000, 25000], etp: [0.01, 0.08, 0.5], ref: "Splunk SOAR / Cortex XSOAR" }
+  v: [Scripts manuels, Scripts + n8n, Shuffle, Shuffle redondant, 'Shuffle, playbooks validés à quatre yeux']
+- name: Coordination de crise
+  role: Se parler quand le reste est en panne
+  cost: { unit: user, price: 10, min: 2000, setup: [100, 1000, 6000], etp: [0.002, 0.01, 0.05], ref: "Plateforme de gestion de crise (Everbridge)" }
+  v: [Canal de discussion dédié, 'Mattermost, canal d’incident', Mattermost + Jitsi, 'Matrix + Jitsi, hors infrastructure principale', 'Matrix chiffré + Jitsi, hors infrastructure principale']
+- name: Procédures
+  role: Quoi faire, dans quel ordre
+  cost: { unit: flat, price: 0, setup: [300, 3000, 15000], etp: [0.005, 0.05, 0.3], ref: "Démarche identique" }
+  v: [Fiche de réflexes, Playbooks dans Forgejo, Playbooks + exercice annuel, Playbooks + exercices semestriels, Playbooks + exercices de crise avec rapport]

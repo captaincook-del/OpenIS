@@ -1,0 +1,13 @@
+name: Databases
+intro: Relational engines and cache, backed up and monitored.
+sizing: {startup: One instance shared between applications., pme: 'Primary and replica, continuous backup.', grande: 'One cluster per critical application, dedicated team.'}
+items:
+- name: Relational database
+  role: Application data
+  v: ['PostgreSQL, 1 instance', PostgreSQL + replica, PostgreSQL + Patroni, Multi-site Patroni, 'PostgreSQL + Patroni, encryption at rest']
+- name: Database backup
+  role: Point-in-time restore
+  v: [Scheduled export, pgBackRest, pgBackRest + remote copy, Multi-repository pgBackRest, 'Encrypted pgBackRest, sovereign repository']
+- name: Cache
+  role: Speeds up applications
+  v: ['Valkey, 1 instance', Valkey, Valkey Sentinel, Valkey cluster, 'Valkey cluster, TLS enforced']

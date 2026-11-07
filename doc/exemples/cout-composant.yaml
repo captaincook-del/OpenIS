@@ -1,0 +1,22 @@
+# EXEMPLE — coût d'un composant. Ce fichier n'est PAS chargé par le site : il sert de modèle (voir doc/budget.md).
+# Chaque composant de src/data/fr/domains/NN-id.yaml porte un bloc `cost:` au même niveau que `name`, `role`, `v`.
+# Les formules et les volumes par taille sont en tête de src/data/shared/pricing.yaml.
+
+name: Hyperviseur
+role: Exécute les machines virtuelles
+v: ['Proxmox VE, 1 nœud', 'Proxmox VE, 2 nœuds + témoin', 'Proxmox VE, cluster 3 à 7 nœuds', 'Proxmox VE multi-clusters', OpenNebula sur infrastructure qualifiée]
+cost:
+  unit: core                 # se compte par cœur (pme : 192 cœurs dans pricing.yaml)
+  price: 315                 # équivalent propriétaire, € par cœur et par an, au niveau Standard (VCF : 350 $)
+  min: 5000                  # contrat minimal annuel
+  support: 34                # souscription Proxmox Standard 550 €/socket, ramenée au cœur (16 cœurs par socket)
+  setup: [2000, 8000, 40000] # mise en place pour startup, pme, grande
+  etp: [0.05, 0.2, 1.0]      # temps d'administration pour startup, pme, grande
+  ref: "VMware Cloud Foundation (vCenter, vSAN, NSX), 350 $/cœur/an"
+  src: "https://redresscompliance.com/vmware-cloud-foundation-cost-per-core.html ; https://www.proxmox.com/proxmox-ve/pricing"   # pages consultées
+  # from: entreprise         # facultatif : l'équivalent propriétaire n'est acheté qu'à partir de ce niveau
+
+# ── Exemple chiffré : PME, niveau Standard (multiplicateurs à 1) ─────────────────────────
+#   libre        = 8 000 + 3 × (192 × 34 + 0,2 × 60 000)          = 8 000 + 3 × 18 528 =  63 584 €
+#   propriétaire = 8 000 × 0,6 + 3 × (192 × 315 + 0,2 × 0,8 × 60 000) = 4 800 + 3 × 70 080 = 215 040 €
+# Pour corriger un chiffre, citez sa source (devis, grille tarifaire publique) dans le message de commit.

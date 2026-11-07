@@ -1,0 +1,22 @@
+id: collaboration
+name: Collaboration
+status: partial
+intro: Les outils de travail au quotidien, façon La Suite.
+sizing: {startup: 'Fichiers, chat et visio dans une seule instance.', pme: 'Services séparés, quotas, sauvegardes dédiées.', grande: 'Instances par direction, montée en charge horizontale.'}
+items:
+- name: Fichiers et documents
+  role: Stockage partagé, édition collaborative
+  cost: { unit: user, price: 60, support: 90, setup: [500, 6000, 40000], etp: [0.03, 0.2, 1], ref: "SharePoint et OneDrive, part de Microsoft 365 E3 (39 $/mois)", src: "https://redriver.com/collaboration/microsoft-365-price-increase-2026 ; https://www.nextcloud.com/pricing ; https://www.capterra.com/p/10011676/Collabora-Online/pricing/" }
+  v: [Nextcloud, Nextcloud + Collabora, La Suite Docs + Nextcloud, Nextcloud en grappe, 'La Suite Docs, chiffrement côté serveur maîtrisé']
+- name: Messagerie électronique
+  role: Courriel et agendas
+  cost: { unit: user, price: 50, support: 5, setup: [300, 4000, 25000], etp: [0.02, 0.15, 0.8], ref: "Exchange Online, part de Microsoft 365 E3", src: "https://redriver.com/collaboration/microsoft-365-price-increase-2026" }
+  v: [Stalwart Mail, Postfix + Dovecot, Postfix + Dovecot + antispam Rspamd, Cluster de messagerie redondant, 'Messagerie chiffrée, journaux conservés en France']
+- name: Discussion
+  role: Messagerie instantanée
+  cost: { unit: user, price: 57, support: 10, setup: [200, 2000, 15000], etp: [0.01, 0.05, 0.3], ref: "Microsoft Teams Enterprise, vendu à part dans l’UE (≈ 5,25 $/mois) ; Slack Pro 7,25 $", src: "https://consultevo.com/?p=42219" }
+  v: [Mattermost, Matrix (Synapse), Matrix + Element, 'Matrix fédéré, haute disponibilité', 'Matrix souverain, type Tchap']
+- name: Visioconférence
+  role: Réunions en ligne
+  cost: { unit: user, price: 0, setup: [200, 2000, 12000], etp: [0.01, 0.05, 0.25], ref: "Réunions incluses dans Microsoft Teams", src: "https://consultevo.com/?p=42219" }
+  v: [Jitsi, Jitsi, La Suite Visio (LiveKit), LiveKit multi-nœuds, LiveKit sur infrastructure souveraine]

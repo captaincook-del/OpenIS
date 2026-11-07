@@ -1,0 +1,18 @@
+id: gestion-projet
+name: Gestion de projet
+status: complete
+intro: Planifier, suivre et livrer.
+sizing: {startup: Une liste de tâches partagée., pme: Suivi de projets et d'équipes., grande: Portefeuille de projets et droits fins.}
+items:
+- name: Suivi des tâches
+  role: Qui fait quoi
+  cost: { unit: user, price: 37, min: 500, setup: [100, 1500, 10000], etp: [0.005, 0.03, 0.15], ref: "Jira Standard, 8,48 $/utilisateur/mois (40 % des utilisateurs)", src: "https://www.adaptavist.com/blog/atlassian-price-updates-effective-october-2026" }
+  v: [Vikunja, Taiga, OpenProject, OpenProject en grappe, 'OpenProject, droits par projet']
+- name: Code et révision
+  role: Travail des développeurs
+  cost: { unit: user, price: 23, min: 1000, setup: [100, 1500, 10000], etp: [0.005, 0.03, 0.15], ref: "GitHub Enterprise, 21 $/développeur/mois (10 % des utilisateurs)", src: "https://toolradar.com/tools/github/pricing" }
+  v: [Forgejo, Forgejo, GitLab + GitLab CI, Forgejo redondant, 'Forgejo, signature des commits imposée']
+- name: Agendas partagés
+  role: Planning d'équipe
+  cost: { unit: flat, price: 0, setup: [0, 200, 1500], etp: [0.001, 0.005, 0.03], ref: "Inclus dans Microsoft 365" }
+  v: [Agenda Nextcloud, Agenda Nextcloud, Agendas Nextcloud par équipe, Nextcloud en grappe, 'Nextcloud, hébergement qualifié']

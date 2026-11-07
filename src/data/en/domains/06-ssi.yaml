@@ -1,0 +1,16 @@
+name: Security (SSI)
+intro: Protect, detect, respond.
+sizing: {startup: 'Basic hygiene: firewall, backups, passwords.', pme: 'Central detection, VPN, secrets management.', grande: 'Security operations centre, risk mapping.'}
+items:
+- name: Firewall
+  role: Network filtering
+  v: [OPNsense, OPNsense + VLAN, OPNsense redundant pair, OPNsense CARP multi-site, OPNsense + segmentation by trust zone]
+- name: VPN
+  role: Remote access
+  v: [WireGuard, WireGuard + 2FA, NetBird, Redundant multi-site NetBird, WireGuard with certificate-based access control]
+- name: Passwords and secrets
+  role: Vault
+  v: [KeePassXC, Vaultwarden, Passbolt, OpenBao cluster, OpenBao + HSM]
+- name: MFA
+  role: Multi-factor authentication and access
+  v: [FreeOTP, FreeOTP, FreeOTP + YubiKey, FreeOTP + redundant pair of YubiKeys, Redundant pair of YubiKeys]

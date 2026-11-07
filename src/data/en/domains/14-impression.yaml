@@ -1,0 +1,13 @@
+name: Printing
+intro: Printing, scanning and digitising.
+sizing: {startup: One shared printer., pme: Print server and scan to folder., grande: 'Secure printing, queues per site.'}
+items:
+- name: Print server
+  role: Print queues
+  v: [CUPS, CUPS, Redundant CUPS, 'CUPS cluster, queues per site', 'CUPS, badge-secured printing']
+- name: Scanning
+  role: From paper to digital
+  v: [Scan to Samba, Scan to Nextcloud, Scan + OCR to Nextcloud, Scan + OCR + automatic filing, 'Scan + OCR, controlled retention']
+- name: Volume tracking
+  role: Costs and usage
+  v: [Printer counters read by hand, CUPS logs, CUPS logs + Grafana, Alerts on abnormal volumes, Logs kept according to the legal policy]

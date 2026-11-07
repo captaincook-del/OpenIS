@@ -1,0 +1,22 @@
+id: ssi
+name: Sécurité (SSI)
+status: complete
+intro: Protéger, détecter, réagir.
+sizing: {startup: 'Hygiène de base : pare-feu, sauvegardes, mots de passe.', pme: 'Détection centralisée, VPN, gestion des secrets.', grande: 'Centre de supervision sécurité, cartographie des risques.'}
+items:
+- name: Pare-feu
+  role: Filtrage du réseau
+  cost: { unit: site, price: 2000, min: 500, support: 150, setup: [300, 2500, 15000], etp: [0.02, 0.08, 0.4], ref: "Fortinet FortiGate 100F, licence UTP ≈ 1 950 $/an par site", src: "https://datacenter360.ca/product-category/network-security/firewall/licensing/ ; https://shop.opnsense.com/product/opnsense-business-edition-3yr/" }
+  v: [OPNsense, OPNsense + VLAN, OPNsense en paire redondante, OPNsense CARP multi-sites, OPNsense + segmentation par zone de confiance]
+- name: VPN
+  role: Accès distant
+  cost: { unit: user, price: 60, min: 1000, setup: [200, 2000, 12000], etp: [0.01, 0.05, 0.25], ref: "Cisco Secure Client / Zscaler Private Access" }
+  v: [WireGuard, WireGuard + 2FA, NetBird, NetBird redondant multi-sites, WireGuard avec contrôle d'accès par certificat]
+- name: Mots de passe et secrets
+  role: Coffre
+  cost: { unit: user, price: 86, min: 500, support: 30, setup: [100, 1500, 10000], etp: [0.005, 0.03, 0.2], ref: "1Password Business, 7,99 $/mois ; Bitwarden Enterprise 6 $", src: "https://www.activepieces.com/blog/1password-pricing-2026-for-teams-and-businesses.md ; https://www.capterra.com/p/158063/passbolt/pricing/" }
+  v: [KeePassXC, Vaultwarden, Passbolt, OpenBao en grappe, OpenBao + HSM]
+- name: MFA
+  role: Authentification multifacteur et accès
+  cost: { unit: user, price: 32, min: 500, setup: [200, 2000, 15000], etp: [0.005, 0.03, 0.15], ref: "Cisco Duo Essentials / Okta MFA, 3 $/mois", src: "https://aimultiple.com/mfa-pricing" }
+  v: [FreeOTP, FreeOTP, FreeOTP + YubiKey, FreeOTP + YubiKey en paire redondante, YubiKey en paire redondante]
