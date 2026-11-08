@@ -20,7 +20,7 @@ Il n'y a ni tests ni linter : `npm run build` et la console du navigateur en dé
 - UnoCSS (preset Wind3, transformer variant group), aucune bibliothèque d'interface
 - Données en YAML, importées via `@modyfi/vite-plugin-yaml`
 
-Site statique : pas de serveur, pas de base de données, aucun cookie ni script tiers. Seule exception : les polices viennent de Google Fonts (voir [Interface](interface.md#couleurs-et-polices)).
+Site statique : pas de serveur, pas de base de données, aucun cookie ni script tiers. Les polices sont hébergées avec le site (paquets `@fontsource`) : aucune requête vers un service externe.
 
 ## Contrôles en développement
 

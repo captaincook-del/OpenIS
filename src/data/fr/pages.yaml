@@ -64,9 +64,7 @@ legal:
         - quote:
             - "Le fait, pour toute personne, de présenter aux hébergeurs du site un contenu ou une activité comme étant illicite dans le but d'en obtenir le retrait ou d'en faire cesser la diffusion, alors qu'elle sait cette information inexacte, est puni d'une peine d'un an d'emprisonnement et de 15 000 Euros d'amende."
     - h: Données personnelles
-      # Si les polices sont un jour hébergées sur le site (plus d'appel à Google Fonts), supprimer le deuxième paragraphe.
       p:
         - "Ce site n'utilise aucun cookie et ne dépose aucun traceur. Il n'intègre ni mesure d'audience ni publicité."
-        - "Pour s'afficher, les pages chargent leurs polices depuis les serveurs de Google Fonts : votre adresse IP et des informations techniques sur votre navigateur sont alors transmises à Google, qui les traite selon sa [politique de confidentialité](https://policies.google.com/privacy)."
         - "Le site est hébergé par une société américaine : les journaux techniques de connexion (adresse IP, date, pages demandées) peuvent être conservés par l'hébergeur et traités aux États-Unis. Voir la [politique de confidentialité de Netlify](https://www.netlify.com/privacy/)."
         - "Le formulaire de contact se contente d'ouvrir votre messagerie : le site n'enregistre rien. Les courriels reçus servent uniquement à répondre à votre demande. Vous pouvez en demander l'effacement, ou l'accès et la rectification des données vous concernant, en écrivant à [{email}](mailto:{email}). En cas de désaccord, vous pouvez saisir la [CNIL](https://www.cnil.fr/)."

@@ -16,9 +16,9 @@ const page = computed(() => pages[props.pageKey])
     <p v-if="!pages.translated" class="mt-2 mb-0 text-sm text-mute">{{ t('home.untranslated') }}</p>
     <p v-if="page.lead" class="mt-3 md:mt-4.5 mb-0 text-lg md:text-[22px] leading-normal max-w-[860px]">{{ page.lead }}</p>
 
-    <div class="mt-6 md:mt-8 grid gap-3 md:gap-4 md:grid-cols-[repeat(auto-fit,minmax(min(100%,320px),1fr))]">
-      <section v-for="(s, i) in page.sections" :id="'sec-' + i" :key="s.h"
-        :class="['p-4 md:p-[22px] card', s.p?.length > 2 || s.p?.some((b) => b.quote) ? 'md:col-span-full' : '']">
+    <!-- Une carte par section, toutes sur la même largeur -->
+    <div class="mt-6 md:mt-8 flex flex-col gap-3 md:gap-4">
+      <section v-for="(s, i) in page.sections" :id="'sec-' + i" :key="s.h" class="p-4 md:p-[22px] card">
         <h2 class="m-0 font-display font-700 text-xl md:text-[22px]">{{ s.h }}</h2>
         <template v-for="(b, j) in s.p" :key="j">
           <!-- Bloc cité : adresses, extraits de loi. Une ligne par entrée -->
