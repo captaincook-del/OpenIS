@@ -20,11 +20,13 @@ src/
 │   ├── budget.js           calcul du budget (page Budget et résumé du catalogue)
 │   └── i18n.js             traduction de l'interface : t(), tg(), setLang()
 ├── views/                  une vue par route
-│   ├── Home.vue            catalogue
+│   ├── Home.vue            accueil : choix de la taille et du niveau
+│   ├── Catalog.vue         catalogue
 │   ├── Solutions.vue       liste des solutions
 │   ├── SolutionPage.vue    fiche d'une solution
 │   ├── Budget.vue          budget calculé depuis le catalogue
-│   ├── Page.vue            À propos et Mentions légales
+│   ├── About.vue           À propos : projet, échelle des niveaux, avancement par groupe
+│   ├── Page.vue            Mentions légales (sections de texte)
 │   └── Contact.vue         formulaire qui ouvre la messagerie (mailto)
 ├── components/             éléments réutilisés par les vues
 │   ├── SolutionText.vue    texte avec liens automatiques vers les fiches
@@ -72,16 +74,17 @@ Convention Vue : `src/views/` ne contient que les pages routées, `src/component
 - `src/lib/store.js` : état réactif `{ sizeId, levelIdx, lang }` partagé entre les pages. Langue initiale : `?lang=en`, sinon dernier choix mémorisé (`localStorage`), sinon langue du navigateur.
 - `src/lib/i18n.js` : `t('clé', vars)` pour les phrases d'interface, `tg(groupe)` pour les noms de groupes de domaines, `setLang()`.
 - `src/lib/budget.js` : `sum()`, `byLevel`, `current`, `eur()` ; voir [Budget](budget.md).
-- `src/router/index.js` : routeur en **mode hash** (`/#/budget`), donc aucune règle de réécriture côté serveur. `Page.vue` sert À propos et Mentions légales via la prop `pageKey`.
+- `src/router/index.js` : routeur en **mode hash** (`/#/budget`), donc aucune règle de réécriture côté serveur. `About.vue` sert l'À propos ; `Page.vue` sert les Mentions légales via la prop `pageKey`. Un lien `?s=N` fait défiler jusqu'à la section N (option `scrollBehavior`).
 
 ## Pages du site
 
 | Adresse | Vue | Contenu |
 |---|---|---|
-| `/` | `Home.vue` | Catalogue : taille, niveau, domaines, composants, résumé du budget |
+| `/` | `Home.vue` | Accueil : taille, niveau, accès au catalogue |
+| `/catalogue` | `Catalog.vue` | Catalogue : barre de choix compacte, domaines, composants, résumé du budget |
 | `/solutions` | `Solutions.vue` | Les solutions, avec recherche, filtre de licence et filtre « avec fiche » |
 | `/solutions/<id>` | `SolutionPage.vue` | Fiche d'une solution, seulement si son fichier existe |
 | `/budget` | `Budget.vue` | Coût sur 3 ans par niveau et détail par domaine |
-| `/a-propos` | `Page.vue` | Présentation et état du catalogue |
+| `/a-propos` | `About.vue` | Présentation, échelle des niveaux, avancement par groupe |
 | `/contact` | `Contact.vue` | Réclamations et débats (formulaire mailto) |
 | `/mentions-legales` | `Page.vue` | Mentions légales |

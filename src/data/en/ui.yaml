@@ -146,3 +146,35 @@ sp.report: Report an error on this page
 pg.level: Level {n}
 ct.required: (required)
 ct.opens: Your email app opens with the message pre-filled.
+# Home and catalogue
+nav.home: Mon SI Libre, home
+acc.intro: 'From virtualisation to each user''s desktop, an entirely free-software stack suited to your organisation. Two questions are enough to build it.'
+acc.stat.domains: domains
+acc.stat.solutions: free solutions
+acc.stat.fiches: detailed fact sheets
+acc.stat.levels: levels of requirement
+acc.step1: How large is your organisation?
+acc.step2: Which level of requirement?
+acc.recap: 'Your stack: {size} · {level} · {n} components'
+acc.budget: '{years}-year free-software budget:'
+acc.vsprop: compared with proprietary
+acc.cta: See my catalogue
+acc.ctashort: My catalogue
+acc.short: '{v} over {years} years'
+acc.explore: Explore the site
+acc.go.catalog: 'The stack domain by domain, from infrastructure to business applications.'
+acc.go.solutions: Every piece of software listed, with its licence, limits and alternatives.
+acc.go.budget: 'The {years}-year cost, compared with an equivalent proprietary stack.'
+cat.title: Your catalogue
+cat.size: Size
+cat.level: Level
+# About
+pg.n.done: '{n} done'
+pg.n.partial: '{n} to complete'
+pg.n.planned: '{n} planned'
+abt.start: Where to start
+abt.cta: Build my stack
+abt.scale.low: Simpler to run
+abt.scale.high: More demanding, more costly
+abt.of: 'out of {total}'
+abt.groups: Domain groups

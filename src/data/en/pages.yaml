@@ -10,10 +10,10 @@ contact:
     - Other remark
 about:
   title: About
+  lead: "Organisations of every size depend on a handful of vendors for their whole information system. We show that another way exists, built entirely on free software."
   sections:
     - h: Our idea
       p:
-        - "Organisations of every size depend on a handful of vendors for their whole information system. We show that another way exists, built entirely on free software."
         - "From the virtualisation server to the application on each person's phone, we describe a complete stack adapted to the size of the organisation."
     - h: Who it is for
       p:
@@ -22,8 +22,6 @@ about:
       p:
         - "Essential, Standard, Enterprise, High availability, Sovereign. The level is chosen according to the risks to cover and the budget, not fashion."
     - h: Catalogue status
-      p:
-        - "The catalogue covers all planned domains, from infrastructure to training (list below). The technical choices should still be reviewed with an expert before any production use."
 legal:
   title: Legal notice (the French version prevails)
   sections:

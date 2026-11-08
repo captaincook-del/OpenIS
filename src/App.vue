@@ -6,19 +6,19 @@ import { state } from './lib/store'
 import Icon from './components/Icon.vue'
 
 const LANG_NAMES = { fr: 'Français', en: 'English' }
-const nav = [['/', 'nav.catalog', 'grid'], ['/solutions', 'nav.solutions', 'search'], ['/budget', 'nav.budget', 'chart'], ['/a-propos', 'nav.about', 'info'], ['/contact', 'nav.contact', 'mail']]
+const nav = [['/catalogue', 'nav.catalog', 'grid'], ['/solutions', 'nav.solutions', 'search'], ['/budget', 'nav.budget', 'chart'], ['/a-propos', 'nav.about', 'info'], ['/contact', 'nav.contact', 'mail']]
 // Focus visible sur fond vert : anneau clair
 const ring = 'outline-none focus-visible:(ring-2 ring-paper ring-offset-2 ring-offset-brand)'
-// La racine « / » ne doit être active que sur elle-même ; /solutions/xxx garde « Solutions » actif
+// /solutions/xxx garde « Solutions » actif ; l'accueil « / » n'a pas d'onglet, le logo y mène
 const route = useRoute()
-const isActive = (to) => (to === '/' ? route.path === '/' : route.path.startsWith(to))
+const isActive = (to) => route.path.startsWith(to)
 </script>
 
 <template>
   <div class="min-h-screen bg-paper text-ink font-sans flex flex-col pb-[72px] md:pb-0">
     <header class="bg-brand text-paper">
       <div class="wrap min-h-[68px] py-3 md:py-0 flex flex-wrap items-center gap-x-10 gap-y-2">
-        <RouterLink to="/" :class="ring + ' rounded-sm font-display font-800 text-xl md:text-[22px] text-paper no-underline'">Mon SI Libre</RouterLink>
+        <RouterLink to="/" :aria-current="route.path === '/' ? 'page' : null" :aria-label="t('nav.home')" :class="ring + ' rounded-sm font-display font-800 text-xl md:text-[22px] text-paper no-underline'">Mon SI Libre</RouterLink>
 
         <nav :aria-label="t('nav.aria')" class="hidden md:flex flex-wrap gap-1 flex-auto">
           <RouterLink v-for="[to, key] in nav" :key="to" v-slot="{ href, navigate }" :to="to" custom>

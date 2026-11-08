@@ -16,10 +16,11 @@ contact:
     - Autre remarque
 about:
   title: À propos
+  # Accroche affichée en grand sous le titre
+  lead: "Les petites et grandes organisations dépendent de quelques éditeurs pour tout leur système d'information. Nous montrons qu'une autre voie existe, entièrement fondée sur des logiciels libres."
   sections:
     - h: Notre idée
       p:
-        - "Les petites et grandes organisations dépendent de quelques éditeurs pour tout leur système d'information. Nous montrons qu'une autre voie existe, entièrement fondée sur des logiciels libres."
         - "Du serveur de virtualisation jusqu'à l'application sur le téléphone de chaque personne, nous décrivons une pile complète, adaptée à la taille de l'organisation."
     - h: Pour qui
       p:
@@ -29,9 +30,7 @@ about:
       p:
         - "Essentielle, Standard, Entreprise, Haute disponibilité, Souveraine. On choisit le niveau selon les risques à couvrir et le budget, pas selon la mode."
     - h: État du catalogue
-      roadmap: true         # section affichée en colonne, avec l'avancement par domaine
-      p:
-        - "Le catalogue couvre l'ensemble des domaines prévus, de l'infrastructure à la formation (liste ci-dessous). Les choix techniques restent à relire avec un expert avant toute mise en production."
+      roadmap: true         # section affichée avec l'avancement par groupe de domaines
 legal:
   title: Mentions légales
   # Les textes acceptent des liens [texte](adresse) et les jetons {email} et {claims_email} (adresses de contact ci-dessus).

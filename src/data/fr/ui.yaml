@@ -146,3 +146,35 @@ sp.report: Signaler une erreur sur cette fiche
 pg.level: Niveau {n}
 ct.required: (obligatoire)
 ct.opens: Votre application de courriel s'ouvre avec le message prérempli.
+# Accueil et catalogue
+nav.home: Mon SI Libre, accueil
+acc.intro: 'De la virtualisation jusqu''au poste de chaque utilisateur, une pile entièrement libre, adaptée à votre organisation. Deux questions suffisent pour la composer.'
+acc.stat.domains: domaines
+acc.stat.solutions: solutions libres
+acc.stat.fiches: fiches détaillées
+acc.stat.levels: niveaux d'exigence
+acc.step1: Quelle est la taille de votre organisation ?
+acc.step2: Quel niveau d'exigence ?
+acc.recap: 'Votre pile : {size} · {level} · {n} composants'
+acc.budget: 'Budget libre sur {years} ans :'
+acc.vsprop: face au propriétaire
+acc.cta: Voir mon catalogue
+acc.ctashort: Mon catalogue
+acc.short: '{v} sur {years} ans'
+acc.explore: Explorer le site
+acc.go.catalog: 'La pile domaine par domaine, de l''infrastructure aux applications métier.'
+acc.go.solutions: Chaque logiciel cité, sa licence, ses limites et ses alternatives.
+acc.go.budget: 'Le coût sur {years} ans, comparé à une pile propriétaire équivalente.'
+cat.title: Votre catalogue
+cat.size: Taille
+cat.level: Niveau
+# À propos
+pg.n.done: '{n} terminés'
+pg.n.partial: '{n} à compléter'
+pg.n.planned: '{n} prévus'
+abt.start: Par où commencer
+abt.cta: Composer ma pile
+abt.scale.low: Plus simple à opérer
+abt.scale.high: Plus exigeant, plus coûteux
+abt.of: 'sur {total}'
+abt.groups: Groupes de domaines

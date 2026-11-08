@@ -2,7 +2,8 @@
 
 ## Mise en page responsive
 
-- **Ordinateur** : en-tête vert avec la navigation, l'avancement du catalogue, le choix de langue et le lien GitHub ; catalogue en trois colonnes (domaines, composants, résumé du budget).
+- **Accueil** (`/`) : on choisit la taille puis le niveau, puis « Voir mon catalogue ». Le logo y ramène depuis toutes les pages ; l'accueil n'a pas d'onglet.
+- **Ordinateur** : en-tête vert avec la navigation, l'avancement du catalogue, le choix de langue et le lien GitHub ; catalogue (`/catalogue`) avec une barre de choix compacte puis trois colonnes (domaines, composants, résumé du budget).
 - **Téléphone** (sous 768 px, `md:`) : barre d'onglets fixe en bas de l'écran (`md:hidden` dans `App.vue`), choix du domaine par liste et flèches, composants en cartes.
 - Conteneur pleine largeur `wrap` : 16 px de marge sur téléphone, 48 px sur ordinateur, 1 680 px au plus.
 
@@ -29,5 +30,5 @@ Les icônes sont des traits SVG dans `src/components/Icon.vue` ; pas d'emoji dan
 ## Pièges connus
 
 - **Débordement sur téléphone** : une grille à une seule colonne doit déclarer `grid-cols-[minmax(0,1fr)]`, et `fieldset` a `min-width: 0` (`src/assets/base.css`). Sinon une rangée défilante (pastilles de niveau, filtres) élargit toute la page.
-- **Ancres** : le routeur est en mode hash, une ancre `#id` changerait de route. Pour faire défiler vers une section, utilisez `scrollIntoView` (voir `Solutions.vue` et `SolutionPage.vue`).
+- **Ancres** : le routeur est en mode hash, une ancre `#id` changerait de route. Pour faire défiler vers une section, utilisez `scrollIntoView` (voir `Solutions.vue` et `SolutionPage.vue`), ou un paramètre `?s=N` traité par `scrollBehavior` dans `router/index.js`.
 - **Lien actif** : la navigation compare la route courante (`useRoute()`), pas la cible du `RouterLink`.
