@@ -6,3 +6,5 @@ a { color: inherit; }
 fieldset { min-width: 0; }
 /* Ancres de la fiche : ne pas passer sous l'en-tête */
 [id] { scroll-margin-top: 1rem; }
+/* Champ de recherche : pas de style natif (loupe et croix de WebKit), le focus est porté par son cadre */
+input[type='search'] { -webkit-appearance: none; appearance: none; }

@@ -38,10 +38,10 @@ const pillOn = 'border-brand bg-brandsoft font-700'
     </div>
 
     <div role="search" class="mt-5 md:mt-7 md:(p-4 bg-white border border-line rounded-[14px]) grid grid-cols-[minmax(0,1fr)] md:(flex flex-row) flex-wrap md:items-center gap-3 md:gap-x-5">
-      <label class="flex-[1_1_320px] flex items-center gap-2.5 min-h-12 px-3.5 border border-edge rounded-[10px] bg-white has-[:focus-visible]:(ring-2 ring-ink ring-offset-2)">
+      <label class="flex-[1_1_320px] flex items-center gap-2.5 min-h-12 px-3.5 border border-edge rounded-[10px] bg-white cursor-text focus-within:(border-brand shadow-[0_0_0_1px_#2F5D50])">
         <Icon name="search" class="text-mute" />
         <span class="sr-only">{{ t('sol.searchlabel') }}</span>
-        <input v-model="q" type="search" :placeholder="t('sol.search')" class="flex-1 min-w-0 border-0 outline-none bg-transparent text-base" />
+        <input v-model="q" type="search" :placeholder="t('sol.search')" class="flex-1 min-w-0 h-11 border-0 outline-none shadow-none appearance-none bg-transparent text-base" />
       </label>
       <fieldset class="flex md:flex-wrap items-center gap-2 md:gap-1.5 overflow-x-auto -mx-4 px-4 md:(mx-0 px-0 overflow-visible) pb-1 md:pb-0">
         <legend class="sr-only">{{ t('sol.famlabel') }}</legend>
