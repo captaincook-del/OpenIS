@@ -1,0 +1,22 @@
+id: ia-locale
+name: IA et modèles locaux
+status: complete
+intro: Modèles de langage et outils d'IA hébergés chez vous.
+sizing: {startup: Un modèle léger sur un poste., pme: 'Serveur GPU partagé, interface commune.', grande: 'Plusieurs modèles, recherche documentaire, cloisonnement.'}
+items:
+- name: Exécution des modèles
+  role: Faire tourner l'IA
+  cost: { unit: user, price: 97, min: 3000, setup: [3000, 25000, 150000], etp: [0.02, 0.15, 0.8], ref: "Microsoft 365 Copilot, 30 $/mois (30 % des utilisateurs) ; ChatGPT Business 20 $", src: "https://redresscompliance.com/microsoft-365-copilot-pricing-2026 ; https://www.eesel.ai/blog/chatgpt-work-pricing" }
+  v: [Ollama sur un poste, Ollama sur serveur GPU, vLLM sur serveurs GPU, vLLM multi-GPU avec bascule, vLLM sur infrastructure souveraine]
+- name: Interface de discussion
+  role: Pour les utilisateurs
+  cost: { unit: flat, price: 0, setup: [200, 1500, 10000], etp: [0.005, 0.03, 0.15], ref: "Inclus dans Copilot / ChatGPT Enterprise" }
+  v: [LibreChat, LibreChat, LibreChat + SSO Keycloak, LibreChat redondant, 'LibreChat, journalisation contrôlée']
+- name: Modèles
+  role: Poids ouverts
+  cost: { unit: flat, price: 0, setup: [0, 0, 0], etp: [0.002, 0.01, 0.05], ref: "Inclus dans Copilot / ChatGPT Enterprise" }
+  v: [Petit modèle (7 à 8 milliards de paramètres), Modèle de taille moyenne, Modèles spécialisés par métier, Plusieurs modèles avec routage, Modèles dont origine et licence sont documentées]
+- name: Recherche documentaire
+  role: Répondre à partir de vos documents
+  cost: { unit: user, price: 30, min: 2000, from: entreprise, setup: [200, 3000, 20000], etp: [0.005, 0.05, 0.3], ref: "Azure AI Search / Glean" }
+  v: [pgvector, pgvector, Qdrant, Qdrant en grappe, 'Qdrant, cloisonnement par direction']

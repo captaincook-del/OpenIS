@@ -1,0 +1,13 @@
+name: Archiving
+intro: Keeping documents with evidential value.
+sizing: {startup: A read-only folder., pme: PDF/A and locked storage., grande: 'Archiving system, retention periods.'}
+items:
+- name: Archiving
+  role: Keeping and proving
+  v: [Read-only folder, PDF/A on locked storage, PDF/A + access log, Vitam cluster, 'Vitam, qualified hosting']
+- name: Immutable storage
+  role: Preventing modification
+  v: ['ZFS, snapshots', 'ZFS, locked snapshots', Ceph RGW with object lock, Multi-site Ceph RGW, 'Ceph RGW, copy on sovereign storage']
+- name: Retention periods
+  role: Deletion rules
+  v: [Retention table, Table + reminders, Validated archiving policy, Policy + automated deletion, Policy + certified deletion]

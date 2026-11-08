@@ -1,0 +1,18 @@
+id: bases-de-donnees
+name: Bases de données
+status: complete
+intro: Moteurs relationnels et cache, sauvegardés et supervisés.
+sizing: {startup: Une instance partagée entre applications., pme: 'Primaire et réplique, sauvegarde continue.', grande: 'Une grappe par application critique, équipe dédiée.'}
+items:
+- name: Base relationnelle
+  role: Données des applications
+  cost: { unit: server, price: 1600, min: 1600, support: 1000, setup: [300, 4000, 25000], etp: [0.02, 0.15, 0.8], ref: "SQL Server Standard, ≈ 3 950 $ les 2 cœurs (4 cœurs minimum par instance, abonnement)", src: "https://o365hq.com/software/sql-server-2025-standard-2-core-license-pack" }
+  v: ['PostgreSQL, 1 instance', PostgreSQL + réplique, PostgreSQL + Patroni, Patroni multi-sites, 'PostgreSQL + Patroni, chiffrement au repos']
+- name: Sauvegarde des bases
+  role: Restauration à un instant donné
+  cost: { unit: server, price: 0, setup: [100, 1000, 6000], etp: [0.005, 0.03, 0.15], ref: "Agents de bases de données inclus dans Veeam Data Platform", src: "https://eon.io/blog/veeam-pricing" }
+  v: [Export planifié, pgBackRest, pgBackRest + copie distante, pgBackRest multi-dépôts, 'pgBackRest chiffré, dépôt souverain']
+- name: Cache
+  role: Accélère les applications
+  cost: { unit: server, price: 1500, min: 1500, setup: [50, 500, 4000], etp: [0.002, 0.01, 0.08], ref: "Redis Enterprise" }
+  v: ['Valkey, 1 instance', Valkey, Valkey Sentinel, Valkey en grappe, 'Valkey en grappe, TLS imposé']

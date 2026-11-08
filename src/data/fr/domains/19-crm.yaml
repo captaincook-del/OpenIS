@@ -1,0 +1,18 @@
+id: crm
+name: Relation client (CRM)
+status: complete
+intro: Relation client et prospection.
+sizing: {startup: Un carnet de contacts partagé., pme: CRM simple et envois groupés., grande: CRM intégré à la facturation et à la messagerie.}
+items:
+- name: Gestion de la relation client
+  role: Suivre clients et prospects
+  cost: { unit: user, price: 210, min: 3000, support: 2, setup: [500, 8000, 60000], etp: [0.01, 0.08, 0.5], ref: "Salesforce Sales Cloud Enterprise, 175 €/utilisateur/mois (10 % des utilisateurs)", src: "https://pricingdna.pages.dev/crm/salesforce-sales-cloud/pricing" }
+  v: [Dolibarr, EspoCRM, SuiteCRM, SuiteCRM en grappe, 'SuiteCRM, conservation des données maîtrisée']
+- name: Contacts
+  role: Annuaire commun
+  cost: { unit: flat, price: 0, setup: [0, 200, 1500], etp: [0.001, 0.005, 0.03], ref: "Inclus dans Microsoft 365" }
+  v: [Contacts Nextcloud, Contacts Nextcloud, Contacts synchronisés avec le CRM, Annuaire unique via FreeIPA, 'Annuaire unique, accès journalisés']
+- name: Envois groupés
+  role: Courriels aux clients
+  cost: { unit: user, price: 8, min: 500, setup: [50, 500, 3000], etp: [0.002, 0.01, 0.05], ref: "Mailchimp / Brevo" }
+  v: [Listmonk, Listmonk, Listmonk + Postfix dédié, Listmonk redondant, 'Listmonk, consentements tracés']

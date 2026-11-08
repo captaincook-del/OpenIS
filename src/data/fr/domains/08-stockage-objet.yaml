@@ -1,0 +1,18 @@
+id: stockage-objet
+name: Stockage objet
+status: complete
+intro: Fichiers volumineux, copies et archives, accessibles par API S3 ou par partage réseau.
+sizing: {startup: 'Un seul serveur, partages simples.', pme: Trois nœuds avec réplication., grande: 'Plusieurs sites, cycles de vie et quotas par direction.'}
+items:
+- name: Serveur S3
+  role: Stockage compatible S3
+  cost: { unit: server, price: 3000, min: 3000, setup: [300, 3000, 20000], etp: [0.01, 0.05, 0.3], ref: "NetApp StorageGRID / Dell ECS" }
+  v: ['Garage, 1 nœud', 'Garage, 3 nœuds', SeaweedFS en grappe, Ceph RGW multi-sites, 'Ceph RGW, chiffrement côté serveur, clés maîtrisées']
+- name: Partage de fichiers
+  role: Accès réseau aux dossiers
+  cost: { unit: server, price: 400, min: 400, setup: [100, 1500, 8000], etp: [0.01, 0.05, 0.25], ref: "Windows Server Standard 16 cœurs (≈ 1 180 $, amorti sur 3 ans)", src: "https://www.trustedtechteam.com/collections/sale/2025" }
+  v: [Samba, 'Samba + droits ACL', Samba avec FreeIPA, Samba en grappe (CTDB), 'Samba, journalisation des accès conservée']
+- name: Copies de données
+  role: Sauvegarde chiffrée des fichiers
+  cost: { unit: server, price: 0, setup: [100, 1000, 6000], etp: [0.005, 0.03, 0.15], ref: "Copie externalisée incluse dans Veeam Data Platform", src: "https://eon.io/blog/veeam-pricing" }
+  v: [restic vers disque externe, restic + rclone vers S3, BorgBackup + rclone chiffré, restic vers deux sites distincts, 'restic, copies chiffrées sur stockage souverain']

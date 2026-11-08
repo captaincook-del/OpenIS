@@ -1,0 +1,180 @@
+nav.catalog: Catalogue
+nav.solutions: Solutions
+nav.budget: Budget
+nav.about: À propos
+nav.contact: Contact
+nav.aria: Navigation principale
+lang.label: Langue
+banner: 'Catalogue en construction : {done} domaines terminés sur {total} ({pct} %)'
+banner.partial: ' · {n} à compléter'
+banner.planned: ' · {n} à créer'
+footer.tagline: Site vitrine. Toutes les briques citées sont des logiciels libres ou ouverts.
+footer.source: Code source
+footer.legal: Mentions légales
+gh.label: Code source du site sur GitHub (nouvel onglet)
+a11y.newtab: (nouvel onglet)
+a11y.fiche: (fiche de la solution)
+a11y.site: (site du projet, nouvel onglet)
+home.title: Un système d'information complet, sans enfermement.
+home.intro: 'Choisissez la taille et le niveau d''exigence : la pile libre correspondante s''affiche, de la virtualisation jusqu''au poste de chaque utilisateur.'
+home.size: Taille de l'organisation
+home.level: Niveau d'exigence
+home.users: '{users} utilisateurs, {hosts}'
+home.budget: Voir le budget
+home.domains: Domaines
+home.wip: en cours
+home.wiptitle: Domaine en cours d'enrichissement
+home.wipchip: En cours d'enrichissement
+home.wipchiptitle: De nouveaux composants seront ajoutés
+home.count: '{n} composants pour « {size} ».'
+home.variant: Variante {size}
+home.legend: Légende des badges
+home.untranslated: 'Ce domaine n''est pas encore traduit : contenu en français.'
+legend.title: Comprendre les badges
+legend.note: 'Licences et labels sont indicatifs : vérifiez la version que vous déployez auprès du projet.'
+badge.nolicense: Licence à renseigner
+sol.title: Les {n} solutions citées
+sol.intro: Un nom mène à sa fiche quand elle existe (étiquette « Fiche »), sinon au site du projet. Le badge indique la licence ; un contour noir signale un label vérifié.
+sol.search: Rechercher une solution
+sol.searchlabel: Rechercher
+sol.famlabel: Famille de licence
+sol.allfam: Toutes les licences
+sol.tag: Fiche
+sol.only: Avec fiche ({n})
+sol.none: Aucune solution ne correspond. Effacez un filtre pour élargir la recherche.
+sol.srfiche: (fiche)
+sp.back: ← Toutes les solutions
+sp.site: Site du projet
+sp.why: Pourquoi celle-ci
+sp.alt: Pourquoi pas une autre
+sp.limits: Limites à connaître
+sp.whennot: Quand choisir autre chose
+sp.used: Où elle apparaît dans le catalogue
+sp.sources: Sources
+sp.updated: 'Fiche mise à jour en {date}. Licences et fonctions évoluent : vérifiez auprès du projet.'
+sp.nopage: Pas encore de fiche pour cette solution
+sp.nopage2: Une fiche s'affiche dès qu'un fichier src/data/fr/solutions/{id}.yaml existe.
+sp.visit: Voir le site du projet
+sp.untranslated: 'Cette fiche n''est pas encore traduite : contenu en français.'
+bud.title: Combien ça coûte, sur {years} ans ?
+bud.intro: Somme des {n} composants du catalogue pour cette taille, comparée à une pile propriétaire équivalente. Ajouter ou retirer un composant dans domains/ modifie ces chiffres.
+bud.size: Taille
+bud.setup: Mise en place {capex} · {run}/an
+bud.free: Libre
+bud.prop: Propriétaire
+bud.saving: Économie
+bud.extra: Surcoût
+bud.detail: Détail par domaine · niveau {level}
+bud.detailnote: Coût du libre sur {years} ans, domaine par domaine. Cliquez un niveau ci-dessus pour comparer.
+bud.etp: Le temps d'administration est valorisé à {cost} par an et par équivalent temps plein.
+ct.topic: Objet
+ct.page: Page ou contenu concerné
+ct.optional: (facultatif)
+ct.pageph: Ex. fiche Redis, domaine Réseau, page Budget
+ct.message: Votre message
+ct.msgph: Que faut-il corriger ou discuter, et pourquoi ? Une source aide à traiter la demande.
+ct.name: Nom ou pseudonyme
+ct.email: Courriel pour la réponse
+ct.send: Ouvrir mon courriel
+ct.legal1: Pour une réclamation sur un contenu, voir aussi les
+ct.legal2: mentions légales
+ct.legal3: (recours auprès de l'hébergeur).
+ct.b.topic: 'Objet :'
+ct.b.page: 'Page ou contenu concerné :'
+ct.b.none: non précisé
+ct.b.name: 'Nom ou pseudonyme :'
+ct.b.reply: 'Réponse à :'
+pg.done: terminé
+pg.partial: à compléter
+pg.planned: prévu
+pg.stat: '{done} domaines terminés sur {total} ({pct} %) · pointillés : à compléter'
+g.Infrastructure: Infrastructure
+g.Sécurité: Sécurité
+g.Utilisateurs: Utilisateurs
+g.Applications métier: Applications métier
+g.Gouvernance: Gouvernance
+g.Autres: Autres
+# Nouveau design
+banner.short: En cours
+banner.count: '{done} / {total} domaines'
+banner.aria: Avancement du catalogue
+home.config: Votre configuration
+home.usersonly: '{users} utilisateurs'
+home.domainof: 'Domaine · {i} sur {n}'
+home.position: 'Domaine {i} sur {n} · {k} composants'
+home.prev: Domaine précédent
+home.next: Domaine suivant
+home.prevto: 'Domaine précédent : {name}'
+home.nextto: 'Domaine suivant : {name}'
+home.tablelabel: Composants du domaine
+home.col.item: Composant
+home.col.sol: Solution retenue
+home.col.lic: Licence
+home.summary: Résumé de la sélection
+home.sumtitle: 'Budget sur {years} ans · {size} · {level}'
+home.free: Pile libre
+home.propeq: 'Équivalent propriétaire :'
+home.seebudget: Voir le détail du budget
+legend.labels: 'Un contour noir signale un label vérifié :'
+bud.selected: 'Chiffres du niveau {level}'
+bud.kpi.free: 'Pile libre · {level}'
+bud.kpi.prop: Équivalent propriétaire
+bud.kpi.gain: 'Économie sur {years} ans'
+bud.kpi.extra: 'Surcoût sur {years} ans'
+bud.kpi.setup: Mise en place, puis par an
+bud.peryear: '{v}/an'
+bud.compare: Les {n} niveaux comparés
+bud.legfree: Libre (couleur du niveau)
+bud.tap: Touchez un niveau pour afficher son détail.
+bud.showall: Afficher les {n} domaines
+bud.showless: Afficher les domaines les plus coûteux
+sol.count: '{n} fiches détaillées · {f} familles de licence'
+sol.letters: Aller à la lettre
+sol.site: Site
+sol.shown: '{n} solutions affichées sur {total}'
+sp.crumb: Fil d'Ariane
+sp.toc: Sommaire de la fiche
+sp.tocshort: Sur cette page
+sp.short.why: Pourquoi
+sp.short.alt: Alternatives
+sp.short.limits: Limites
+sp.short.whennot: Autre choix
+sp.short.used: Dans le catalogue
+sp.altfiche: Fiche disponible
+sp.altsite: Site, nouvel onglet
+sp.report: Signaler une erreur sur cette fiche
+pg.level: Niveau {n}
+ct.required: (obligatoire)
+ct.opens: Votre application de courriel s'ouvre avec le message prérempli.
+# Accueil et catalogue
+nav.home: Mon SI Libre, accueil
+acc.intro: 'De la virtualisation jusqu''au poste de chaque utilisateur, une pile entièrement libre, adaptée à votre organisation. Deux questions suffisent pour la composer.'
+acc.stat.domains: domaines
+acc.stat.solutions: solutions libres
+acc.stat.fiches: fiches détaillées
+acc.stat.levels: niveaux d'exigence
+acc.step1: Quelle est la taille de votre organisation ?
+acc.step2: Quel niveau d'exigence ?
+acc.recap: 'Votre pile : {size} · {level} · {n} composants'
+acc.budget: 'Budget libre sur {years} ans :'
+acc.vsprop: face au propriétaire
+acc.cta: Voir mon catalogue
+acc.ctashort: Mon catalogue
+acc.short: '{v} sur {years} ans'
+acc.explore: Explorer le site
+acc.go.catalog: 'La pile domaine par domaine, de l''infrastructure aux applications métier.'
+acc.go.solutions: Chaque logiciel cité, sa licence, ses limites et ses alternatives.
+acc.go.budget: 'Le coût sur {years} ans, comparé à une pile propriétaire équivalente.'
+cat.title: Votre catalogue
+cat.size: Taille
+cat.level: Niveau
+# À propos
+pg.n.done: '{n} terminés'
+pg.n.partial: '{n} à compléter'
+pg.n.planned: '{n} prévus'
+abt.start: Par où commencer
+abt.cta: Composer ma pile
+abt.scale.low: Plus simple à opérer
+abt.scale.high: Plus exigeant, plus coûteux
+abt.of: 'sur {total}'
+abt.groups: Groupes de domaines

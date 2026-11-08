@@ -1,0 +1,22 @@
+id: ged
+name: Gestion documentaire
+status: complete
+intro: Gestion documentaire et recherche.
+sizing: {startup: Un dossier classé., pme: 'Numérisation, OCR et classement.', grande: 'Workflows de validation, droits fins.'}
+items:
+- name: Gestion documentaire
+  role: Classer et retrouver
+  cost: { unit: user, price: 80, min: 2000, support: 5, setup: [300, 5000, 40000], etp: [0.01, 0.08, 0.5], ref: "M-Files / OpenText / SharePoint Premium" }
+  v: [Paperless-ngx, Alfresco, Mayan EDMS, Mayan EDMS en grappe, 'Mayan EDMS, archivage chiffré']
+- name: Reconnaissance de texte
+  role: OCR
+  cost: { unit: user, price: 5, min: 500, setup: [50, 500, 3000], etp: [0.002, 0.01, 0.05], ref: "ABBYY FineReader Server" }
+  v: [Tesseract, Tesseract, Tesseract + OCRmyPDF, Tesseract + OCRmyPDF en grappe, 'OCRmyPDF, traitement sur site uniquement']
+- name: Wiki
+  role: Documentation technique
+  cost: { unit: user, price: 31, min: 500, setup: [100, 1000, 8000], etp: [0.005, 0.02, 0.1], ref: "Confluence Standard, 5,78 $/utilisateur/mois (la moitié des utilisateurs)", src: "https://www.adaptavist.com/blog/atlassian-price-updates-effective-october-2026" }
+  v: [Wiki.js, Docmost, Docmost, Docmost en grappe, Docmost en grappe]
+- name: Circuit de validation
+  role: Relecture et approbation
+  cost: { unit: user, price: 15, min: 500, setup: [100, 1500, 10000], etp: [0.005, 0.02, 0.1], ref: "Power Automate / DocuWare" }
+  v: [Courriel, Nextcloud Flow, Workflows Mayan EDMS, Workflows + délégations, Workflows + piste d'audit]

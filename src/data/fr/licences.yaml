@@ -1,0 +1,14 @@
+# Registre des solutions citées. Tout nom listé dans `names` est reconnu et lié automatiquement
+# dans les textes des fichiers domains/. Licences : identifiants SPDX, à vérifier à chaque nouvelle version majeure.
+# `labels` : à ne renseigner que si le label a été vérifié à la source (voir `labels` ci-dessous).
+
+families:
+  - { id: copyleft, name: Copyleft fort, desc: "Les modifications redistribuées doivent rester libres (GPL, AGPL).", color: "#14573A", bg: "#D9F0E3", prefixes: [AGPL, GPL, CeCILL] }
+  - { id: weak, name: Copyleft faible, desc: "Seules les modifications du composant lui-même restent libres (LGPL, MPL, EPL, CDDL).", color: "#1B4B8A", bg: "#DCE9F8", prefixes: [LGPL, MPL, EPL, CDDL] }
+  - { id: permissive, name: Permissive, desc: "Réutilisable presque sans condition (MIT, BSD, Apache).", color: "#5E3593", bg: "#EBE0F7", prefixes: [MIT, BSD, Apache, OLDAP, PostgreSQL] }
+  - { id: source, name: Code source disponible, desc: "Le code se lit mais la licence n'est pas libre au sens de l'OSI (BUSL, SSPL, Sustainable Use).", color: "#7A4300", bg: "#FBE6C8", prefixes: [BUSL, SSPL, SUL] }
+  - { id: unknown, name: Licence à renseigner, desc: "Information non encore saisie.", color: "#404040", bg: "#E3E3E3", prefixes: [] }
+
+labels:
+  - { id: sill, name: SILL, desc: "Référencé au Socle interministériel de logiciels libres", url: "https://code.gouv.fr/sill/" }
+  - { id: cspn, name: CSPN, desc: "Certification de sécurité de premier niveau de l'ANSSI", url: "https://cyber.gouv.fr/produits-certifies" }

@@ -1,0 +1,13 @@
+name: CRM
+intro: Customer relationship and prospecting.
+sizing: {startup: A shared address book., pme: Simple CRM and bulk mailings., grande: CRM integrated with invoicing and email.}
+items:
+- name: Customer relationship management
+  role: Tracking customers and prospects
+  v: [Dolibarr, EspoCRM, SuiteCRM, SuiteCRM cluster, 'SuiteCRM, controlled data retention']
+- name: Contacts
+  role: Shared directory
+  v: [Nextcloud contacts, Nextcloud contacts, Contacts synchronised with the CRM, Single directory via FreeIPA, 'Single directory, logged access']
+- name: Bulk mailings
+  role: Emails to customers
+  v: [Listmonk, Listmonk, Listmonk + dedicated Postfix, Redundant Listmonk, 'Listmonk, consents tracked']

@@ -1,0 +1,9 @@
+families:
+  - { name: Strong copyleft, desc: "Redistributed changes must stay free (GPL, AGPL)." }
+  - { name: Weak copyleft, desc: "Only changes to the component itself must stay free (LGPL, MPL, EPL, CDDL)." }
+  - { name: Permissive, desc: "Reusable with almost no conditions (MIT, BSD, Apache)." }
+  - { name: Source available, desc: "The code can be read but the licence is not free in the OSI sense (BUSL, SSPL, Sustainable Use)." }
+  - { name: Licence to be added, desc: "Information not entered yet." }
+labels:
+  - { desc: "Listed in the French government's interministerial free-software base (SILL)" }
+  - { desc: "First-level security certification (CSPN) from the French cybersecurity agency ANSSI" }

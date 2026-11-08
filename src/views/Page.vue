@@ -1,35 +1,33 @@
 <script setup>
 import { computed } from 'vue'
-import { pages, coverage } from '../catalog'
-import RichText from './RichText.vue'
+import { pages } from '../lib/catalog'
+import { t } from '../lib/i18n'
+import RichText from '../components/RichText.vue'
 
+// Page de texte (mentions légales) : une carte par section.
+// Chaque section porte l'id sec-N : /mentions-legales?s=N y fait défiler (voir router/index.js)
 const props = defineProps({ pageKey: String })
 const page = computed(() => pages[props.pageKey])
 </script>
 
 <template>
-  <main class="max-w-3xl mx-auto px-5 py-8">
-    <h1 class="font-display font-800 text-4xl md:text-5xl">{{ page.title }}</h1>
-    <section v-for="s in page.sections" :key="s.h" class="mt-8">
-      <h2 class="font-display font-700 text-2xl">{{ s.h }}</h2>
-      <template v-for="(b, i) in s.p" :key="i">
-        <!-- Bloc cité : adresses, extraits de loi. Une ligne par entrée -->
-        <blockquote v-if="b.quote" class="mt-3 pl-4 border-l-4 border-brand/40 leading-relaxed max-w-prose">
-          <p v-for="(l, j) in b.quote" :key="j"><RichText :text="l" /></p>
-        </blockquote>
-        <p v-else class="mt-3 leading-relaxed max-w-prose"><RichText :text="b" /></p>
-      </template>
-    </section>
+  <main class="wrap pt-6 md:pt-10 pb-4 md:pb-16">
+    <h1 class="h-page">{{ page.title }}</h1>
+    <p v-if="!pages.translated" class="mt-2 mb-0 text-sm text-mute">{{ t('home.untranslated') }}</p>
+    <p v-if="page.lead" class="mt-3 md:mt-4.5 mb-0 text-lg md:text-[22px] leading-normal max-w-[860px]">{{ page.lead }}</p>
 
-    <section v-if="page.roadmap" class="mt-4">
-      <p class="font-600">{{ coverage.done }} domaines terminés sur {{ coverage.total }} ({{ coverage.pct }} %) · pointillés : à compléter</p>
-      <div v-for="[group, list] in coverage.groups" :key="group" class="mt-5">
-        <h3 class="font-600">{{ group }}</h3>
-        <ul class="mt-2 flex flex-wrap gap-2">
-          <li v-for="d in list" :key="d.id" class="chip" :class="d.status === 'done' ? '!bg-brandsoft !border-brand font-600' : d.status === 'partial' ? '!border-brand !border-dashed' : 'text-mute'">
-            {{ d.name }}<span class="sr-only"> ({{ d.status === 'done' ? 'terminé' : d.status === 'partial' ? 'à compléter' : 'prévu' }})</span></li>
-        </ul>
-      </div>
-    </section>
+    <div class="mt-6 md:mt-8 grid gap-3 md:gap-4 md:grid-cols-[repeat(auto-fit,minmax(min(100%,320px),1fr))]">
+      <section v-for="(s, i) in page.sections" :id="'sec-' + i" :key="s.h"
+        :class="['p-4 md:p-[22px] card', s.p?.length > 2 || s.p?.some((b) => b.quote) ? 'md:col-span-full' : '']">
+        <h2 class="m-0 font-display font-700 text-xl md:text-[22px]">{{ s.h }}</h2>
+        <template v-for="(b, j) in s.p" :key="j">
+          <!-- Bloc cité : adresses, extraits de loi. Une ligne par entrée -->
+          <blockquote v-if="b.quote" class="mt-3 mx-0 pl-4 border-l-4 border-brand/40 leading-relaxed max-w-[760px]">
+            <p v-for="(l, k) in b.quote" :key="k" class="m-0"><RichText :text="l" /></p>
+          </blockquote>
+          <p v-else class="mt-2.5 mb-0 leading-relaxed max-w-[760px]"><RichText :text="b" /></p>
+        </template>
+      </section>
+    </div>
   </main>
 </template>

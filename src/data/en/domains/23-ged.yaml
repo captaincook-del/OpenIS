@@ -1,0 +1,16 @@
+name: Document management
+intro: Document management and search.
+sizing: {startup: A filed folder., pme: 'Scanning, OCR and filing.', grande: 'Approval workflows, fine-grained rights.'}
+items:
+- name: Document management
+  role: Filing and finding
+  v: [Paperless-ngx, Alfresco, Mayan EDMS, Mayan EDMS cluster, 'Mayan EDMS, encrypted archiving']
+- name: Text recognition
+  role: OCR
+  v: [Tesseract, Tesseract, Tesseract + OCRmyPDF, Tesseract + OCRmyPDF cluster, 'OCRmyPDF, on-site processing only']
+- name: Wiki
+  role: Technical documentation
+  v: [Wiki.js, Docmost, Docmost, Docmost cluster, Docmost cluster]
+- name: Approval workflow
+  role: Review and sign-off
+  v: [Email, Nextcloud Flow, Mayan EDMS workflows, Workflows + delegations, Workflows + audit trail]

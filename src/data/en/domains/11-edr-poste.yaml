@@ -1,0 +1,13 @@
+name: Endpoint protection
+intro: Protecting workstations and servers against threats.
+sizing: {startup: Antivirus and disk encryption., pme: Central detection and automatic patches., grande: 'Detection across the whole fleet, patches in waves.'}
+items:
+- name: Detection
+  role: Seeing a threat on the workstation
+  v: [ClamAV, ClamAV + Wazuh, Wazuh + osquery, Wazuh cluster + osquery, 'Wazuh + osquery, rules controlled in France']
+- name: Disk encryption
+  role: Protecting a stolen workstation
+  v: [LUKS, 'LUKS, keys in Vaultwarden', LUKS + Clevis and Tang, LUKS + redundant Tang, 'LUKS, escrowed keys never outsourced']
+- name: Patches
+  role: Keeping systems up to date
+  v: [unattended-upgrades, unattended-upgrades, 'Ansible, updates in waves', Ansible + internal mirror repository, 'Signed internal mirror repository, validation before deployment']

@@ -1,0 +1,16 @@
+name: Virtualisation
+intro: "The foundation: hosting virtual machines and storage."
+sizing:
+  startup: "One host, a few VMs. Snapshots act as a safety net."
+  pme: "Three-node cluster, replicated storage."
+  grande: "Several clusters per site, dedicated distributed storage."
+items:
+  - name: Hypervisor
+    role: Runs the virtual machines
+    v: ["Proxmox VE, 1 node", "Proxmox VE, 2 nodes + witness", "Proxmox VE, 3 to 7 node cluster", "Proxmox VE multi-cluster, automatic failover", "OpenNebula or Proxmox on SecNumCloud-qualified infrastructure"]
+  - name: Storage
+    role: Virtual machine disks
+    v: ["Local ZFS", "ZFS + asynchronous replication", "Ceph (3 nodes)", "Multi-site Ceph, synchronous replication", "Ceph with encryption at rest and controlled keys"]
+  - name: Backup
+    role: Recovery after an incident
+    v: ["Proxmox Backup Server (USB disk)", "Dedicated Proxmox Backup Server", "PBS + encrypted remote copy", "Redundant PBS + offline copy", "PBS + copy on sovereign storage, monthly restore test"]

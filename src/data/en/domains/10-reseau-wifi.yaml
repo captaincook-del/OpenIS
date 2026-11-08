@@ -1,0 +1,13 @@
+name: Network and Wi-Fi
+intro: Local network, Wi-Fi and guest access.
+sizing: {startup: One router and one access point., pme: 'Managed switches, VLAN per use.', grande: 'Redundant core, segmentation per site.'}
+items:
+- name: Routing and firewall
+  role: Network core
+  v: [OPNsense, OPNsense + VLAN, OPNsense redundant pair, OPNsense CARP multi-site, 'OPNsense, trust zones']
+- name: Wi-Fi
+  role: Wireless access
+  v: ['OpenWrt, one access point', 'OpenWrt, several access points + VLAN', OpenWrt + 802.1X, 'OpenWrt, redundant central control', 'OpenWrt, 802.1X with certificates']
+- name: Network authentication
+  role: Who connects
+  v: [Shared key, FreeRADIUS, FreeRADIUS + LDAP, Redundant FreeRADIUS, FreeRADIUS + client certificates]

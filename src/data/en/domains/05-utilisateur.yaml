@@ -1,0 +1,19 @@
+name: User workstation
+intro: 'What the person sees: workstation and smartphone.'
+sizing: {startup: 'Workstations managed by hand, basic scripts.', pme: 'Fleet managed by policies, automated deployment.', grande: 'Master images, centralised management per site.'}
+items:
+- name: Workstation system
+  role: Desktop OS
+  v: [Ubuntu LTS, Ubuntu LTS, 'Ubuntu LTS', 'Debian managed by Ansible, updates in waves', 'Hardened Debian, encrypted disk, secure boot']
+- name: Email and calendar
+  role: Desktop application
+  v: [Thunderbird, Thunderbird, Thunderbird + automatic configuration, Thunderbird + centralised policies, 'Thunderbird, OpenPGP encryption enforced']
+- name: Office suite
+  role: Text, spreadsheet, presentation
+  v: [LibreOffice, LibreOffice, LibreOffice + company templates, LibreOffice + Collabora, 'LibreOffice, ODF open formats enforced']
+- name: Browser
+  role: Web access
+  v: [Firefox, Firefox + uBlock, Firefox ESR + policies, Managed Firefox ESR, 'Hardened Firefox ESR, vetted extensions']
+- name: Smartphone
+  role: Mobile
+  v: [Free apps via F-Droid, /e/OS, /e/OS + Headwind MDM, 'Fleet managed by MDM, dual profile', 'GrapheneOS or hardened /e/OS, sovereign MDM']

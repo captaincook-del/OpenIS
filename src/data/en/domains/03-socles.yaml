@@ -1,0 +1,28 @@
+name: Foundations (DNS, LDAP, NTP)
+intro: 'DNS, LDAP, NTP: what everything else assumes.'
+sizing: {startup: A resolver and a lightweight directory are enough., pme: 'Two of each, on separate hosts.', grande: 'Services replicated per site, monitored.'}
+items:
+- name: DNS
+  role: Internal names and resolution
+  v: [Unbound + dnsmasq, Bind9 primary + secondary, PowerDNS + DNSSEC, PowerDNS anycast across sites, 'PowerDNS, signed zones, sovereign resolvers']
+- name: LDAP directory
+  role: Accounts and groups
+  v: [LLDAP, OpenLDAP, FreeIPA, Multi-master 389 Directory Server, 'Multi-site FreeIPA, HSM for keys']
+  by_size:
+    startup:
+      essentielle: {text: 'LLDAP, POSIX attributes entered by hand', why: 'With a few accounts, adding POSIX identifiers and groups by hand remains reasonable.'}
+      standard: LLDAP + database backup, POSIX attributes entered by hand
+    pme:
+      essentielle: {text: FreeIPA, why: 'LLDAP has no native POSIX management (identifiers, groups, shells): with several hundred accounts, manual entry becomes a source of errors.'}
+    grande:
+      essentielle: {text: FreeIPA, why: At this scale you need native POSIX management and replication.}
+      standard: FreeIPA, 2 replicated servers
+- name: NTP time
+  role: Consistent clock everywhere
+  v: [chrony (public pools), chrony on 2 internal servers, chrony + multiple authenticated sources (NTS), Multi-site chrony + GPS, 'chrony + GNSS clock and NTS, traceable time']
+- name: SSO
+  role: One login for everything
+  v: [Authelia, Authelia + 2FA, Keycloak, Keycloak cluster, Keycloak + FranceConnect / ProConnect]
+- name: PKI
+  role: Internal certificates
+  v: [step-ca, step-ca, step-ca + internal ACME, Redundant step-ca, 'Offline root authority, HSM']

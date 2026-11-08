@@ -1,0 +1,18 @@
+id: impression
+name: Impression
+status: complete
+intro: Imprimer, scanner, numériser.
+sizing: {startup: Une imprimante partagée., pme: Serveur d'impression et scan vers dossier., grande: 'Impression sécurisée, files par site.'}
+items:
+- name: Serveur d'impression
+  role: Files d'impression
+  cost: { unit: user, price: 6, min: 300, setup: [50, 500, 4000], etp: [0.005, 0.02, 0.1], ref: "PaperCut MF / Windows Print Server" }
+  v: [CUPS, CUPS, CUPS redondant, 'CUPS en grappe, files par site', 'CUPS, impression sécurisée par badge']
+- name: Numérisation
+  role: Du papier au numérique
+  cost: { unit: user, price: 5, min: 300, setup: [50, 500, 4000], etp: [0.002, 0.01, 0.05], ref: "Kofax / ABBYY (numérisation)" }
+  v: [Scan vers Samba, Scan vers Nextcloud, Scan + OCR vers Nextcloud, Scan + OCR + classement automatique, 'Scan + OCR, conservation maîtrisée']
+- name: Suivi des volumes
+  role: Coûts et usages
+  cost: { unit: user, price: 2, setup: [0, 200, 1500], etp: [0.001, 0.005, 0.03], ref: "PaperCut (rapports)" }
+  v: [Compteurs relevés à la main, Journaux CUPS, Journaux CUPS + Grafana, Alertes sur volumes anormaux, Journaux conservés selon la politique légale]

@@ -1,0 +1,13 @@
+name: Object storage
+intro: Large files, copies and archives, reachable through the S3 API or a network share.
+sizing: {startup: 'A single server, simple shares.', pme: Three nodes with replication., grande: 'Several sites, lifecycles and quotas per department.'}
+items:
+- name: S3 server
+  role: S3-compatible storage
+  v: ['Garage, 1 node', 'Garage, 3 nodes', SeaweedFS cluster, Multi-site Ceph RGW, 'Ceph RGW, server-side encryption, controlled keys']
+- name: File sharing
+  role: Network access to folders
+  v: [Samba, Samba + ACLs, Samba with FreeIPA, Clustered Samba (CTDB), 'Samba, access logging retained']
+- name: Data copies
+  role: Encrypted file backup
+  v: [restic to external disk, restic + rclone to S3, BorgBackup + encrypted rclone, restic to two separate sites, 'restic, encrypted copies on sovereign storage']

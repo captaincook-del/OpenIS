@@ -1,0 +1,13 @@
+name: Electronic signature
+intro: Signing documents online.
+sizing: {startup: PDF signing with a certificate., pme: Simple online signing., grande: 'Advanced signing, traceability.'}
+items:
+- name: Electronic signature
+  role: Contracts and agreements
+  v: [Certificate in LibreOffice, DocuSeal, Documenso, Redundant Documenso, Documenso + qualified certificates from a provider]
+- name: Certificates
+  role: Signer's identity
+  v: [Internal certificate (step-ca), Internal certificate (step-ca), Qualified eIDAS provider, 'Qualified provider, two suppliers', French qualified eIDAS provider]
+- name: Timestamping
+  role: Proving the date
+  v: [Signature timestamp, Internal timestamp server, Qualified timestamp token, Tokens from two providers, Qualified token from a French provider]

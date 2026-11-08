@@ -1,0 +1,180 @@
+nav.catalog: Catalogue
+nav.solutions: Solutions
+nav.budget: Budget
+nav.about: About
+nav.contact: Contact
+nav.aria: Main navigation
+lang.label: Language
+banner: 'Catalogue under construction: {done} of {total} domains completed ({pct}%)'
+banner.partial: ' · {n} to complete'
+banner.planned: ' · {n} to create'
+footer.tagline: Showcase site. Every component listed is free or open-source software.
+footer.source: Source code
+footer.legal: Legal notice
+gh.label: Site source code on GitHub (opens in a new tab)
+a11y.newtab: (opens in a new tab)
+a11y.fiche: (solution page)
+a11y.site: (project website, opens in a new tab)
+home.title: A complete information system, free from lock-in.
+home.intro: 'Choose the size and the level of requirement: the matching free-software stack is shown, from virtualisation to each user''s desktop.'
+home.size: Organisation size
+home.level: Level of requirement
+home.users: '{users} users, {hosts}'
+home.budget: See the budget
+home.domains: Domains
+home.wip: in progress
+home.wiptitle: Domain being expanded
+home.wipchip: Being expanded
+home.wipchiptitle: More components will be added
+home.count: '{n} components for “{size}”.'
+home.variant: '{size} variant'
+home.legend: Badge legend
+home.untranslated: 'This domain is not translated yet: content is in French.'
+legend.title: Understanding the badges
+legend.note: 'Licences and labels are indicative: check the version you deploy with the project.'
+badge.nolicense: Licence to be added
+sol.title: The {n} solutions listed
+sol.intro: A name leads to its page when one exists (“Page” tag), otherwise to the project website. The badge shows the licence; an outlined badge marks a verified label.
+sol.search: Search a solution
+sol.searchlabel: Search
+sol.famlabel: Licence family
+sol.allfam: All licences
+sol.tag: Page
+sol.only: With a page ({n})
+sol.none: No solution matches. Clear a filter to widen the search.
+sol.srfiche: (page)
+sp.back: ← All solutions
+sp.site: Project website
+sp.why: Why this one
+sp.alt: Why not another
+sp.limits: Known limitations
+sp.whennot: When to choose something else
+sp.used: Where it appears in the catalogue
+sp.sources: Sources
+sp.updated: 'Page updated in {date}. Licences and features change: check with the project.'
+sp.nopage: No page for this solution yet
+sp.nopage2: A page appears as soon as a file src/data/fr/solutions/{id}.yaml exists.
+sp.visit: Visit the project website
+sp.untranslated: 'This page is not translated yet: content is in French.'
+bud.title: How much does it cost over {years} years?
+bud.intro: Sum of the {n} catalogue components for this size, compared with an equivalent proprietary stack. Adding or removing a component in domains/ changes these figures.
+bud.size: Size
+bud.setup: Setup {capex} · {run}/year
+bud.free: Free software
+bud.prop: Proprietary
+bud.saving: Saving
+bud.extra: Extra cost
+bud.detail: Breakdown by domain · {level} level
+bud.detailnote: Free-software cost over {years} years, domain by domain. Click a level above to compare.
+bud.etp: Administration time is valued at {cost} per year per full-time equivalent.
+ct.topic: Subject
+ct.page: Page or content concerned
+ct.optional: (optional)
+ct.pageph: E.g. Redis page, Network domain, Budget page
+ct.message: Your message
+ct.msgph: What should be corrected or discussed, and why? A source helps us handle the request.
+ct.name: Name or pseudonym
+ct.email: Email for the reply
+ct.send: Open my email app
+ct.legal1: For a complaint about content, see also the
+ct.legal2: legal notice
+ct.legal3: (recourse to the host).
+ct.b.topic: 'Subject:'
+ct.b.page: 'Page or content concerned:'
+ct.b.none: not specified
+ct.b.name: 'Name or pseudonym:'
+ct.b.reply: 'Reply to:'
+pg.done: completed
+pg.partial: to complete
+pg.planned: planned
+pg.stat: '{done} of {total} domains completed ({pct}%) · dashed: to complete'
+g.Infrastructure: Infrastructure
+g.Sécurité: Security
+g.Utilisateurs: Users
+g.Applications métier: Business applications
+g.Gouvernance: Governance
+g.Autres: Other
+# New design
+banner.short: In progress
+banner.count: '{done} / {total} domains'
+banner.aria: Catalogue progress
+home.config: Your configuration
+home.usersonly: '{users} users'
+home.domainof: 'Domain · {i} of {n}'
+home.position: 'Domain {i} of {n} · {k} components'
+home.prev: Previous domain
+home.next: Next domain
+home.prevto: 'Previous domain: {name}'
+home.nextto: 'Next domain: {name}'
+home.tablelabel: Domain components
+home.col.item: Component
+home.col.sol: Selected solution
+home.col.lic: Licence
+home.summary: Selection summary
+home.sumtitle: '{years}-year budget · {size} · {level}'
+home.free: Free-software stack
+home.propeq: 'Proprietary equivalent:'
+home.seebudget: See the budget breakdown
+legend.labels: 'A black outline marks a verified label:'
+bud.selected: '{level} level figures'
+bud.kpi.free: 'Free-software stack · {level}'
+bud.kpi.prop: Proprietary equivalent
+bud.kpi.gain: 'Saving over {years} years'
+bud.kpi.extra: 'Extra cost over {years} years'
+bud.kpi.setup: Setup, then per year
+bud.peryear: '{v}/year'
+bud.compare: The {n} levels compared
+bud.legfree: Free software (level colour)
+bud.tap: Tap a level to see its breakdown.
+bud.showall: Show all {n} domains
+bud.showless: Show the most expensive domains
+sol.count: '{n} detailed pages · {f} licence families'
+sol.letters: Jump to letter
+sol.site: Website
+sol.shown: '{n} of {total} solutions shown'
+sp.crumb: Breadcrumb
+sp.toc: Page contents
+sp.tocshort: On this page
+sp.short.why: Why
+sp.short.alt: Alternatives
+sp.short.limits: Limitations
+sp.short.whennot: Other choice
+sp.short.used: In the catalogue
+sp.altfiche: Page available
+sp.altsite: Website, new tab
+sp.report: Report an error on this page
+pg.level: Level {n}
+ct.required: (required)
+ct.opens: Your email app opens with the message pre-filled.
+# Home and catalogue
+nav.home: Mon SI Libre, home
+acc.intro: 'From virtualisation to each user''s desktop, an entirely free-software stack suited to your organisation. Two questions are enough to build it.'
+acc.stat.domains: domains
+acc.stat.solutions: free solutions
+acc.stat.fiches: detailed fact sheets
+acc.stat.levels: levels of requirement
+acc.step1: How large is your organisation?
+acc.step2: Which level of requirement?
+acc.recap: 'Your stack: {size} · {level} · {n} components'
+acc.budget: '{years}-year free-software budget:'
+acc.vsprop: compared with proprietary
+acc.cta: See my catalogue
+acc.ctashort: My catalogue
+acc.short: '{v} over {years} years'
+acc.explore: Explore the site
+acc.go.catalog: 'The stack domain by domain, from infrastructure to business applications.'
+acc.go.solutions: Every piece of software listed, with its licence, limits and alternatives.
+acc.go.budget: 'The {years}-year cost, compared with an equivalent proprietary stack.'
+cat.title: Your catalogue
+cat.size: Size
+cat.level: Level
+# About
+pg.n.done: '{n} done'
+pg.n.partial: '{n} to complete'
+pg.n.planned: '{n} planned'
+abt.start: Where to start
+abt.cta: Build my stack
+abt.scale.low: Simpler to run
+abt.scale.high: More demanding, more costly
+abt.of: 'out of {total}'
+abt.groups: Domain groups

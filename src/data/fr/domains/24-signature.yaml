@@ -1,0 +1,18 @@
+id: signature
+name: Signature électronique
+status: complete
+intro: Signer des documents en ligne.
+sizing: {startup: Signature de PDF par certificat., pme: Signature en ligne simple., grande: 'Signature avancée, traçabilité.'}
+items:
+- name: Signature électronique
+  role: Contrats et accords
+  cost: { unit: user, price: 46, min: 500, support: 20, setup: [100, 1500, 10000], etp: [0.002, 0.02, 0.1], ref: "Yousign Pro 38 €/mois, DocuSign Business Pro 40 $/mois (10 % des utilisateurs)", src: "https://verdocs.com/?p=13994 ; https://www.capterra.com/p/121506/DocuSign/pricing/ ; https://www.docuseal.com/pricing" }
+  v: [Certificat dans LibreOffice, DocuSeal, Documenso, Documenso redondant, Documenso + certificats qualifiés d'un prestataire]
+- name: Certificats
+  role: Identité du signataire
+  cost: { unit: user, price: 3, min: 300, setup: [0, 300, 2000], etp: [0.001, 0.005, 0.03], ref: "Certificats de signature achetés (eIDAS)" }
+  v: [Certificat interne (step-ca), Certificat interne (step-ca), Prestataire qualifié eIDAS, 'Prestataire qualifié, deux fournisseurs', Prestataire qualifié eIDAS français]
+- name: Horodatage
+  role: Prouver la date
+  cost: { unit: user, price: 3, min: 500, setup: [50, 500, 3000], etp: [0.002, 0.01, 0.05], ref: "Service d'horodatage qualifié (jetons)" }
+  v: [Horodatage de la signature, Serveur d'horodatage interne, Jeton d'horodatage qualifié, Jetons de deux prestataires, Jeton qualifié d'un prestataire français]

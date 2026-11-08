@@ -1,0 +1,18 @@
+id: cartographie
+name: Cartographie du SI
+status: complete
+intro: Savoir ce qu'on possède et comment c'est relié.
+sizing: {startup: Un schéma et un tableur., pme: Inventaire outillé., grande: Cartographie à jour reliée aux risques.}
+items:
+- name: Inventaire
+  role: Équipements et services
+  cost: { unit: flat, price: 0, setup: [0, 300, 2000], etp: [0.001, 0.005, 0.03], ref: "Inventaire déjà compté dans Exploitation" }
+  v: [Tableur, NetBox, NetBox + GLPI, NetBox + GLPI + découverte réseau, 'NetBox + GLPI, relié au registre RGPD']
+- name: Schémas d'architecture
+  role: Comprendre d'un coup d'œil
+  cost: { unit: user, price: 8, min: 200, setup: [0, 200, 1500], etp: [0.001, 0.005, 0.03], ref: "Microsoft Visio / Lucidchart" }
+  v: [draw.io, draw.io, Mermaid versionné dans Forgejo, Mermaid + revue d'architecture, Mermaid + revue d'architecture annuelle]
+- name: Flux de données
+  role: Qui parle à qui
+  cost: { unit: user, price: 20, min: 3000, setup: [200, 3000, 20000], etp: [0.005, 0.03, 0.2], ref: "MEGA HOPEX / SAP LeanIX" }
+  v: [Schéma des flux principaux, Matrice des flux, Matrice des flux dans NetBox, Matrice des flux + contrôle automatique, Matrice des flux + preuve de conformité]

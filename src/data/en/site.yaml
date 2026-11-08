@@ -1,0 +1,10 @@
+levels:
+  - { name: Essential, pitch: "The bare minimum, simple to operate." }
+  - { name: Standard, pitch: "Basic redundancy and tested backups." }
+  - { name: Enterprise, pitch: "Central directory, SSO, logging, compliance." }
+  - { name: High availability, pitch: "No single point of failure, multi-site." }
+  - { name: Sovereign, pitch: "Controlled hosting and encryption, SecNumCloud." }
+sizes:
+  - { name: Startup, hosts: "1 to 2 servers", profil: "Startup, small association" }
+  - { name: SME, hosts: "3 to 6 servers", profil: "SME, association, small local authority" }
+  - { name: Large organisation, hosts: "10+ servers, multi-site", profil: "Large company, local authority, public body" }

@@ -1,0 +1,18 @@
+id: cms
+name: Site web et CMS
+status: partial
+intro: Site web, publication et statistiques.
+sizing: {startup: Un site statique., pme: Site éditable par l'équipe., grande: 'Plusieurs sites, contributeurs, workflow.'}
+items:
+- name: Gestion de contenu
+  role: Publier
+  cost: { unit: user, price: 15, min: 1000, setup: [500, 8000, 60000], etp: [0.01, 0.08, 0.5], ref: "Sitecore / WordPress VIP / Webflow" }
+  v: ['Hugo, site statique', 'Vue.js, Symfony, Django', 'Vue.js, Symfony, Django', 'Vue.js, Symfony, Django en grappe', 'Vue.js, Symfony, Django hébergement qualifié']
+- name: Serveur web
+  role: Diffusion
+  cost: { unit: site, price: 1000, min: 500, setup: [50, 500, 3000], etp: [0.002, 0.01, 0.05], ref: "NGINX Plus / hébergement managé" }
+  v: [Caddy, Caddy, nginx, nginx + répartiteur de charge, nginx + WAF]
+- name: Statistiques
+  role: Mesure d'audience respectueuse
+  cost: { unit: user, price: 10, min: 1000, setup: [50, 1000, 6000], etp: [0.002, 0.02, 0.1], ref: "Piano Analytics / Google Analytics 360" }
+  v: [Plausible, Matomo, 'Matomo, données anonymisées', 'Matomo, anonymisation + hébergement redondant', 'Matomo, exemption de consentement CNIL']

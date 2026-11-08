@@ -1,0 +1,16 @@
+name: Continuity and disaster recovery
+intro: Resuming activity after an incident.
+sizing: {startup: A simple procedure and an offline copy., pme: 'Documented scenarios, tested restoration.', grande: 'Failover between sites, regular exercises.'}
+items:
+- name: Recovery plan
+  role: Written procedures
+  v: [Paper sheet + offline copy, Procedures versioned in Forgejo, Procedures + annual exercise, Automated failover between sites, 'Failover tested quarterly, qualified fallback site']
+- name: Data replication
+  role: Copy to another place
+  v: [ZFS send to a second disk, 'ZFS, asynchronous replication', Ceph RBD mirroring, Synchronous multi-site Ceph, 'Encrypted Ceph, sovereign fallback site']
+- name: Recovery objectives
+  role: Tolerated data loss and downtime
+  v: ['24 h loss, 24 h recovery', '24 h loss, 8 h recovery', '1 h loss, 4 h recovery', 'No loss, under 15 min', 'No loss, under 15 min, qualified separate sites']
+- name: Restore tests
+  role: Proving it works
+  v: [One file restored each month, One VM restored each quarter, Full restore each year, Six-monthly failover exercise, Quarterly exercise with signed report]

@@ -1,0 +1,13 @@
+name: Project management
+intro: Plan, track and deliver.
+sizing: {startup: A shared task list., pme: Project and team tracking., grande: Project portfolio and fine-grained rights.}
+items:
+- name: Task tracking
+  role: Who does what
+  v: [Vikunja, Taiga, OpenProject, OpenProject cluster, 'OpenProject, rights per project']
+- name: Code and review
+  role: Developers' work
+  v: [Forgejo, Forgejo, GitLab + GitLab CI, Redundant Forgejo, 'Forgejo, signed commits enforced']
+- name: Shared calendars
+  role: Team planning
+  v: [Nextcloud calendar, Nextcloud calendar, Nextcloud calendars per team, Nextcloud cluster, 'Nextcloud, qualified hosting']

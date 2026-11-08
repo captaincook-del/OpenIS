@@ -1,0 +1,13 @@
+name: Telephony
+intro: Internal and external calls, softphones.
+sizing: {startup: 'A few lines, softphones.', pme: 'Phone system, call queues.', grande: 'Several sites, carrier backup.'}
+items:
+- name: Phone system
+  role: Telephony core
+  v: [Asterisk + FreePBX, Asterisk + FreePBX, FreeSWITCH, Redundant FreeSWITCH + Kamailio, 'FreeSWITCH, trunk from a French carrier']
+- name: Calling applications
+  role: On workstation and mobile
+  v: [Linphone, Linphone, Linphone + automatic configuration, Linphone + centralised provisioning, 'Linphone, SRTP encryption enforced']
+- name: Carrier connection
+  role: Calls to the outside
+  v: [One SIP trunk, One SIP trunk + 4G backup, 'Two trunks, two carriers', Two carriers + two sites, 'French carriers, logs kept in France']

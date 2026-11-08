@@ -1,0 +1,13 @@
+name: Accounting and ERP
+intro: Sales management, accounting, invoicing.
+sizing: {startup: Simple invoicing and accounting., pme: Full commercial management., grande: 'Integrated suite, several companies.'}
+items:
+- name: Management and accounting
+  role: Management core
+  v: [Dolibarr, Dolibarr, Odoo Community, Odoo Community cluster, 'Tryton, qualified hosting']
+- name: Electronic invoicing
+  role: Compliant invoices
+  v: [Factur-X with Dolibarr, Factur-X with Dolibarr, Factur-X + approved platform, Factur-X + redundant approved platform, 'Factur-X, French approved platform']
+- name: Backup and traceability
+  role: Accounting records
+  v: [Daily backup, Backup + PDF/A archiving, Backup + audit trail, Multi-site replication, Encrypted legal retention]

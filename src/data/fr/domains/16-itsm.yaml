@@ -1,0 +1,18 @@
+id: itsm
+name: Support et ITSM
+status: complete
+intro: Support aux utilisateurs et gestion des incidents.
+sizing: {startup: Une boîte partagée suffit., pme: Outil de tickets et base de connaissances., grande: Catalogue de services et astreinte.}
+items:
+- name: Gestion des tickets
+  role: Suivre les demandes
+  cost: { unit: user, price: 5, min: 500, support: 5, setup: [200, 3000, 25000], etp: [0.01, 0.05, 0.3], ref: "Jira Service Management Standard, 21,50 $/agent/mois (un agent pour 50 utilisateurs)", src: "https://www.adaptavist.com/blog/atlassian-price-updates-effective-october-2026 ; https://costbench.com/software/help-desk/zammad/" }
+  v: [Boîte courriel partagée, Zammad, GLPI, GLPI redondant, 'GLPI, journaux d''accès conservés']
+- name: Base de connaissances
+  role: Réponses réutilisables
+  cost: { unit: user, price: 3, min: 500, setup: [50, 500, 3000], etp: [0.002, 0.01, 0.05], ref: "Confluence Standard, 5,78 $/utilisateur/mois (équipe informatique)", src: "https://www.adaptavist.com/blog/atlassian-price-updates-effective-october-2026" }
+  v: [Wiki Forgejo, BookStack, BookStack + SSO Keycloak, BookStack redondant, 'BookStack, versions validées']
+- name: Assistance à distance
+  role: Dépanner sans se déplacer
+  cost: { unit: user, price: 10, min: 550, setup: [50, 500, 3000], etp: [0.002, 0.01, 0.05], ref: "TeamViewer Business 611 $/an, Corporate 2 760 $/an", src: "https://www.realvnc.com/en/blog/teamviewer-pricing/" }
+  v: [RustDesk, RustDesk, 'RustDesk, serveur interne', 'RustDesk, serveurs redondants', 'RustDesk, sessions journalisées']
