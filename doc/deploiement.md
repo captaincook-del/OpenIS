@@ -12,6 +12,8 @@
 
 Pour ne pas inscrire les adresses dans le dépôt, retirez-les de `netlify.toml` et définissez les mêmes variables dans l'interface Netlify (Site configuration › Environment variables).
 
+`robots.txt` et `sitemap.txt` sont générés au build par `vite.config.js` (plugin `robots-sitemap`) : pages fixes plus une ligne par fiche de `data/fr/solutions/`. L'adresse du site vient de la variable `URL` fournie par Netlify (adresse principale, domaine personnalisé compris), sinon de `SITE_URL`, sinon `https://openis.netlify.app`. En mode hash, les moteurs de recherche ignorent ce qui suit `#` : seule la page d'accueil est réellement indexable.
+
 Le routeur est en mode hash : aucune règle de réécriture n'est nécessaire. Si vous passez en mode historique, ajoutez une redirection `/* → /index.html` (exemple commenté dans `netlify.toml`).
 
 ## Autre hébergement

@@ -1,3 +1,4 @@
+import { readdirSync } from 'node:fs'
 import { defineConfig, loadEnv } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import UnoCSS from 'unocss/vite'
@@ -18,6 +19,19 @@ export default defineConfig(({ mode }) => {
             if (env[k]) console.log(`[env] ${k} : définie (contexte ${ctx})`)
             else this.warn(`${k} absente (contexte ${ctx}) : la valeur fictive de pages.yaml sera publiée.`)
           }
+        },
+      },
+      {
+        name: 'robots-sitemap',
+        // robots.txt et sitemap.txt générés au build : une fiche ajoutée dans data/fr/solutions/ y entre seule.
+        // URL : celle du site sur Netlify (variable URL fournie au build), sinon SITE_URL, sinon l'adresse Netlify par défaut.
+        generateBundle() {
+          const site = (process.env.URL || process.env.SITE_URL || 'https://openis.netlify.app').replace(/\/$/, '')
+          const pages = ['', 'catalogue', 'budget', 'solutions', 'a-propos', 'contact', 'mentions-legales']
+          const fiches = readdirSync('src/data/fr/solutions').filter((f) => f.endsWith('.yaml')).map((f) => 'solutions/' + f.slice(0, -5)).sort()
+          const urls = [...pages, ...fiches].map((p) => (p ? `${site}/#/${p}` : `${site}/`))
+          this.emitFile({ type: 'asset', fileName: 'sitemap.txt', source: urls.join('\n') + '\n' })
+          this.emitFile({ type: 'asset', fileName: 'robots.txt', source: `User-agent: *\nAllow: /\n\nSitemap: ${site}/sitemap.txt\n` })
         },
       },
     ],

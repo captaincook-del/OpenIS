@@ -100,8 +100,9 @@ Une bonne fiche répond à « pourquoi celle-ci et pas une autre ? » en une pag
 `fr/pages.yaml` contient À propos, Contact (titre, introduction, avertissement, objets du formulaire, adresses de secours) et Mentions légales.
 
 - Les textes acceptent des liens `[texte](adresse)` et les jetons `{email}` et `{claims_email}`, remplacés par les adresses de contact.
-- Un bloc `quote:` affiche un encadré, une ligne par entrée.
-- Dans une section, `levels: true` affiche les cartes des niveaux sous le texte ; `roadmap: true` place la section en colonne avec l'avancement par domaine.
+- Un bloc `quote:` affiche un encadré, une ligne par entrée. Précédé d'une phrase courte terminée par « : », il devient une carte titrée (adresse) ; les cartes qui se suivent s'affichent côte à côte.
+- Mentions légales : `highlight: true` met en avant le premier paragraphe d'une section ; `contact: true` ajoute un bouton vers le formulaire de contact.
+- Dans une section, `levels: true` affiche les cartes des niveaux sous le texte ; `roadmap: true` affiche l'avancement par groupe de domaines.
 - Le premier objet de `contact.topics` (réclamation) part vers l'adresse des réclamations.
 
 ## Règles YAML
