@@ -11,7 +11,7 @@
 
 Dans `uno.config.js` : `ink`, `paper`, `mute`, `line`, `edge`, `brand` (vert d'accent), `brandsoft`, `rule`, `soft`, `gain`, `propbar`. Les couleurs des niveaux sont dans `src/data/fr/site.yaml` : c'est le seul code couleur du site (teinte du niveau choisi, bande du domaine actif, barres du budget).
 
-Polices Bricolage Grotesque (titres) et Instrument Sans (texte), chargées depuis Google Fonts dans `index.html`. Pour un site sans aucun appel externe, hébergez-les dans le projet et retirez la mention correspondante des mentions légales.
+Polices Bricolage Grotesque (titres, graisses 500, 700, 800) et Instrument Sans (texte, 400, 500, 600), hébergées avec le site grâce aux paquets `@fontsource`, importés dans `src/main.js`. Vite copie les fichiers dans `dist/` : aucune requête vers Google ni vers un autre service externe. Pour une nouvelle graisse, importer `@fontsource/<police>/<graisse>.css` dans `src/main.js`.
 
 ## Raccourcis UnoCSS
 

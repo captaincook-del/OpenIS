@@ -5,12 +5,12 @@
 ```
 doc/                        documentation développeur (ce dossier)
 public/favicon.svg
-index.html                  polices Google Fonts, titre
+index.html                  titre, icône
 uno.config.js               couleurs, polices, raccourcis de style
 vite.config.js              plugins, contrôle des variables d'environnement au build
 netlify.toml                build et en-têtes de sécurité
 src/
-├── main.js
+├── main.js                 point d'entrée : styles, polices @fontsource, application
 ├── App.vue                 en-tête vert, avancement, pied de page, barre d'onglets sur téléphone
 ├── assets/base.css         styles globaux hors UnoCSS (boutons, fieldset, ancres)
 ├── router/index.js         routes (mode hash)

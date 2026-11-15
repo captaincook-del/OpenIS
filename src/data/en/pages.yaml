@@ -44,6 +44,5 @@ legal:
     - h: Personal data
       p:
         - "This site uses no cookies and sets no trackers. It includes no audience measurement or advertising."
-        - "To display, the pages load their fonts from Google Fonts servers: your IP address and technical information about your browser are then sent to Google, which processes them under its [privacy policy](https://policies.google.com/privacy)."
         - "The site is hosted by a US company: technical connection logs (IP address, date, pages requested) may be kept by the host and processed in the United States. See [Netlify's privacy policy](https://www.netlify.com/privacy/)."
         - "The contact form only opens your email app: the site stores nothing. Emails received are used only to answer your request. You may ask for their erasure, or for access to or correction of data about you, by writing to [{email}](mailto:{email}). If you disagree, you may contact the [CNIL](https://www.cnil.fr/)."
